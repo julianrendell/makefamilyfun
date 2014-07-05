@@ -1,9 +1,9 @@
 [submodule "plugins/jekyll-plantuml"]
 	path = plugins/jekyll-plantuml
-	url = git://github.com/yjpark/jekyll-plantuml.git
+	url = git@github.com:yjpark/jekyll-plantuml.git
 [submodule "plugins/octopress_highlight"]
 	path = plugins/octopress_highlight
-	url = git://github.com/thesp0nge/octopress_highlight_plugin.git
+	url = git@github.com:thesp0nge/octopress_highlight_plugin.git
 [submodule ".themes/octostrap3"]
 	path = .themes/octostrap3
 	url = https://github.com/kAworu/octostrap3.git

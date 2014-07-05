@@ -7,7 +7,7 @@ title: Make. Family. Fun.
 subtitle: This, that, and the other
 author: Julian Rendell & Sarah Dakin
 simple_search: https://www.google.com/search
-description: Laughing, Smiling, Making, Creating. 
+description: Laughing, Smiling, Making, Creating.
 
 # Default date format is "ordinal" (resulting in "July 22nd 2007")
 # You can customize the format as defined in
@@ -143,4 +143,3 @@ attract: {
 	default_cols: 2,
 	default_rows: 2,
 }
-
