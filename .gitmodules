@@ -1,0 +1,6 @@
+[submodule "plugins/jekyll-plantuml"]
+	path = plugins/jekyll-plantuml
+	url = git@github.com:yjpark/jekyll-plantuml.git
+[submodule "plugins/octopress_highlight"]
+	path = plugins/octopress_highlight
+	url = git@github.com:thesp0nge/octopress_highlight_plugin.git
