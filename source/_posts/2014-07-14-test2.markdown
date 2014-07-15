@@ -1,0 +1,7 @@
+---
+layout: post
+title: "test2"
+date: 2014-07-14 14:42:32 -0700
+comments: true
+categories: 
+---

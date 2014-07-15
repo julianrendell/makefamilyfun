@@ -59,6 +59,8 @@ default_asides: [asides/recent_posts.html, asides/github.html, asides/delicious.
 # post_asides:
 # page_asides:
 
+exclude: [assets/bootstrap/docs]
+
 # ----------------------- #
 #   3rd Party Settings    #
 # ----------------------- #
