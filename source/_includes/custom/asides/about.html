@@ -1,4 +1,18 @@
-<section>
-  <h1>About Me</h1>
-  <p>A little something about me.</p>
+<section class="panel panel-default">
+  <div class="panel-heading">
+    <h3 class="panel-title">About Us</h3>
+  </div>
+
+  {% if site.authors %}
+  	{% for author in site.authors %}
+  		<div>
+  			<img class="img-thumbnail pull-left" src="{% gravatar_image_for_email email:author.email size:64 %}" alt="Gravatar of {{ author.email}} " title="Gravatar of {{ author.email }}" />
+    			<h4 class="list-group-item-heading">{{ author.name }}</h3>
+  			<p>
+  	  		{{ author.description | markdownify}}
+  	  	</p>
+        <br/>
+  		</div>
+  	{% endfor %}
+  {% endif %}
 </section>

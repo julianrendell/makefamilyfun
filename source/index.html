@@ -1,54 +1,84 @@
 ---
 layout: default
 navbar: Blog
+customcss: stylesheets/toplevelindex.css
 ---
 
 <div class="row">
   <div class="page-content {% unless site.default_asides == empty and site.blog_index_asides == empty %}col-md-9{% else %}col-md-12{% endunless %}">
-    <div class="blog-index">
-      {% assign index = true %}
-      {% for post in paginator.posts %}
-      {% assign content = post.content %}
-        <article class="post">
-          {% include article.html %}
-        </article>
-      {% endfor %}
-    </div>
 
     <div>
-
-      <h1>Site Pages</h1>
-      <ul>
-      {% for page in site.pages %}
-      <!--{% if page.title %} -->
-      <li>{{ page.title}}</li>
-        <ul>
-          <li>URL: {{ page.url }}</li>
-          <li>Cover Image: {{page.coverimage}}</li>
-          <li>Excerpted: {{ page.content | excerpt | markdownify }}</li>
-        </ul>
-      <!-- {% endif %}  -->
-      {% endfor %}
-      </ul>
-
+      <h1>This is the Title</h1>
+      <p>Here is a paragraph. It is lonely.</p>
     </div>
 
+    <script>
+    function setItemSizeAndBackground(element, cols, rows, image_url) {
+        var width = {{site.attract.column_width}} * cols;
+        var height = {{site.attract.row_height}} * rows;
+
+        $(element).width(width);
+        $(element).height(height);
+
+        if (image_url) {
+          $(element).css('background-image', 'url(' + image_url + ')');
+          $(element).css('background-size', 'contain');
+          $(element).css('background-repeat', 'no-repeat');
+          $(element).css('background-position', 'center');
+        }
+    }
+
+    </script>
 
 
+    <div id="container">
+      {% for post in site.posts %}
+         <div class="item" id = "post-item-{{forloop.index}}">
+            <a class="btn btn-primary {{site.attract.button_size}}" href="{{page.url}}">{{ post.title | titlecase}}</a><br/>
 
-    <ul class="pager">
-      {% if paginator.next_page %}
-        <li class="previous"><a href="{{paginator.next_page}}">&larr;&nbsp;Older</a></li>
-      {% else %}
-        <li class="previous disabled"><a href="#">&larr;&nbsp;Older</a></li>
-      {% endif %}
-      <li><a href="/blog/archives">Blog Archives</a></li>
-      {% if paginator.previous_page %}
-        <li class="next"><a href="{{paginator.previous_page}}">Newer&nbsp;&rarr;</a></li>
-      {% else %}
-        <li class="next disabled"><a href="#">Newer&nbsp;&rarr;</a></li>
-      {% endif %}
-    </ul>
+            {% unless post.coverimage %}
+              {{ post.content | excerpt | markdownify }}
+            {% endunless %}
+        </div>
+        <script>
+          setItemSizeAndBackground(
+              "#post-item-{{forloop.index}}",
+              {% if post.attract_cols%}{{ post.attract_cols }}
+              {% else %} {{ site.attract.default_cols}}
+              {% endif %},
+              {% if post.attract_rows%}{{ post.attract_rows }}
+              {% else %} {{ site.attract.default_rows}}
+              {% endif %},
+              "{{ post.coverimage }}"
+            );
+          </script>
+      {% endfor %}
+
+      {% for page in site.pages %}
+        {% if page.published == true %}
+           <div class="item" id = "page-item-{{forloop.index}}">
+              <a class="btn btn-primary {{site.attract.button_size}}" href="{{page.url}}">{{ page.title | titlecase}}</a><br/>
+
+              {% unless page.coverimage %}
+                {{ page.content | excerpt | markdownify }}
+              {% endunless %}
+          </div>
+          <script>
+            setItemSizeAndBackground(
+                "#page-item-{{forloop.index}}",
+                {% if page.attract_cols%}{{ page.attract_cols }}
+                {% else %} {{ site.attract.default_cols}}
+                {% endif %},
+                {% if page.attract_rows%}{{ page.attract_rows }}
+                {% else %} {{ site.attract.default_rows}}
+                {% endif %},
+                "{{ page.coverimage }}"
+              );
+            </script>
+        {% endif %}
+      {% endfor %}
+    </div>
+
   </div>
 
   {% unless site.default_asides == empty and site.blog_index_asides == empty %}
@@ -61,3 +91,88 @@ navbar: Blog
     </aside>
   {% endunless %}
 </div>
+
+<script src="{{ root_url }}/javascripts/packery.pkgd.min.js"></script>
+<script src="{{ root_url }}/javascripts/draggabilly.pkgd.min.js"></script>
+<script src="{{ root_url }}/javascripts/imagesloaded.pkgd.min.js"></script>
+
+<script>
+  var drag_active = false;
+
+  function onDragStart( instance, event, pointer ) {
+    drag_active = true;
+  }
+
+  function onDragEnd( instance, event, pointer ) {
+    drag_active = false;
+  }
+
+  // http://stackoverflow.com/questions/11624078/repeating-settimeout
+  function DeltaTimer(render, interval) {
+    var timeout;
+    var lastTime;
+
+    this.start = start;
+    this.stop = stop;
+
+    function start() {
+        timeout = setTimeout(loop, 0);
+        lastTime = + new Date;
+        return lastTime;
+    }
+
+    function stop() {
+        clearTimeout(timeout);
+        return lastTime;
+    }
+
+    function loop() {
+        var thisTime = + new Date;
+        var deltaTime = thisTime - lastTime;
+        var delay = Math.max(interval - deltaTime, 0);
+        timeout = setTimeout(loop, delay);
+        lastTime = thisTime + delay;
+        render(thisTime);
+    }
+  }
+
+  function randomMove(time) {
+    if (drag_active) {
+      return;
+    }
+
+    var $container = $('#container');
+    var elements = $container.packery('getItemElements');
+    var element = elements[Math.round(Math.random() * (elements.length - 1))];
+    $container.packery( 'fit', element, 0, 0);
+  }
+
+
+  var $container = $('#container').packery({
+    columnWidth: {{ site.attract.column_width }},
+    rowHeight: {{ site.attract.row_height }},
+    gutter: {{ site.attract.gutter }},
+    transitionDuration: "{{ site.attract.transition_duration }}"
+  });
+
+  $container.find('.item').each( 
+    function( i, itemElem ) {
+      // make element draggable with Draggabilly
+      var draggie = new Draggabilly( itemElem );
+      // bind Draggabilly events to Packery
+      $container.packery( 'bindDraggabillyEvents', draggie );
+      draggie.on( 'dragStart', onDragStart );
+      draggie.on( 'dragEnd', onDragEnd );
+    }
+  );
+
+  $container.packery('bindResize');
+
+  $container.imagesLoaded( function() {
+    $container.packery();
+  });
+
+  var timer = new DeltaTimer(randomMove, 5000);
+  var start = timer.start();
+
+</script>
