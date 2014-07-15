@@ -4,3 +4,6 @@
 [submodule "plugins/octopress_highlight"]
 	path = plugins/octopress_highlight
 	url = git@github.com:thesp0nge/octopress_highlight_plugin.git
+[submodule ".themes/octostrap3"]
+	path = .themes/octostrap3
+	url = git@github.com:thesp0nge/octopress_highlight_plugin.git
