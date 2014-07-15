@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Make. Family. Fun.]]></title>
+  <link href="http://blog.julianrendell.com/atom.xml" rel="self"/>
+  <link href="http://blog.julianrendell.com/"/>
+  <updated>2014-07-15T16:11:18-07:00</updated>
+  <id>http://blog.julianrendell.com/</id>
+  <author>
+    <name><![CDATA[Julian Rendell & Sarah Dakin]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[test3]]></title>
+    <link href="http://blog.julianrendell.com/blog/2014/07/14/test3/"/>
+    <updated>2014-07-14T14:42:37-07:00</updated>
+    <id>http://blog.julianrendell.com/blog/2014/07/14/test3</id>
+    <content type="html"><![CDATA[
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[test2]]></title>
+    <link href="http://blog.julianrendell.com/blog/2014/07/14/test2/"/>
+    <updated>2014-07-14T14:42:32-07:00</updated>
+    <id>http://blog.julianrendell.com/blog/2014/07/14/test2</id>
+    <content type="html"><![CDATA[
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[test1]]></title>
+    <link href="http://blog.julianrendell.com/blog/2014/07/14/test1/"/>
+    <updated>2014-07-14T14:42:29-07:00</updated>
+    <id>http://blog.julianrendell.com/blog/2014/07/14/test1</id>
+    <content type="html"><![CDATA[
+]]></content>
+  </entry>
+  
+</feed>
