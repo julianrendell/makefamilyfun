@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Experimenting with ABS"
-date: 2014-07-15 22:17:34 -0700
+date: 2013-10-08 22:17:34 -0700
 comments: true
 categories: [3dprinting]
 coverimage: /images/2013-10-08-post-experimenting-with-abs/Photo-2013-10-08_11_23_11PM.jpg

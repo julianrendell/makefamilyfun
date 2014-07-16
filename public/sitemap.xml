@@ -3,8 +3,14 @@
   
   
   <url>
-    <loc>http://www.makefamilyfun.ca/blog/2014/07/15/experimenting-with-abs/</loc>
-    <lastmod>2014-07-15T22:17:34-07:00</lastmod>
+    <loc>http://www.makefamilyfun.ca/blog/2014/07/14/see-through-display-case/</loc>
+    <lastmod>2014-07-14T10:55:42-07:00</lastmod>
+    <priority>0.8</priority>
+  </url>
+  
+  <url>
+    <loc>http://www.makefamilyfun.ca/blog/2014/05/24/mythical-celebrities/</loc>
+    <lastmod>2014-05-24T10:47:03-07:00</lastmod>
     <priority>0.8</priority>
   </url>
   
@@ -93,6 +99,12 @@
   </url>
   
   <url>
+    <loc>http://www.makefamilyfun.ca/blog/2013/10/08/experimenting-with-abs/</loc>
+    <lastmod>2013-10-08T22:17:34-07:00</lastmod>
+    <priority>0.8</priority>
+  </url>
+  
+  <url>
     <loc>http://www.makefamilyfun.ca/blog/2013/10/06/replacement-pololus/</loc>
     <lastmod>2013-10-06T20:40:45-07:00</lastmod>
     <priority>0.8</priority>
@@ -125,28 +137,28 @@
   
   <url>
     <loc>http://www.makefamilyfun.ca/blog/</loc>
-    <lastmod>2014-07-16T10:43:15-07:00</lastmod>
+    <lastmod>2014-07-16T11:02:47-07:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   
   <url>
     <loc>http://www.makefamilyfun.ca/blog/archives/</loc>
-    <lastmod>2014-07-16T10:43:15-07:00</lastmod>
+    <lastmod>2014-07-16T11:02:47-07:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   
   <url>
     <loc>http://www.makefamilyfun.ca/</loc>
-    <lastmod>2014-07-16T10:43:15-07:00</lastmod>
+    <lastmod>2014-07-16T11:02:47-07:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
   
   <url>
     <loc>http://www.makefamilyfun.ca/Notes/Octopress/</loc>
-    <lastmod>2014-07-16T10:43:15-07:00</lastmod>
+    <lastmod>2014-07-16T11:02:47-07:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
