@@ -32,7 +32,7 @@ customcss: stylesheets/toplevelindex.css
 
     <div id="container">
       {% for post in site.posts %}
-         <div class="item" id = "post-item-{{forloop.index}}">
+         <div class="item panel panel-heading" id = "post-item-{{forloop.index}}">
             <a class="btn btn-primary {{site.attract.button_size}}" href="{{page.url}}">{{ post.title | titlecase}}</a><br/>
 
             {% unless post.coverimage %}
@@ -55,7 +55,7 @@ customcss: stylesheets/toplevelindex.css
 
       {% for page in site.pages %}
         {% if page.published == true %}
-           <div class="item" id = "page-item-{{forloop.index}}">
+           <div class="item panel panel-heading" id = "page-item-{{forloop.index}}">
               <a class="btn btn-primary {{site.attract.button_size}}" href="{{page.url}}">{{ page.title | titlecase}}</a><br/>
 
               {% unless page.coverimage %}
