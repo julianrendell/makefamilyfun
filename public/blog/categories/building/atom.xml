@@ -4,7 +4,7 @@
   <title><![CDATA[Category: building | Make. Family. Fun.]]></title>
   <link href="http://www.makefamilyfun.ca/blog/categories/building/atom.xml" rel="self"/>
   <link href="http://www.makefamilyfun.ca/"/>
-  <updated>2014-07-16T11:02:47-07:00</updated>
+  <updated>2014-07-16T13:08:10-07:00</updated>
   <id>http://www.makefamilyfun.ca/</id>
   <author>
     <name><![CDATA[Julian Rendell & Sarah Dakin]]></name>
@@ -12,6 +12,43 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[Cloths Line- Year Later]]></title>
+    <link href="http://www.makefamilyfun.ca/blog/2014/07/13/cloths-line-year-later/"/>
+    <updated>2014-07-13T12:56:43-07:00</updated>
+    <id>http://www.makefamilyfun.ca/blog/2014/07/13/cloths-line-year-later</id>
+    <content type="html"><![CDATA[<p><img class="pull left" src="/images/2014-07-13-post-cloths-line-year-later/Photo-2014-07-13_9_47_14AM.jpg" width="320" height="240">
+So what do you do when you find an advertising flag pole in the scrap metal yard? Take it home and turn it into a clothesline, right?</p>
+
+<p>The smell of freshly dried laundry can&rsquo;t be beat. It makes the effort of mixing up a lot more concrete than I expected worth it. Not to mention the &ldquo;maybe this wasn&rsquo;t a good idea&rdquo; thoughts as I drove home with the pole tied to the top of the car and the wind started to catch it as I drove past the airport!</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Kaiju Board]]></title>
+    <link href="http://www.makefamilyfun.ca/blog/2014/05/08/kaiju-board/"/>
+    <updated>2014-05-08T12:13:37-07:00</updated>
+    <id>http://www.makefamilyfun.ca/blog/2014/05/08/kaiju-board</id>
+    <content type="html"><![CDATA[<p><img class="pull left" src="/images/2014-05-08-post-kaiju-board/Photo-2014-05-08_12_44_28AM.jpg" width="320" height="240">
+<img class="pull left" src="/images/2014-05-08-post-kaiju-board/Photo-2014-05-23_2_35_23AM.jpg" width="320" height="240">
+<img class="pull left" src="/images/2014-05-08-post-kaiju-board/Photo-2014-07-14_6_15_51PM.jpg" width="320" height="240">
+<img class="pull left" src="/images/2014-05-08-post-kaiju-board/Photo-2014-07-14_6_16_16PM.jpg" width="320" height="240">
+<img class="pull left" src="/images/2014-05-08-post-kaiju-board/Photo-2014-07-14_6_17_55PM.jpg" width="320" height="240">
+<img class="pull left" src="/images/2014-05-08-post-kaiju-board/Photo-2014-07-14_6_19_19PM.jpg" width="320" height="240">
+We have a large wall mounted display at the office that is intended to display the status of various systems.  We&rsquo;ve yet to find a great app that is both informative and keeps people checking on it.</p>
+
+<p>We tried <a href="http://skahal.com/buildron/">Buildron</a> but after a while it crashes and needs to be restarted.  And I never could get the Gravatar integration to work.</p>
+
+<p>So we&rsquo;ve decided to build our own information radiator utilising a Pandaboard we have in the office. We&rsquo;ve got Android on it, and Leslie has got a demo unity app to install and run.</p>
+
+<p>To house this I build a wooden frame.  The back houses speakers, amplifier, Pandaboard, and an Arduino.  The Arduino controls 8 RGB LEDs embedded in the side of the frame. Long term we plan to have the Pandaboard send control messages to the Arduino that will trigger different LED sequences. Eg failing builds &ndash; shades of red.</p>
+
+<p>The Pandaboard is held in place by a custom 3D clip that I created in OpenSCAD and printed. Right now everything else is held by tape, but they&rsquo;ll get 3D printed holders to.</p>
+
+<p>I put to use the foam cutter I made from a broken toaster to cut out our team name from styrofoam. The acid etched look was achieved by using a couple of different kinds of spray paint. Solvent based spray paint dissolves styrofoam, whereas acrylic based doesn&rsquo;t.</p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[Mighty MiniBuilder]]></title>
@@ -55,25 +92,6 @@ Continuing trends in building my own furniture and trying to be more healthy I&r
 <p>We&rsquo;ve manged to make some space in our house, and I needed to take a day off work. Thanks to the folks at Rona who pre-cut the surface plywood for me, I succeeded in measuring, cutting, and putting it all together inside a day.</p>
 
 <p><a href="http://www.familyhandyman.com/workshop/workbench/how-to-build-a-workbench-super-simple-50-bench/view-all">It even looks like the picture</a>, and only needed a little shimming under one leg.</p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[Loft]]></title>
-    <link href="http://www.makefamilyfun.ca/blog/2012/12/16/loft/"/>
-    <updated>2012-12-16T00:02:51-08:00</updated>
-    <id>http://www.makefamilyfun.ca/blog/2012/12/16/loft</id>
-    <content type="html"><![CDATA[<p><img class="pull left" src="/images/2012-12-16-post-loft/Photo-2012-12-16_11_51_16AM.jpg" width="320" height="240">
-<img class="pull left" src="/images/2012-12-16-post-loft/Photo-2014-07-15_8_06_03PM.jpg" width="320" height="240">
-<img class="pull left" src="/images/2012-12-16-post-loft/Photo-2014-07-15_8_24_31PM.jpg" width="320" height="240"></p>
-
-<p>My 6 year old has to share a room with his 2 year old brother- who'se fingers are notourious for going everywhere by themselves.</p>
-
-<p>What to do?</p>
-
-<p>Create his own private loft.</p>
-
-<p>My iPad and Adobe sketch were very helpful in both figuring it out and convincing other family members that it would work out.</p>
 ]]></content>
   </entry>
   

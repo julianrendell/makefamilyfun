@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: build | Make. Family. Fun.]]></title>
+  <link href="http://www.makefamilyfun.ca/blog/categories/build/atom.xml" rel="self"/>
+  <link href="http://www.makefamilyfun.ca/"/>
+  <updated>2014-07-16T13:08:10-07:00</updated>
+  <id>http://www.makefamilyfun.ca/</id>
+  <author>
+    <name><![CDATA[Julian Rendell & Sarah Dakin]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[Ruggedizing Huxley]]></title>
+    <link href="http://www.makefamilyfun.ca/blog/2014/06/16/ruggedizing-huxley/"/>
+    <updated>2014-06-16T12:48:53-07:00</updated>
+    <id>http://www.makefamilyfun.ca/blog/2014/06/16/ruggedizing-huxley</id>
+    <content type="html"><![CDATA[<p><img class="pull left" src="/images/2014-06-16-post-ruggedizing-huxley/Photo-2014-06-16_5_44_24PM.jpg" width="320" height="240">
+<img class="pull left" src="/images/2014-06-16-post-ruggedizing-huxley/Photo-2014-07-09_7_58_26AM.jpg" width="320" height="240">
+<img class="pull left" src="/images/2014-06-16-post-ruggedizing-huxley/Photo-2014-07-09_7_58_27AM.jpg" width="320" height="240">
+<img class="pull left" src="/images/2014-06-16-post-ruggedizing-huxley/Photo-2014-07-10_11_13_12PM.jpg" width="320" height="240">
+<img class="pull left" src="/images/2014-06-16-post-ruggedizing-huxley/Photo-2014-07-10_11_13_39PM.jpg" width="320" height="240">
+<img class="pull left" src="/images/2014-06-16-post-ruggedizing-huxley/Photo-2014-07-10_11_14_03PM.jpg" width="320" height="240">
+<img class="pull left" src="/images/2014-06-16-post-ruggedizing-huxley/Photo-2014-07-10_11_14_33PM.jpg" width="320" height="240">
+<img class="pull left" src="/images/2014-06-16-post-ruggedizing-huxley/Photo-2014-07-10_11_15_22PM.jpg" width="320" height="240">
+<img class="pull left" src="/images/2014-06-16-post-ruggedizing-huxley/Photo-2014-07-13_11_17_16PM.jpg" width="320" height="240">
+We want to be able to easily move our 3D printer around, including taking it to events and schools.</p>
+
+<p>Thus was born the printer case.  Very nice that everything could be cut out of a single 4'x4' sheet of particle board.</p>
+
+<p>Only downside- disconnecting everything and rewiring it with plugs. So many wires to solder!</p>
+]]></content>
+  </entry>
+  
+</feed>

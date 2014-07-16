@@ -4,7 +4,7 @@
   <title><![CDATA[Category: 3dprinting | Make. Family. Fun.]]></title>
   <link href="http://www.makefamilyfun.ca/blog/categories/3dprinting/atom.xml" rel="self"/>
   <link href="http://www.makefamilyfun.ca/"/>
-  <updated>2014-07-16T11:02:47-07:00</updated>
+  <updated>2014-07-16T13:08:10-07:00</updated>
   <id>http://www.makefamilyfun.ca/</id>
   <author>
     <name><![CDATA[Julian Rendell & Sarah Dakin]]></name>
@@ -26,6 +26,40 @@ My employer sometimes get&rsquo;s development prototypes of new displays for ret
   </entry>
   
   <entry>
+    <title type="html"><![CDATA[Ruggedizing Huxley]]></title>
+    <link href="http://www.makefamilyfun.ca/blog/2014/06/16/ruggedizing-huxley/"/>
+    <updated>2014-06-16T12:48:53-07:00</updated>
+    <id>http://www.makefamilyfun.ca/blog/2014/06/16/ruggedizing-huxley</id>
+    <content type="html"><![CDATA[<p><img class="pull left" src="/images/2014-06-16-post-ruggedizing-huxley/Photo-2014-06-16_5_44_24PM.jpg" width="320" height="240">
+<img class="pull left" src="/images/2014-06-16-post-ruggedizing-huxley/Photo-2014-07-09_7_58_26AM.jpg" width="320" height="240">
+<img class="pull left" src="/images/2014-06-16-post-ruggedizing-huxley/Photo-2014-07-09_7_58_27AM.jpg" width="320" height="240">
+<img class="pull left" src="/images/2014-06-16-post-ruggedizing-huxley/Photo-2014-07-10_11_13_12PM.jpg" width="320" height="240">
+<img class="pull left" src="/images/2014-06-16-post-ruggedizing-huxley/Photo-2014-07-10_11_13_39PM.jpg" width="320" height="240">
+<img class="pull left" src="/images/2014-06-16-post-ruggedizing-huxley/Photo-2014-07-10_11_14_03PM.jpg" width="320" height="240">
+<img class="pull left" src="/images/2014-06-16-post-ruggedizing-huxley/Photo-2014-07-10_11_14_33PM.jpg" width="320" height="240">
+<img class="pull left" src="/images/2014-06-16-post-ruggedizing-huxley/Photo-2014-07-10_11_15_22PM.jpg" width="320" height="240">
+<img class="pull left" src="/images/2014-06-16-post-ruggedizing-huxley/Photo-2014-07-13_11_17_16PM.jpg" width="320" height="240">
+We want to be able to easily move our 3D printer around, including taking it to events and schools.</p>
+
+<p>Thus was born the printer case.  Very nice that everything could be cut out of a single 4'x4' sheet of particle board.</p>
+
+<p>Only downside- disconnecting everything and rewiring it with plugs. So many wires to solder!</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Octoprint Rocks!]]></title>
+    <link href="http://www.makefamilyfun.ca/blog/2014/06/14/octoprint-rocks/"/>
+    <updated>2014-06-14T12:41:27-07:00</updated>
+    <id>http://www.makefamilyfun.ca/blog/2014/06/14/octoprint-rocks</id>
+    <content type="html"><![CDATA[<p><img class="pull left" src="/images/2014-06-14-post-octoprint-rocks/Photo-2014-06-14_4_00_51PM.jpg" width="320" height="240">
+Got <a href="http://octoprint.org/">Octoprint</a> running on <a href="http://archlinuxarm.org/platforms/armv5/seagate-dockstar">Arch for the Seagate Dockster</a>.</p>
+
+<p>Now the printer can be completely remote controlled and monitored- Octoprint includes instructions for setting up a webcam to both record and stream the print.</p>
+]]></content>
+  </entry>
+  
+  <entry>
     <title type="html"><![CDATA[New PTFE Tube]]></title>
     <link href="http://www.makefamilyfun.ca/blog/2014/05/21/new-ptfe-tube/"/>
     <updated>2014-05-21T02:39:40-07:00</updated>
@@ -41,50 +75,27 @@ One of the problems of Bowden drives is that the PTFE (teflon) tube is hard to h
   </entry>
   
   <entry>
-    <title type="html"><![CDATA[3D Printed Phone Case]]></title>
-    <link href="http://www.makefamilyfun.ca/blog/2014/05/01/3d-printed-phone-case/"/>
-    <updated>2014-05-01T10:34:08-07:00</updated>
-    <id>http://www.makefamilyfun.ca/blog/2014/05/01/3d-printed-phone-case</id>
-    <content type="html"><![CDATA[<p><img class="pull left" src="/images/2014-05-01-post-3d-printed-phone-case/IMG_1978.JPG" width="320" height="240">
-My new phone case. Printed in SeaCans PLA. Many of the pieces fited with no or very little sanding. Very happy- I think Huxley is working!</p>
+    <title type="html"><![CDATA[Kaiju Board]]></title>
+    <link href="http://www.makefamilyfun.ca/blog/2014/05/08/kaiju-board/"/>
+    <updated>2014-05-08T12:13:37-07:00</updated>
+    <id>http://www.makefamilyfun.ca/blog/2014/05/08/kaiju-board</id>
+    <content type="html"><![CDATA[<p><img class="pull left" src="/images/2014-05-08-post-kaiju-board/Photo-2014-05-08_12_44_28AM.jpg" width="320" height="240">
+<img class="pull left" src="/images/2014-05-08-post-kaiju-board/Photo-2014-05-23_2_35_23AM.jpg" width="320" height="240">
+<img class="pull left" src="/images/2014-05-08-post-kaiju-board/Photo-2014-07-14_6_15_51PM.jpg" width="320" height="240">
+<img class="pull left" src="/images/2014-05-08-post-kaiju-board/Photo-2014-07-14_6_16_16PM.jpg" width="320" height="240">
+<img class="pull left" src="/images/2014-05-08-post-kaiju-board/Photo-2014-07-14_6_17_55PM.jpg" width="320" height="240">
+<img class="pull left" src="/images/2014-05-08-post-kaiju-board/Photo-2014-07-14_6_19_19PM.jpg" width="320" height="240">
+We have a large wall mounted display at the office that is intended to display the status of various systems.  We&rsquo;ve yet to find a great app that is both informative and keeps people checking on it.</p>
 
-<p><a href="http://www.thingiverse.com/thing:79606">Model on Thingiverse.</a></p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[J-Heads are Better than Old]]></title>
-    <link href="http://www.makefamilyfun.ca/blog/2014/03/30/j-heads-are-better-than-old/"/>
-    <updated>2014-03-30T02:21:50-07:00</updated>
-    <id>http://www.makefamilyfun.ca/blog/2014/03/30/j-heads-are-better-than-old</id>
-    <content type="html"><![CDATA[<p><img class="pull left" src="/images/2014-03-30-post-j-heads-are-better-than-old/Photo-2014-03-30_12_33_20AM.jpg" width="320" height="240">
-<img class="pull left" src="/images/2014-03-30-post-j-heads-are-better-than-old/Photo-2014-03-30_12_40_42AM.jpg" width="320" height="240">
-<img class="pull left" src="/images/2014-03-30-post-j-heads-are-better-than-old/Photo-2014-03-30_12_41_08AM.jpg" width="320" height="240">
-<img class="pull left" src="/images/2014-03-30-post-j-heads-are-better-than-old/Photo-2014-03-30_12_41_52AM.jpg" width="320" height="240">
-Next thing to try on the road to making my Huxley work well: replace the head.</p>
+<p>We tried <a href="http://skahal.com/buildron/">Buildron</a> but after a while it crashes and needs to be restarted.  And I never could get the Gravatar integration to work.</p>
 
-<p>I&rsquo;ve taken a sheet of hobby aluminium (bought at <a href="http://www.imperialhobbies.ca/">Imperial Hobbies</a>) and then cut and bent it by hand into an adapter for the JHead.</p>
+<p>So we&rsquo;ve decided to build our own information radiator utilising a Pandaboard we have in the office. We&rsquo;ve got Android on it, and Leslie has got a demo unity app to install and run.</p>
 
-<p>Also upgraded to a heating cartridge (instead of a resistor).</p>
+<p>To house this I build a wooden frame.  The back houses speakers, amplifier, Pandaboard, and an Arduino.  The Arduino controls 8 RGB LEDs embedded in the side of the frame. Long term we plan to have the Pandaboard send control messages to the Arduino that will trigger different LED sequences. Eg failing builds &ndash; shades of red.</p>
 
-<p>Great improvement.</p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[Autobed Levelling]]></title>
-    <link href="http://www.makefamilyfun.ca/blog/2014/03/27/autobed-levelling/"/>
-    <updated>2014-03-27T02:14:36-07:00</updated>
-    <id>http://www.makefamilyfun.ca/blog/2014/03/27/autobed-levelling</id>
-    <content type="html"><![CDATA[<p><img class="pull left" src="/images/2014-03-27-post-autobed-levelling/Photo-2014-03-27_9_35_15PM.jpg" width="320" height="240">
-<img class="pull left" src="/images/2014-03-27-post-autobed-levelling/Photo-2014-03-27_9_36_58PM.jpg" width="320" height="240">
-<img class="pull left" src="/images/2014-03-27-post-autobed-levelling/Photo-2014-03-27_9_37_14PM.jpg" width="320" height="240">
-<img class="pull left" src="/images/2014-03-27-post-autobed-levelling/Photo-2014-03-27_9_45_55PM.jpg" width="320" height="240">
-My hands are too big to easily manipulate the three set screws that control the bed levelling adjustments.</p>
+<p>The Pandaboard is held in place by a custom 3D clip that I created in OpenSCAD and printed. Right now everything else is held by tape, but they&rsquo;ll get 3D printed holders to.</p>
 
-<p>I&rsquo;ve added a servo controlled Z-Axis probe and followed the instructions for setting up the Marlin firmware.</p>
-
-<p>Major improvement!</p>
+<p>I put to use the foam cutter I made from a broken toaster to cut out our team name from styrofoam. The acid etched look was achieved by using a couple of different kinds of spray paint. Solvent based spray paint dissolves styrofoam, whereas acrylic based doesn&rsquo;t.</p>
 ]]></content>
   </entry>
   
