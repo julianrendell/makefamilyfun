@@ -130,7 +130,7 @@ authors: [
 attract: {
 	column_width: 80,
 	row_height: 80,
-	gutter: 2,
+	gutter: 10,
 	transition_duration: 1s,
 	default_cols: 2,
 	default_rows: 2,

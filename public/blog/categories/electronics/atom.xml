@@ -4,7 +4,7 @@
   <title><![CDATA[Category: electronics | Make. Family. Fun.]]></title>
   <link href="http://www.makefamilyfun.ca/blog/categories/electronics/atom.xml" rel="self"/>
   <link href="http://www.makefamilyfun.ca/"/>
-  <updated>2014-07-16T03:08:04-07:00</updated>
+  <updated>2014-07-16T10:43:15-07:00</updated>
   <id>http://www.makefamilyfun.ca/</id>
   <author>
     <name><![CDATA[Julian Rendell & Sarah Dakin]]></name>
@@ -12,20 +12,6 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
-  
-  <entry>
-    <title type="html"><![CDATA[Adafruit TimeSquare Watch]]></title>
-    <link href="http://www.makefamilyfun.ca/blog/2014/07/16/adafruit-timesquare-watch/"/>
-    <updated>2014-07-16T01:39:10-07:00</updated>
-    <id>http://www.makefamilyfun.ca/blog/2014/07/16/adafruit-timesquare-watch</id>
-    <content type="html"><![CDATA[<p><img class="pull left" src="/images/2013-12-22-post-adafruit-timesquare-watch/Photo-2013-12-22_9_44_36PM.jpg" width="320" height="240">
-Shhh- don&rsquo;t tell Liam. SO COOL!</p>
-
-<p>It&rsquo;s an <a href="http://www.adafruit.com/products/1225">Adafruit TimeSquare watch!</a></p>
-
-<p>*Postscript:** Liam&rsquo;s 7 and pretty good at soldering.  He got most of the way through this by himself, but needed a little help to finish it off and figure out how to set it up.</p>
-]]></content>
-  </entry>
   
   <entry>
     <title type="html"><![CDATA[Rebuilding a Roomba Battery]]></title>
@@ -39,6 +25,20 @@ Shhh- don&rsquo;t tell Liam. SO COOL!</p>
 Roomba batteries are built from the same cells that are in RC car batteries.</p>
 
 <p>With care you can use one to rebuild the other!</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Adafruit TimeSquare Watch]]></title>
+    <link href="http://www.makefamilyfun.ca/blog/2013/12/22/adafruit-timesquare-watch/"/>
+    <updated>2013-12-22T00:39:10-08:00</updated>
+    <id>http://www.makefamilyfun.ca/blog/2013/12/22/adafruit-timesquare-watch</id>
+    <content type="html"><![CDATA[<p><img class="pull left" src="/images/2013-12-22-post-adafruit-timesquare-watch/Photo-2013-12-22_9_44_36PM.jpg" width="320" height="240">
+Shhh- don&rsquo;t tell Liam. SO COOL!</p>
+
+<p>It&rsquo;s an <a href="http://www.adafruit.com/products/1225">Adafruit TimeSquare watch!</a></p>
+
+<p>*Postscript:** Liam&rsquo;s 7 and pretty good at soldering.  He got most of the way through this by himself, but needed a little help to finish it off and figure out how to set it up.</p>
 ]]></content>
   </entry>
   

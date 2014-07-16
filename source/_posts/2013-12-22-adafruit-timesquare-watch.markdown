@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Adafruit TimeSquare Watch"
-date: 2014-07-16 01:39:10 -0700
+date: 2013-12-22 01:39:10 -0700
 comments: true
 categories: [electronics, wearables, adafruit]
 coverimage: /images/2013-12-22-post-adafruit-timesquare-watch/Photo-2013-12-22_9_44_36PM.jpg

@@ -4,7 +4,7 @@
   <title><![CDATA[Make. Family. Fun.]]></title>
   <link href="http://www.makefamilyfun.ca/atom.xml" rel="self"/>
   <link href="http://www.makefamilyfun.ca/"/>
-  <updated>2014-07-16T03:08:04-07:00</updated>
+  <updated>2014-07-16T10:43:15-07:00</updated>
   <id>http://www.makefamilyfun.ca/</id>
   <author>
     <name><![CDATA[Julian Rendell & Sarah Dakin]]></name>
@@ -12,20 +12,6 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
-  
-  <entry>
-    <title type="html"><![CDATA[Adafruit TimeSquare Watch]]></title>
-    <link href="http://www.makefamilyfun.ca/blog/2014/07/16/adafruit-timesquare-watch/"/>
-    <updated>2014-07-16T01:39:10-07:00</updated>
-    <id>http://www.makefamilyfun.ca/blog/2014/07/16/adafruit-timesquare-watch</id>
-    <content type="html"><![CDATA[<p><img class="pull left" src="http://www.makefamilyfun.ca/images/2013-12-22-post-adafruit-timesquare-watch/Photo-2013-12-22_9_44_36PM.jpg" width="320" height="240">
-Shhh- don&rsquo;t tell Liam. SO COOL!</p>
-
-<p>It&rsquo;s an <a href="http://www.adafruit.com/products/1225">Adafruit TimeSquare watch!</a></p>
-
-<p>*Postscript:** Liam&rsquo;s 7 and pretty good at soldering.  He got most of the way through this by himself, but needed a little help to finish it off and figure out how to set it up.</p>
-]]></content>
-  </entry>
   
   <entry>
     <title type="html"><![CDATA[Experimenting with ABS]]></title>
@@ -56,6 +42,18 @@ One of the problems of Bowden drives is that the PTFE (teflon) tube is hard to h
   </entry>
   
   <entry>
+    <title type="html"><![CDATA[3D Printed Phone Case]]></title>
+    <link href="http://www.makefamilyfun.ca/blog/2014/05/01/3d-printed-phone-case/"/>
+    <updated>2014-05-01T10:34:08-07:00</updated>
+    <id>http://www.makefamilyfun.ca/blog/2014/05/01/3d-printed-phone-case</id>
+    <content type="html"><![CDATA[<p><img class="pull left" src="http://www.makefamilyfun.ca/images/2014-05-01-post-3d-printed-phone-case/IMG_1978.JPG" width="320" height="240">
+My new phone case. Printed in SeaCans PLA. Many of the pieces fited with no or very little sanding. Very happy- I think Huxley is working!</p>
+
+<p><a href="http://www.thingiverse.com/thing:79606">Model on Thingiverse.</a></p>
+]]></content>
+  </entry>
+  
+  <entry>
     <title type="html"><![CDATA[Rebuilding a Roomba Battery]]></title>
     <link href="http://www.makefamilyfun.ca/blog/2014/04/28/rebuilding-a-roomba-battery/"/>
     <updated>2014-04-28T02:32:04-07:00</updated>
@@ -67,6 +65,18 @@ One of the problems of Bowden drives is that the PTFE (teflon) tube is hard to h
 Roomba batteries are built from the same cells that are in RC car batteries.</p>
 
 <p>With care you can use one to rebuild the other!</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Glass Blowing]]></title>
+    <link href="http://www.makefamilyfun.ca/blog/2014/04/16/glass-blowing/"/>
+    <updated>2014-04-16T10:23:31-07:00</updated>
+    <id>http://www.makefamilyfun.ca/blog/2014/04/16/glass-blowing</id>
+    <content type="html"><![CDATA[<p><img class="pull left" src="http://www.makefamilyfun.ca/images/2014-04-16-post-glass-blowing/glass-paperweight.jpg" width="320" height="240">
+<img class="pull left" src="http://www.makefamilyfun.ca/images/2014-04-16-post-glass-blowing/Glassblowing1.jpg" width="320" height="240">
+<img class="pull left" src="http://www.makefamilyfun.ca/images/2014-04-16-post-glass-blowing/IMG_2113.jpg" width="320" height="240">
+Granville Island glass blowing class. Awesome.</p>
 ]]></content>
   </entry>
   
@@ -167,6 +177,20 @@ Builder Bob?</p>
   </entry>
   
   <entry>
+    <title type="html"><![CDATA[Adafruit TimeSquare Watch]]></title>
+    <link href="http://www.makefamilyfun.ca/blog/2013/12/22/adafruit-timesquare-watch/"/>
+    <updated>2013-12-22T00:39:10-08:00</updated>
+    <id>http://www.makefamilyfun.ca/blog/2013/12/22/adafruit-timesquare-watch</id>
+    <content type="html"><![CDATA[<p><img class="pull left" src="http://www.makefamilyfun.ca/images/2013-12-22-post-adafruit-timesquare-watch/Photo-2013-12-22_9_44_36PM.jpg" width="320" height="240">
+Shhh- don&rsquo;t tell Liam. SO COOL!</p>
+
+<p>It&rsquo;s an <a href="http://www.adafruit.com/products/1225">Adafruit TimeSquare watch!</a></p>
+
+<p>*Postscript:** Liam&rsquo;s 7 and pretty good at soldering.  He got most of the way through this by himself, but needed a little help to finish it off and figure out how to set it up.</p>
+]]></content>
+  </entry>
+  
+  <entry>
     <title type="html"><![CDATA[Standing Desk]]></title>
     <link href="http://www.makefamilyfun.ca/blog/2013/12/10/standing-desk/"/>
     <updated>2013-12-10T00:32:49-08:00</updated>
@@ -251,7 +275,9 @@ Amazing. Extremely Nauseating. I lasted about 3 minutes before I had to take it 
     <link href="http://www.makefamilyfun.ca/blog/2013/06/01/vancouver-minimakerfaire-2013/"/>
     <updated>2013-06-01T21:53:16-07:00</updated>
     <id>http://www.makefamilyfun.ca/blog/2013/06/01/vancouver-minimakerfaire-2013</id>
-    <content type="html"><![CDATA[<p><img class="pull left" src="http://www.makefamilyfun.ca/images/2013-06-01-post-vancouver-minimakerfaire-2013/Photo-2013-06-01_11_22_42AM.jpg" width="320" height="240">
+    <content type="html"><![CDATA[<p><img class="pull left" src="http://www.makefamilyfun.ca/images/2013-06-01-post-vancouver-minimakerfaire-2013/IMG_1337.jpg" width="320" height="240">
+<img class="pull left" src="http://www.makefamilyfun.ca/images/2013-06-01-post-vancouver-minimakerfaire-2013/IMG_1339.jpg" width="320" height="240">
+<img class="pull left" src="http://www.makefamilyfun.ca/images/2013-06-01-post-vancouver-minimakerfaire-2013/Photo-2013-06-01_11_22_42AM.jpg" width="320" height="240">
 <img class="pull left" src="http://www.makefamilyfun.ca/images/2013-06-01-post-vancouver-minimakerfaire-2013/Photo-2013-06-01_11_23_26AM.jpg" width="320" height="240">
 <img class="pull left" src="http://www.makefamilyfun.ca/images/2013-06-01-post-vancouver-minimakerfaire-2013/Photo-2013-06-01_11_36_40AM.jpg" width="320" height="240">
 <img class="pull left" src="http://www.makefamilyfun.ca/images/2013-06-01-post-vancouver-minimakerfaire-2013/Photo-2013-06-01_11_48_24AM.jpg" width="320" height="240">

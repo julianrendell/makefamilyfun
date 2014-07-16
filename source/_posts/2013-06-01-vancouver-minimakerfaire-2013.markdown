@@ -8,6 +8,8 @@ coverimage: images/2013-06-01-post-vancouver-minimakerfaire-2013/Photo-2013-06-0
 attract_cols:
 attract_rows:
 ---
+{% img pull left /images/2013-06-01-post-vancouver-minimakerfaire-2013/IMG_1337.jpg 320 240 %}
+{% img pull left /images/2013-06-01-post-vancouver-minimakerfaire-2013/IMG_1339.jpg 320 240 %}
 {% img pull left /images/2013-06-01-post-vancouver-minimakerfaire-2013/Photo-2013-06-01_11_22_42AM.jpg 320 240 %}
 {% img pull left /images/2013-06-01-post-vancouver-minimakerfaire-2013/Photo-2013-06-01_11_23_26AM.jpg 320 240 %}
 {% img pull left /images/2013-06-01-post-vancouver-minimakerfaire-2013/Photo-2013-06-01_11_36_40AM.jpg 320 240 %}
