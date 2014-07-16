@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: vr | Make. Family. Fun.]]></title>
+  <link href="http://www.makefamilyfun.ca/blog/categories/vr/atom.xml" rel="self"/>
+  <link href="http://www.makefamilyfun.ca/"/>
+  <updated>2014-07-16T02:46:39-07:00</updated>
+  <id>http://www.makefamilyfun.ca/</id>
+  <author>
+    <name><![CDATA[Julian Rendell & Sarah Dakin]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[Matrix: Beginnings]]></title>
+    <link href="http://www.makefamilyfun.ca/blog/2013/11/15/matrix-beginnings/"/>
+    <updated>2013-11-15T00:28:25-08:00</updated>
+    <id>http://www.makefamilyfun.ca/blog/2013/11/15/matrix-beginnings</id>
+    <content type="html"><![CDATA[<p><img class="pull left" src="/images/2013-11-15-post-matrix-beginnings/Photo-2013-11-15_2_09_31PM.jpg" width="320" height="240">
+Amazing. Extremely Nauseating. I lasted about 3 minutes before I had to take it off. Thanks Garret for letting me try it!</p>
+]]></content>
+  </entry>
+  
+</feed>

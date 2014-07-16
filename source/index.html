@@ -26,15 +26,14 @@ customcss: stylesheets/toplevelindex.css
           $(element).css('background-position', 'center');
         }
     }
-
     </script>
-
 
     <div id="container">
       {% for post in site.posts %}
          <div class="item panel panel-heading" id = "post-item-{{forloop.index}}">
-            <a class="btn btn-primary {{site.attract.button_size}}" href="{{page.url}}">{{ post.title | titlecase}}</a><br/>
-
+          <ul class="nav nav-pills">
+            <li class="active"><a href="{{post.url}}">{{ post.title | titlecase}}</a></li>
+          </ul>
             {% unless post.coverimage %}
               {{ post.content | excerpt | markdownify }}
             {% endunless %}
@@ -56,8 +55,9 @@ customcss: stylesheets/toplevelindex.css
       {% for page in site.pages %}
         {% if page.published == true %}
            <div class="item panel panel-heading" id = "page-item-{{forloop.index}}">
-              <a class="btn btn-primary {{site.attract.button_size}}" href="{{page.url}}">{{ page.title | titlecase}}</a><br/>
-
+              <ul class="nav nav-pills">
+                <li class="active"><a href="{{page.url}}">{{ page.title | titlecase}}</a></li>
+              </ul>
               {% unless page.coverimage %}
                 {{ page.content | excerpt | markdownify }}
               {% endunless %}

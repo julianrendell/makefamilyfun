@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: 3dprinting | Make. Family. Fun.]]></title>
+  <link href="http://www.makefamilyfun.ca/blog/categories/3dprinting/atom.xml" rel="self"/>
+  <link href="http://www.makefamilyfun.ca/"/>
+  <updated>2014-07-16T02:46:39-07:00</updated>
+  <id>http://www.makefamilyfun.ca/</id>
+  <author>
+    <name><![CDATA[Julian Rendell & Sarah Dakin]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[Experimenting with ABS]]></title>
+    <link href="http://www.makefamilyfun.ca/blog/2014/07/15/experimenting-with-abs/"/>
+    <updated>2014-07-15T22:17:34-07:00</updated>
+    <id>http://www.makefamilyfun.ca/blog/2014/07/15/experimenting-with-abs</id>
+    <content type="html"><![CDATA[<p><img class="pull left" src="/images/2013-10-08-post-experimenting-with-abs/Photo-2013-10-08_11_23_11PM.jpg" width="320" height="240"></p>
+
+<p>ABS is hard to print with. High temperatures, hard to get to stick, and it curls as it contracts while cooling. And it smells bad!</p>
+
+<p>But it is strong- great for making clips to hold together a foam board box.</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[New PTFE Tube]]></title>
+    <link href="http://www.makefamilyfun.ca/blog/2014/05/21/new-ptfe-tube/"/>
+    <updated>2014-05-21T02:39:40-07:00</updated>
+    <id>http://www.makefamilyfun.ca/blog/2014/05/21/new-ptfe-tube</id>
+    <content type="html"><![CDATA[<p><img class="pull left" src="/images/2014-05-21-post-new-ptfe-tube/Photo-2014-05-21_11_53_23PM.jpg" width="320" height="240">
+<img class="pull left" src="/images/2014-05-21-post-new-ptfe-tube/Photo-2014-05-21_11_53_37PM.jpg" width="320" height="240">
+<img class="pull left" src="/images/2014-05-21-post-new-ptfe-tube/Photo-2014-05-21_11_53_46PM.jpg" width="320" height="240">
+<img class="pull left" src="/images/2014-05-21-post-new-ptfe-tube/Photo-2014-05-21_11_55_25PM.jpg" width="320" height="240">
+One of the problems of Bowden drives is that the PTFE (teflon) tube is hard to hold onto.</p>
+
+<p>Added a larger PTFE tube (thanks Tiago!) and a new pressfit fitting. So far so good.</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[J-Heads are Better than Old]]></title>
+    <link href="http://www.makefamilyfun.ca/blog/2014/03/30/j-heads-are-better-than-old/"/>
+    <updated>2014-03-30T02:21:50-07:00</updated>
+    <id>http://www.makefamilyfun.ca/blog/2014/03/30/j-heads-are-better-than-old</id>
+    <content type="html"><![CDATA[<p><img class="pull left" src="/images/2014-03-30-post-j-heads-are-better-than-old/Photo-2014-03-30_12_33_20AM.jpg" width="320" height="240">
+<img class="pull left" src="/images/2014-03-30-post-j-heads-are-better-than-old/Photo-2014-03-30_12_40_42AM.jpg" width="320" height="240">
+<img class="pull left" src="/images/2014-03-30-post-j-heads-are-better-than-old/Photo-2014-03-30_12_41_08AM.jpg" width="320" height="240">
+<img class="pull left" src="/images/2014-03-30-post-j-heads-are-better-than-old/Photo-2014-03-30_12_41_52AM.jpg" width="320" height="240">
+Next thing to try on the road to making my Huxley work well: replace the head.</p>
+
+<p>I&rsquo;ve taken a sheet of hobby aluminium (bought at <a href="http://www.imperialhobbies.ca/">Imperial Hobbies</a>) and then cut and bent it by hand into an adapter for the JHead.</p>
+
+<p>Also upgraded to a heating cartridge (instead of a resistor).</p>
+
+<p>Great improvement.</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Autobed Levelling]]></title>
+    <link href="http://www.makefamilyfun.ca/blog/2014/03/27/autobed-levelling/"/>
+    <updated>2014-03-27T02:14:36-07:00</updated>
+    <id>http://www.makefamilyfun.ca/blog/2014/03/27/autobed-levelling</id>
+    <content type="html"><![CDATA[<p><img class="pull left" src="/images/2014-03-27-post-autobed-levelling/Photo-2014-03-27_9_35_15PM.jpg" width="320" height="240">
+<img class="pull left" src="/images/2014-03-27-post-autobed-levelling/Photo-2014-03-27_9_36_58PM.jpg" width="320" height="240">
+<img class="pull left" src="/images/2014-03-27-post-autobed-levelling/Photo-2014-03-27_9_37_14PM.jpg" width="320" height="240">
+<img class="pull left" src="/images/2014-03-27-post-autobed-levelling/Photo-2014-03-27_9_45_55PM.jpg" width="320" height="240">
+My hands are too big to easily manipulate the three set screws that control the bed levelling adjustments.</p>
+
+<p>I&rsquo;ve added a servo controlled Z-Axis probe and followed the instructions for setting up the Marlin firmware.</p>
+
+<p>Major improvement!</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[To the Moon!]]></title>
+    <link href="http://www.makefamilyfun.ca/blog/2014/03/25/to-the-moon/"/>
+    <updated>2014-03-25T02:06:45-07:00</updated>
+    <id>http://www.makefamilyfun.ca/blog/2014/03/25/to-the-moon</id>
+    <content type="html"><![CDATA[<p><img class="pull left" src="/images/2014-03-25-post-to-the-moon/Photo-2014-03-25_6_14_20PM.jpg" width="320" height="240">
+Another successful print!</p>
+
+<p>Printed from <a href="http://www.thingiverse.com/thing:26163">this</a> model file.</p>
+
+<p>Some adjustments still needed- the circles aren&rsquo;t quite right and there are a few blobs.</p>
+
+<p>Good progress!</p>
+]]></content>
+  </entry>
+  
+</feed>

@@ -26,7 +26,8 @@ themes_dir      = ".themes"   # directory for blog files
 new_post_ext    = "markdown"  # default new post file extension when using the new_post task
 new_page_ext    = "markdown"  # default new page file extension when using the new_page task
 server_port     = "4000"      # port for preview server eg. localhost:4000
-
+images_dir      = "images"    # where image directories for posts and pages get placed
+ 
 if (/cygwin|mswin|mingw|bccwin|wince|emx/ =~ RUBY_PLATFORM) != nil
   puts '## Set the codepage to 65001 for Windows machines'
   `chcp 65001`
@@ -104,6 +105,9 @@ task :new_post, :title do |t, args|
   raise "### You haven't set anything up yet. First run `rake install` to set up an Octopress theme." unless File.directory?(source_dir)
   mkdir_p "#{source_dir}/#{posts_dir}"
   filename = "#{source_dir}/#{posts_dir}/#{Time.now.strftime('%Y-%m-%d')}-#{title.to_url}.#{new_post_ext}"
+  final_images_dir = "#{source_dir}/#{images_dir}/#{Time.now.strftime('%Y-%m-%d')}-post-#{title.to_url}"
+  cover_image = "#{final_images_dir}/Photo #{Time.now.strftime('%Y-%m-%d')}.jpg"
+
   if File.exist?(filename)
     abort("rake aborted!") if ask("#{filename} already exists. Do you want to overwrite?", ['y', 'n']) == 'n'
   end
@@ -114,9 +118,16 @@ task :new_post, :title do |t, args|
     post.puts "title: \"#{title.gsub(/&/,'&amp;')}\""
     post.puts "date: #{Time.now.strftime('%Y-%m-%d %H:%M:%S %z')}"
     post.puts "comments: true"
-    post.puts "categories: "
+    post.puts "categories: []"
+    post.puts "coverimage: #{cover_image}"
+    post.puts "attract_cols:"
+    post.puts "attract_rows:"
     post.puts "---"
+    post.puts "{% img pull left #{cover_image} 320 240 image title %}" 
+
   end
+  puts "Creating media directory: #{images_dir}"
+  mkdir_p "#{final_images_dir}"
 end
 
 # usage rake new_page[my-new-page] or rake new_page[my-new-page.html] or rake new_page (defaults to "new-page.markdown")
@@ -151,6 +162,10 @@ task :new_page, :filename do |t, args|
       page.puts "comments: true"
       page.puts "sharing: true"
       page.puts "footer: true"
+      page.puts "categories: []"
+      page.puts "coverimage: "
+      post.puts "attract_cols: "
+      post.puts "attract_rows: "
       page.puts "---"
     end
   else

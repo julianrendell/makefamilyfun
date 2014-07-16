@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: head | Make. Family. Fun.]]></title>
+  <link href="http://www.makefamilyfun.ca/blog/categories/head/atom.xml" rel="self"/>
+  <link href="http://www.makefamilyfun.ca/"/>
+  <updated>2014-07-16T02:46:39-07:00</updated>
+  <id>http://www.makefamilyfun.ca/</id>
+  <author>
+    <name><![CDATA[Julian Rendell & Sarah Dakin]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[J-Heads are Better than Old]]></title>
+    <link href="http://www.makefamilyfun.ca/blog/2014/03/30/j-heads-are-better-than-old/"/>
+    <updated>2014-03-30T02:21:50-07:00</updated>
+    <id>http://www.makefamilyfun.ca/blog/2014/03/30/j-heads-are-better-than-old</id>
+    <content type="html"><![CDATA[<p><img class="pull left" src="/images/2014-03-30-post-j-heads-are-better-than-old/Photo-2014-03-30_12_33_20AM.jpg" width="320" height="240">
+<img class="pull left" src="/images/2014-03-30-post-j-heads-are-better-than-old/Photo-2014-03-30_12_40_42AM.jpg" width="320" height="240">
+<img class="pull left" src="/images/2014-03-30-post-j-heads-are-better-than-old/Photo-2014-03-30_12_41_08AM.jpg" width="320" height="240">
+<img class="pull left" src="/images/2014-03-30-post-j-heads-are-better-than-old/Photo-2014-03-30_12_41_52AM.jpg" width="320" height="240">
+Next thing to try on the road to making my Huxley work well: replace the head.</p>
+
+<p>I&rsquo;ve taken a sheet of hobby aluminium (bought at <a href="http://www.imperialhobbies.ca/">Imperial Hobbies</a>) and then cut and bent it by hand into an adapter for the JHead.</p>
+
+<p>Also upgraded to a heating cartridge (instead of a resistor).</p>
+
+<p>Great improvement.</p>
+]]></content>
+  </entry>
+  
+</feed>
