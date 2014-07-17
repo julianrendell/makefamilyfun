@@ -9,7 +9,6 @@ attract_cols:
 attract_rows:
 ---
 {% img pull left /images/2014-06-16-post-ruggedizing-huxley/Photo-2014-06-16_5_44_24PM.jpg 320 240 %}
-{% img pull left /images/2014-06-16-post-ruggedizing-huxley/Photo-2014-07-09_7_58_26AM.jpg 320 240 %}
 {% img pull left /images/2014-06-16-post-ruggedizing-huxley/Photo-2014-07-09_7_58_27AM.jpg 320 240 %}
 {% img pull left /images/2014-06-16-post-ruggedizing-huxley/Photo-2014-07-10_11_13_12PM.jpg 320 240 %}
 {% img pull left /images/2014-06-16-post-ruggedizing-huxley/Photo-2014-07-10_11_13_39PM.jpg 320 240 %}
