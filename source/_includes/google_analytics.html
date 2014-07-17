@@ -5,17 +5,17 @@
   m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
   })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
 
-  ga('create', '{{ site.google_analytics_tracking_id }}', 'auto'{{% if site.google_analytics_domains_to_track %}}, {'allowLinker': true}{{% endif %}});
-  {{% unless site.google_analytics_domains_to_track == blank %}}
+  ga('create', '{{ site.google_analytics_tracking_id }}', 'auto'{% if site.google_analytics_domains_to_track %}, {'allowLinker': true}{% endif %});
+  {% if site.google_analytics_domains_to_track %}
     ga('require', 'linker');
     ga('linker:autoLink', [{{site.google_analytics_domains_to_track}}]);
-  {{% endunless %}}
-  {{% unless site.google_analytics_displayfeatures == blank }}
+  {% endif %}
+  {% if site.google_analytics_displayfeatures == true %}
     ga('require', 'displayfeatures');
-  {{% endunless %}}
-  {{% unless google_enhanced_link_attribution == blank %}}
+  {% endif %}
+  {% if google_enhanced_link_attribution == true %}
     ga('require', 'linkid', 'linkid.js');
-  {{% endunless %}}
+  {% endif %}
   ga('send', 'pageview');
   </script>
 {% endif %}
