@@ -98,9 +98,9 @@ disqus_show_comment_count: true
 
 # Google Analytics
 google_analytics_tracking_id: UA-36079074-3
-google_analytics_domains_to_track: "'makefamilyfun.ca', 'inspirewith.me', 'innovatewith.me', 'inspireandinnovatewith.me', 'herokuapp.com'"
-google_analytics_displayfeatures: true
-google_enhanced_link_attribution: true
+#google_analytics_domains_to_track: "'makefamilyfun.ca', 'inspirewith.me', 'innovatewith.me', 'inspireandinnovatewith.me', 'herokuapp.com'"
+#google_analytics_displayfeatures: true
+#google_enhanced_link_attribution: true
 
 # Facebook Like
 facebook_like: true
