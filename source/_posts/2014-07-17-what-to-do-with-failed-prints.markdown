@@ -3,7 +3,7 @@ layout: post
 title: "What to do With Failed Prints?"
 date: 2014-07-17 13:24:55 -0700
 comments: true
-categories: [3dprintint, crafts]
+categories: [3dprinting, crafts]
 coverimage: /images/2014-07-17-post-what-to-do-with-failed-prints/Photo-2014-07-17_1_22_26PM.jpg
 attract_cols:
 attract_rows:
