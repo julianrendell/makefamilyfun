@@ -32,13 +32,17 @@
   m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
   })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
 
-  ga('create', 'UA-36079074-3', 'auto');
+  ga('create', 'UA-36079074-3', 'auto', {'allowLinker': true});
   
+    ga('require', 'linker');
+    ga('linker:autoLink', ['makefamilyfun.ca', 'inspirewith.me', 'innovatewith.me', 'inspireandinnovatewith.me', 'herokuapp.com']);
+  
+  
+    ga('require', 'displayfeatures');
   
   
   ga('send', 'pageview');
   </script>
-
 
 </head>
 
