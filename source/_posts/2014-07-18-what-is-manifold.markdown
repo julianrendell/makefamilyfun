@@ -4,7 +4,7 @@ title: "What is Manifold?"
 date: 2014-07-18 01:54:37 -0700
 comments: true
 categories: []
-coverimage: source/images/2014-07-18-post-what-is-manifold/Photo 2014-07-18.jpg
+coverimage: 
 attract_cols:
 attract_rows:
 ---

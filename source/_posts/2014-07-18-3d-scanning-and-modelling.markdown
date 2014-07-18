@@ -8,7 +8,7 @@ coverimage: /images/2014-07-18-post-3d-scanning-and-modelling/snapshot03.png
 attract_cols:
 attract_rows:
 ---
-\{% img pull left /images/2014-07-18-post-3d-scanning-and-modelling/snapshot02.png 320 240 %}
+{% img pull left /images/2014-07-18-post-3d-scanning-and-modelling/snapshot02.png 320 240 %}
 {% img pull left /images/2014-07-18-post-3d-scanning-and-modelling/snapshot03.png 320 240 %}
 Finally plugged my Kinect into my computer to try [Skanect](http://skanect.occipital.com/). It's really cool, and amazingly, it's almost as easy to use as their web page makes it out to be.  The one difficulty I encountered was Tristan's dark hair; the sensor kept loosing tracking on the back of his head. Next time, better lighting!
 
