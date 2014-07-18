@@ -3,4 +3,5 @@
 	border-color: #DDD;
     border-radius: 4px;
     padding: 2px;
+    overflow: hidden;
 }
