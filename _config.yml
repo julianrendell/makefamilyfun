@@ -116,7 +116,7 @@ plantuml:
 emoji_dir: /images/emoji
 
 # Custom About
-authors: [ 
+authors: [
 			{
 				name: Julian,
 		  		email: juliangrendell@gmail.com,
@@ -126,6 +126,11 @@ authors: [
 				name: Sarah,
 		  		email: sarahdakin@gmail.com,
 		  		description: "Teacher, writer, presenter: Sarah is a curious mind who is fascinated by how people learn."
+		  	},
+			{
+				name: Tristan,
+		  		email: tristan.rendell@gmail.com,
+		  		description: "Minecraft. Nerf. Games :-)"
 		  	}
 	  	]
 

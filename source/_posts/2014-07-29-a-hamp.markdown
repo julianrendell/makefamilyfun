@@ -1,0 +1,21 @@
+---
+layout: post
+title: "A Hamp"
+author: Tristan
+date: 2014-07-29 20:23:33 -0700
+comments: true
+categories: [nerf]
+coverimage: /images/2014-07-29-post-a-hamp/IMG_2110.jpg
+attract_cols:
+attract_rows:
+---
+{% img pull left /images/2014-07-29-post-a-hamp/IMG_2110.jpg 320 240 %}
+{% img pull left /images/2014-07-29-post-a-hamp/IMG_8344.jpg 320 240 %}
+On the weekend we made a HAMP (High Air-flow/Manual Pump) home-made Nerf gun.
+
+It's based on [this YouTube video](https://www.youtube.com/watch?v=8oUIYxng9C8).
+
+We couldn't get the same bushings that he used. But we found enough pieces at our local Rona to put it all together.
+
+It works pretty well. The range is good, but some darts get stuck.
+

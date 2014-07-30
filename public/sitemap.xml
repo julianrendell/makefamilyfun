@@ -3,6 +3,12 @@
   
   
   <url>
+    <loc>http://www.makefamilyfun.ca/blog/2014/07/29/a-hamp/</loc>
+    <lastmod>2014-07-29T20:23:33-07:00</lastmod>
+    <priority>0.8</priority>
+  </url>
+  
+  <url>
     <loc>http://www.makefamilyfun.ca/blog/2014/07/18/what-is-manifold/</loc>
     <lastmod>2014-07-18T01:54:37-07:00</lastmod>
     <priority>0.8</priority>
@@ -185,28 +191,28 @@
   
   <url>
     <loc>http://www.makefamilyfun.ca/blog/</loc>
-    <lastmod>2014-07-18T10:13:01-07:00</lastmod>
+    <lastmod>2014-07-29T20:38:49-07:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   
   <url>
     <loc>http://www.makefamilyfun.ca/blog/archives/</loc>
-    <lastmod>2014-07-18T10:13:01-07:00</lastmod>
+    <lastmod>2014-07-29T20:38:49-07:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   
   <url>
     <loc>http://www.makefamilyfun.ca/</loc>
-    <lastmod>2014-07-18T10:13:01-07:00</lastmod>
+    <lastmod>2014-07-29T20:38:49-07:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
   
   <url>
     <loc>http://www.makefamilyfun.ca/Notes/Octopress/</loc>
-    <lastmod>2014-07-18T10:13:01-07:00</lastmod>
+    <lastmod>2014-07-29T20:38:49-07:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
