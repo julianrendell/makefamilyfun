@@ -1,1 +1,76 @@
-[#<Jekyll::ContentFilters:0x007f9c51cf2ca0 @options=nil, @caption=nil, @lang=nil, @url=nil, @title=nil>]
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: midi | Make. Family. Fun.]]></title>
+  <link href="http://www.makefamilyfun.ca/blog/categories/midi/atom.xml" rel="self"/>
+  <link href="http://www.makefamilyfun.ca/"/>
+  <updated>2015-03-15T23:39:44-07:00</updated>
+  <id>http://www.makefamilyfun.ca/</id>
+  <author>
+    <name><![CDATA[Julian Rendell & Sarah Dakin]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[Printer Music]]></title>
+    <link href="http://www.makefamilyfun.ca/blog/2014/08/02/printer-music/"/>
+    <updated>2014-08-02T11:58:06-07:00</updated>
+    <id>http://www.makefamilyfun.ca/blog/2014/08/02/printer-music</id>
+    <content type="html"><![CDATA[<p>If you look around the internet you can find videos and articles describing various ways of making 3d printers, laser cutters, CNC machines, and other computer controlled devices make sounds.</p>
+
+<p>This goes back a long time- when I was in high-school, one of my friends used to make the Apple IIe drives play music.</p>
+
+<p>Most of these techniques involve moving a part of the machine rapidly back-and-forward hundreds to thousands of times a second.</p>
+
+<p>For a well built, sturdy machine, there&rsquo;s probably no harm.</p>
+
+<p>Then again, those Apple IIe&rsquo;s often seemed to have failing drives&hellip;</p>
+
+<p>But did you know that many 3D Printers include a buzzer?</p>
+
+<p>Take a look at the <a href="http://reprap.org/wiki/G-code#M300:_Play_beep_sound"><code>M300</code></a> command.</p>
+
+<p>Wouldn&rsquo;t it be nice to have the printer play a tune when it&rsquo;s finished?</p>
+
+<p>But what to do - it&rsquo;s a bit hard to figure out how to write music out as combinations of frequency and duration.</p>
+
+<p>Luckily there are some standard ways of storing musical data, such as <a href="http://en.wikipedia.org/wiki/MIDI">MIDI</a>, and we can write a program to convert from that to <code>M300</code> commands.</p>
+
+<p>MIDI records music as a note number and a relative duration. So converting the timing of the notes is going to be pretty easy: <code>MIDI Duration * time per beat = M300 duration</code>.</p>
+
+<p>The note numbers represent octave and regualar &ldquo;C, D, E, F, G, A, B&rdquo; notes.</p>
+
+<p>We need a way of converting from these octave/notes to a frequency (how many times the speaker will move per second).</p>
+
+<p>A couple of facts that will help us:</p>
+
+<ul>
+<li>Going from a lower note to the same note one octave higher means a doubling in frequency</li>
+<li>there are 12 notes per octice (including sharps and flats)</li>
+<li>most tunings are based on &lsquo;Concert A&rsquo; which is the A above Middle C</li>
+<li>concert A is defined as being 440Hz</li>
+<li>MIDI represents concert A as not number 69</li>
+</ul>
+
+
+<p>If you combine all of these together, you&rsquo;ll get a formula like:</p>
+
+<p><code>freq = 440 * 2^((n-69)/12)</code></p>
+
+<p>(I admit- I cheated a bit, and found this <a href="http://www.dzone.com/snippets/midi-note-number-and-frequency">Python snippet</a>.)</p>
+
+<p>So now we have some rules, or formulae, that will let us convert from MIDI note number/duration pairs to <code>M300</code> g-code commands.</p>
+
+<p>But how do we read the MIDI data.</p>
+
+<pre><code>&gt;&gt;&gt; for message in track:
+...     if message.type == 'note_on':
+...             if message.time &gt; 0:
+...                     print "M300 S%d S%d" % (440.0*pow(2.0, ((message.note - 69.0) / 12.0)), message.time * 10)
+</code></pre>
+]]></content>
+  </entry>
+  
+</feed>

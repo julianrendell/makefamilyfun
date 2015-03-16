@@ -1,1 +1,31 @@
-[#<Jekyll::ContentFilters:0x007f9c51cf2ca0 @options=nil, @caption=nil, @lang=nil, @url=nil, @title=nil>]
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: ptfe | Make. Family. Fun.]]></title>
+  <link href="http://www.makefamilyfun.ca/blog/categories/ptfe/atom.xml" rel="self"/>
+  <link href="http://www.makefamilyfun.ca/"/>
+  <updated>2015-03-15T23:39:44-07:00</updated>
+  <id>http://www.makefamilyfun.ca/</id>
+  <author>
+    <name><![CDATA[Julian Rendell & Sarah Dakin]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[New PTFE Tube]]></title>
+    <link href="http://www.makefamilyfun.ca/blog/2014/05/21/new-ptfe-tube/"/>
+    <updated>2014-05-21T02:39:40-07:00</updated>
+    <id>http://www.makefamilyfun.ca/blog/2014/05/21/new-ptfe-tube</id>
+    <content type="html"><![CDATA[<p><img class="pull left" src="/images/2014-05-21-post-new-ptfe-tube/Photo-2014-05-21_11_53_23PM.jpg" width="320" height="240">
+<img class="pull left" src="/images/2014-05-21-post-new-ptfe-tube/Photo-2014-05-21_11_53_37PM.jpg" width="320" height="240">
+<img class="pull left" src="/images/2014-05-21-post-new-ptfe-tube/Photo-2014-05-21_11_53_46PM.jpg" width="320" height="240">
+<img class="pull left" src="/images/2014-05-21-post-new-ptfe-tube/Photo-2014-05-21_11_55_25PM.jpg" width="320" height="240">
+One of the problems of Bowden drives is that the PTFE (teflon) tube is hard to hold onto.</p>
+
+<p>Added a larger PTFE tube (thanks Tiago!) and a new pressfit fitting. So far so good.</p>
+]]></content>
+  </entry>
+  
+</feed>

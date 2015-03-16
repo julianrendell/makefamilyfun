@@ -1,1 +1,33 @@
-[#<Jekyll::ContentFilters:0x007f9c51cf2ca0 @options=nil, @caption=nil, @lang=nil, @url=nil, @title=nil>]
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: levelling | Make. Family. Fun.]]></title>
+  <link href="http://www.makefamilyfun.ca/blog/categories/levelling/atom.xml" rel="self"/>
+  <link href="http://www.makefamilyfun.ca/"/>
+  <updated>2015-03-15T23:39:44-07:00</updated>
+  <id>http://www.makefamilyfun.ca/</id>
+  <author>
+    <name><![CDATA[Julian Rendell & Sarah Dakin]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[Autobed Levelling]]></title>
+    <link href="http://www.makefamilyfun.ca/blog/2014/03/27/autobed-levelling/"/>
+    <updated>2014-03-27T02:14:36-07:00</updated>
+    <id>http://www.makefamilyfun.ca/blog/2014/03/27/autobed-levelling</id>
+    <content type="html"><![CDATA[<p><img class="pull left" src="/images/2014-03-27-post-autobed-levelling/Photo-2014-03-27_9_35_15PM.jpg" width="320" height="240">
+<img class="pull left" src="/images/2014-03-27-post-autobed-levelling/Photo-2014-03-27_9_36_58PM.jpg" width="320" height="240">
+<img class="pull left" src="/images/2014-03-27-post-autobed-levelling/Photo-2014-03-27_9_37_14PM.jpg" width="320" height="240">
+<img class="pull left" src="/images/2014-03-27-post-autobed-levelling/Photo-2014-03-27_9_45_55PM.jpg" width="320" height="240">
+My hands are too big to easily manipulate the three set screws that control the bed levelling adjustments.</p>
+
+<p>I&rsquo;ve added a servo controlled Z-Axis probe and followed the instructions for setting up the Marlin firmware.</p>
+
+<p>Major improvement!</p>
+]]></content>
+  </entry>
+  
+</feed>

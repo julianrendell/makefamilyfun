@@ -1,1 +1,41 @@
-[#<Jekyll::ContentFilters:0x007f9c51cf2ca0 @options=nil, @caption=nil, @lang=nil, @url=nil, @title=nil>]
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: arduino | Make. Family. Fun.]]></title>
+  <link href="http://www.makefamilyfun.ca/blog/categories/arduino/atom.xml" rel="self"/>
+  <link href="http://www.makefamilyfun.ca/"/>
+  <updated>2015-03-15T23:39:44-07:00</updated>
+  <id>http://www.makefamilyfun.ca/</id>
+  <author>
+    <name><![CDATA[Julian Rendell & Sarah Dakin]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[Kaiju Board]]></title>
+    <link href="http://www.makefamilyfun.ca/blog/2014/05/08/kaiju-board/"/>
+    <updated>2014-05-08T12:13:37-07:00</updated>
+    <id>http://www.makefamilyfun.ca/blog/2014/05/08/kaiju-board</id>
+    <content type="html"><![CDATA[<p><img class="pull left" src="/images/2014-05-08-post-kaiju-board/Photo-2014-05-08_12_44_28AM.jpg" width="320" height="240">
+<img class="pull left" src="/images/2014-05-08-post-kaiju-board/Photo-2014-05-23_2_35_23AM.jpg" width="320" height="240">
+<img class="pull left" src="/images/2014-05-08-post-kaiju-board/Photo-2014-07-14_6_15_51PM.jpg" width="320" height="240">
+<img class="pull left" src="/images/2014-05-08-post-kaiju-board/Photo-2014-07-14_6_16_16PM.jpg" width="320" height="240">
+<img class="pull left" src="/images/2014-05-08-post-kaiju-board/Photo-2014-07-14_6_17_55PM.jpg" width="320" height="240">
+<img class="pull left" src="/images/2014-05-08-post-kaiju-board/Photo-2014-07-14_6_19_19PM.jpg" width="320" height="240">
+We have a large wall mounted display at the office that is intended to display the status of various systems.  We&rsquo;ve yet to find a great app that is both informative and keeps people checking on it.</p>
+
+<p>We tried <a href="http://skahal.com/buildron/">Buildron</a> but after a while it crashes and needs to be restarted.  And I never could get the Gravatar integration to work.</p>
+
+<p>So we&rsquo;ve decided to build our own information radiator utilising a Pandaboard we have in the office. We&rsquo;ve got Android on it, and Leslie has got a demo unity app to install and run.</p>
+
+<p>To house this I build a wooden frame.  The back houses speakers, amplifier, Pandaboard, and an Arduino.  The Arduino controls 8 RGB LEDs embedded in the side of the frame. Long term we plan to have the Pandaboard send control messages to the Arduino that will trigger different LED sequences. Eg failing builds - shades of red.</p>
+
+<p>The Pandaboard is held in place by a custom 3D clip that I created in OpenSCAD and printed. Right now everything else is held by tape, but they&rsquo;ll get 3D printed holders to.</p>
+
+<p>I put to use the foam cutter I made from a broken toaster to cut out our team name from styrofoam. The acid etched look was achieved by using a couple of different kinds of spray paint. Solvent based spray paint dissolves styrofoam, whereas acrylic based doesn&rsquo;t.</p>
+]]></content>
+  </entry>
+  
+</feed>

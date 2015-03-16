@@ -1,1 +1,25 @@
-[#<Jekyll::ContentFilters:0x007f9c51cf2ca0 @options=nil, @caption=nil, @lang=nil, @url=nil, @title=nil>]
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: minimakerfaire2015 | Make. Family. Fun.]]></title>
+  <link href="http://www.makefamilyfun.ca/blog/categories/minimakerfaire2015/atom.xml" rel="self"/>
+  <link href="http://www.makefamilyfun.ca/"/>
+  <updated>2015-03-15T23:39:44-07:00</updated>
+  <id>http://www.makefamilyfun.ca/</id>
+  <author>
+    <name><![CDATA[Julian Rendell & Sarah Dakin]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[Tristan's Makerfaire 2015 Ideas]]></title>
+    <link href="http://www.makefamilyfun.ca/blog/2015/03/14/tristans-makerfaire-ideas/"/>
+    <updated>2015-03-14T22:47:28-07:00</updated>
+    <id>http://www.makefamilyfun.ca/blog/2015/03/14/tristans-makerfaire-ideas</id>
+    <content type="html"><![CDATA[<p>Here is some stuff we will most likely be bringing to Maker Faire. The benefit of moding Nerf guns is that they shoot further, are easier to use and it is often fun to mod them.</p>
+]]></content>
+  </entry>
+  
+</feed>

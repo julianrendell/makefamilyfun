@@ -1,1 +1,28 @@
-[#<Jekyll::ContentFilters:0x007f9c51cf2ca0 @options=nil, @caption=nil, @lang=nil, @url=nil, @title=nil>]
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: glassblowing | Make. Family. Fun.]]></title>
+  <link href="http://www.makefamilyfun.ca/blog/categories/glassblowing/atom.xml" rel="self"/>
+  <link href="http://www.makefamilyfun.ca/"/>
+  <updated>2015-03-15T23:39:44-07:00</updated>
+  <id>http://www.makefamilyfun.ca/</id>
+  <author>
+    <name><![CDATA[Julian Rendell & Sarah Dakin]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[Glass Blowing]]></title>
+    <link href="http://www.makefamilyfun.ca/blog/2014/04/16/glass-blowing/"/>
+    <updated>2014-04-16T10:23:31-07:00</updated>
+    <id>http://www.makefamilyfun.ca/blog/2014/04/16/glass-blowing</id>
+    <content type="html"><![CDATA[<p><img class="pull left" src="/images/2014-04-16-post-glass-blowing/glass-paperweight.jpg" width="320" height="240">
+<img class="pull left" src="/images/2014-04-16-post-glass-blowing/Glassblowing1.jpg" width="320" height="240">
+<img class="pull left" src="/images/2014-04-16-post-glass-blowing/IMG_2113.jpg" width="320" height="240">
+Granville Island glass blowing class. Awesome.</p>
+]]></content>
+  </entry>
+  
+</feed>

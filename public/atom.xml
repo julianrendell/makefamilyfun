@@ -1,0 +1,376 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Make. Family. Fun.]]></title>
+  <link href="http://www.makefamilyfun.ca/atom.xml" rel="self"/>
+  <link href="http://www.makefamilyfun.ca/"/>
+  <updated>2015-03-15T23:39:44-07:00</updated>
+  <id>http://www.makefamilyfun.ca/</id>
+  <author>
+    <name><![CDATA[Julian Rendell & Sarah Dakin]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[Tristan's Makerfaire 2015 Ideas]]></title>
+    <link href="http://www.makefamilyfun.ca/blog/2015/03/14/tristans-makerfaire-ideas/"/>
+    <updated>2015-03-14T22:47:28-07:00</updated>
+    <id>http://www.makefamilyfun.ca/blog/2015/03/14/tristans-makerfaire-ideas</id>
+    <content type="html"><![CDATA[<p>Here is some stuff we will most likely be bringing to Maker Faire. The benefit of moding Nerf guns is that they shoot further, are easier to use and it is often fun to mod them.</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Printer Music]]></title>
+    <link href="http://www.makefamilyfun.ca/blog/2014/08/02/printer-music/"/>
+    <updated>2014-08-02T11:58:06-07:00</updated>
+    <id>http://www.makefamilyfun.ca/blog/2014/08/02/printer-music</id>
+    <content type="html"><![CDATA[<p>If you look around the internet you can find videos and articles describing various ways of making 3d printers, laser cutters, CNC machines, and other computer controlled devices make sounds.</p>
+
+<p>This goes back a long time- when I was in high-school, one of my friends used to make the Apple IIe drives play music.</p>
+
+<p>Most of these techniques involve moving a part of the machine rapidly back-and-forward hundreds to thousands of times a second.</p>
+
+<p>For a well built, sturdy machine, there&rsquo;s probably no harm.</p>
+
+<p>Then again, those Apple IIe&rsquo;s often seemed to have failing drives&hellip;</p>
+
+<p>But did you know that many 3D Printers include a buzzer?</p>
+
+<p>Take a look at the <a href="http://reprap.org/wiki/G-code#M300:_Play_beep_sound"><code>M300</code></a> command.</p>
+
+<p>Wouldn&rsquo;t it be nice to have the printer play a tune when it&rsquo;s finished?</p>
+
+<p>But what to do - it&rsquo;s a bit hard to figure out how to write music out as combinations of frequency and duration.</p>
+
+<p>Luckily there are some standard ways of storing musical data, such as <a href="http://en.wikipedia.org/wiki/MIDI">MIDI</a>, and we can write a program to convert from that to <code>M300</code> commands.</p>
+
+<p>MIDI records music as a note number and a relative duration. So converting the timing of the notes is going to be pretty easy: <code>MIDI Duration * time per beat = M300 duration</code>.</p>
+
+<p>The note numbers represent octave and regualar &ldquo;C, D, E, F, G, A, B&rdquo; notes.</p>
+
+<p>We need a way of converting from these octave/notes to a frequency (how many times the speaker will move per second).</p>
+
+<p>A couple of facts that will help us:</p>
+
+<ul>
+<li>Going from a lower note to the same note one octave higher means a doubling in frequency</li>
+<li>there are 12 notes per octice (including sharps and flats)</li>
+<li>most tunings are based on &lsquo;Concert A&rsquo; which is the A above Middle C</li>
+<li>concert A is defined as being 440Hz</li>
+<li>MIDI represents concert A as not number 69</li>
+</ul>
+
+
+<p>If you combine all of these together, you&rsquo;ll get a formula like:</p>
+
+<p><code>freq = 440 * 2^((n-69)/12)</code></p>
+
+<p>(I admit- I cheated a bit, and found this <a href="http://www.dzone.com/snippets/midi-note-number-and-frequency">Python snippet</a>.)</p>
+
+<p>So now we have some rules, or formulae, that will let us convert from MIDI note number/duration pairs to <code>M300</code> g-code commands.</p>
+
+<p>But how do we read the MIDI data.</p>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>&gt;&gt;&gt; for message in track:
+</span><span class='line'>...     if message.type == 'note_on':
+</span><span class='line'>...             if message.time &gt; 0:
+</span><span class='line'>...                     print "M300 S%d S%d" % (440.0*pow(2.0, ((message.note - 69.0) / 12.0)), message.time * 10)
+</span></code></pre></td></tr></table></div></figure>
+
+
+
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[A Hamp]]></title>
+    <link href="http://www.makefamilyfun.ca/blog/2014/07/29/a-hamp/"/>
+    <updated>2014-07-29T20:23:33-07:00</updated>
+    <id>http://www.makefamilyfun.ca/blog/2014/07/29/a-hamp</id>
+    <content type="html"><![CDATA[<p><img class="pull left" src="http://www.makefamilyfun.ca/images/2014-07-29-post-a-hamp/IMG_2110.jpg" width="320" height="240">
+<img class="pull left" src="http://www.makefamilyfun.ca/images/2014-07-29-post-a-hamp/IMG_8344.jpg" width="320" height="240">
+On the weekend we made a HAMP (High Air-flow/Manual Pump) home-made Nerf gun.</p>
+
+<p>It&rsquo;s based on <a href="https://www.youtube.com/watch?v=8oUIYxng9C8">this YouTube video</a>.</p>
+
+<p>We couldn&rsquo;t get the same bushings that he used. But we found enough pieces at our local Rona to put it all together.</p>
+
+<p>It works pretty well. The range is good, but some darts get stuck.</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[What is Manifold?]]></title>
+    <link href="http://www.makefamilyfun.ca/blog/2014/07/18/what-is-manifold/"/>
+    <updated>2014-07-18T01:54:37-07:00</updated>
+    <id>http://www.makefamilyfun.ca/blog/2014/07/18/what-is-manifold</id>
+    <content type="html"><![CDATA[<p>This is a term that comes up a lot in 3D printing. Non-manifold models cause a lot of problems and lead to failed prints.</p>
+
+<p>You often hear it being described in terms of &ldquo;water tightness&rdquo;, <!--more-->but that hasn&rsquo;t helped me to understand it.</p>
+
+<p>But <a href="http://www.iheartrobotics.com/2010/01/openscad-tip-manifold-space-and-time.html">this</a> post did, especially <a href="http://www.iheartrobotics.com/2010/01/openscad-tip-manifold-space-and-time.html?showComment=1264551125102#c7892813172347887917">this comment</a>:</p>
+
+<blockquote><p>Dominic Muren said&hellip;
+While &ldquo;watertightness&rdquo; is a nice by-product of a manifold mesh, the real test of whether a mesh is manifold or not is that all edges must be shared by exactly two polygons (usually triangles). If we think about a hole (or a leak, in terms of watertightness) that would be a triangle with an edge used by only one polygon. But another way to make a non-manifold, but still technically watertight mesh is to take a manifold mesh and connect two arbitrary edges with a triangle &ndash; that would create at least one edge shared by three polygons.</p>
+
+<p>nd outside are, if there are multiple volumes enclosed by meshes.</p>
+
+<p>In this case, it looks like you might have had an errant triangle, or an edge that didn&rsquo;t terminate correctly, because of how many edges shared that upper vertex. Making the step freed the vertex up.</p></blockquote>
+
+<p>Extra: technically we want models to be 2-manifold.</p>
+
+<p>And <a href="http://www.cs.mtu.edu/~shene/COURSES/cs3621/NOTES/model/manifold.html">some more information here.</a></p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[3D Scanning and Modelling]]></title>
+    <link href="http://www.makefamilyfun.ca/blog/2014/07/18/3d-scanning-and-modelling/"/>
+    <updated>2014-07-18T01:31:01-07:00</updated>
+    <id>http://www.makefamilyfun.ca/blog/2014/07/18/3d-scanning-and-modelling</id>
+    <content type="html"><![CDATA[<p><img class="pull left" src="http://www.makefamilyfun.ca/images/2014-07-18-post-3d-scanning-and-modelling/snapshot02.png" width="320" height="240">
+<img class="pull left" src="http://www.makefamilyfun.ca/images/2014-07-18-post-3d-scanning-and-modelling/snapshot03.png" width="320" height="240">
+Finally plugged my Kinect into my computer to try <a href="http://skanect.occipital.com/">Skanect</a>. It&rsquo;s really cool, and amazingly, it&rsquo;s almost as easy to use as their web page makes it out to be.  The one difficulty I encountered was Tristan&rsquo;s dark hair; the sensor kept loosing tracking on the back of his head. Next time, better lighting!</p>
+
+<p>Then some fun with <a href="http://meshlab.sourceforge.net/">Meshlab</a>- removing the head from this model of a <a href="http://www.thingiverse.com/thing:7202">wizzard on Thingiverse</a> and glueing on Tristan&rsquo;s.</p>
+
+<p>Though in my excitement I made a key mistake- see if you can spot it.</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[What to do With Failed Prints?]]></title>
+    <link href="http://www.makefamilyfun.ca/blog/2014/07/17/what-to-do-with-failed-prints/"/>
+    <updated>2014-07-17T13:24:55-07:00</updated>
+    <id>http://www.makefamilyfun.ca/blog/2014/07/17/what-to-do-with-failed-prints</id>
+    <content type="html"><![CDATA[<p><img class="pull left" src="http://www.makefamilyfun.ca/images/2014-07-17-post-what-to-do-with-failed-prints/Photo-2014-07-17_1_22_26PM.jpg" width="320" height="240">
+3D prints don&rsquo;t always work out. But with a little super glue and imagination you can turn them into something fun- like this. Looks a little <a href="http://sydmead.com/v/12/">Syd Meid</a> inspired.</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[See Through Display Case]]></title>
+    <link href="http://www.makefamilyfun.ca/blog/2014/07/14/see-through-display-case/"/>
+    <updated>2014-07-14T10:55:42-07:00</updated>
+    <id>http://www.makefamilyfun.ca/blog/2014/07/14/see-through-display-case</id>
+    <content type="html"><![CDATA[<p><img class="pull left" src="http://www.makefamilyfun.ca/images/2014-07-14-post-see-through-display-case/Photo-2014-07-14_2_21_42AM.jpg" width="320" height="240">
+My employer sometimes get&rsquo;s development prototypes of new displays for retail use- and sometimes the manufacturer doesn&rsquo;t want it back. I was very lucky to get this- it&rsquo;s I vertical display case with a transparent LCD monitor on the front. You can show the 3D virtual model floating in front of the printer as it works. Even luckier- our Huxley just fits. Next step: install the printer and ruggedize it so that it can be taken to Sarah&rsquo;s school, and the kids.</p>
+
+<p>Only small downside- replaces the cabinet I&rsquo;d built a few wweeks ago.</p>
+
+<p>(Note: the image doesn&rsquo;t do it justice- the lighting is very bright and my phone struggled to capture the full dynamic range.)</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Cloths Line- Year Later]]></title>
+    <link href="http://www.makefamilyfun.ca/blog/2014/07/13/cloths-line-year-later/"/>
+    <updated>2014-07-13T12:56:43-07:00</updated>
+    <id>http://www.makefamilyfun.ca/blog/2014/07/13/cloths-line-year-later</id>
+    <content type="html"><![CDATA[<p><img class="pull left" src="http://www.makefamilyfun.ca/images/2014-07-13-post-cloths-line-year-later/Photo-2014-07-13_9_47_14AM.jpg" width="320" height="240">
+So what do you do when you find an advertising flag pole in the scrap metal yard? Take it home and turn it into a clothesline, right?</p>
+
+<p>The smell of freshly dried laundry can&rsquo;t be beat. It makes the effort of mixing up a lot more concrete than I expected worth it. Not to mention the &ldquo;maybe this wasn&rsquo;t a good idea&rdquo; thoughts as I drove home with the pole tied to the top of the car and the wind started to catch it as I drove past the airport!</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Vancouver MiniMakerFaire 2014]]></title>
+    <link href="http://www.makefamilyfun.ca/blog/2014/06/18/vancouver-minimakerfaire-2014/"/>
+    <updated>2014-06-18T12:34:16-07:00</updated>
+    <id>http://www.makefamilyfun.ca/blog/2014/06/18/vancouver-minimakerfaire-2014</id>
+    <content type="html"><![CDATA[<p><img class="pull left" src="http://www.makefamilyfun.ca/images/2014-06-08-post-vancouver-minimakerfaire-2014/Photo-2014-06-08_11_20_56AM.jpg" width="320" height="240">
+<img class="pull left" src="http://www.makefamilyfun.ca/images/2014-06-08-post-vancouver-minimakerfaire-2014/Photo-2014-06-08_12_42_02PM.jpg" width="320" height="240">
+<img class="pull left" src="http://www.makefamilyfun.ca/images/2014-06-08-post-vancouver-minimakerfaire-2014/Photo-2014-06-08_2_29_11PM.jpg" width="320" height="240">
+Another year, another MiniMakerFaire!</p>
+
+<p>This is the fourth year Vancouver has had a MiniMakerFaire, and the fourth time we&rsquo;ve attended.</p>
+
+<p>It just keeps getting better!</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Ruggedizing Huxley]]></title>
+    <link href="http://www.makefamilyfun.ca/blog/2014/06/16/ruggedizing-huxley/"/>
+    <updated>2014-06-16T12:48:53-07:00</updated>
+    <id>http://www.makefamilyfun.ca/blog/2014/06/16/ruggedizing-huxley</id>
+    <content type="html"><![CDATA[<p><img class="pull left" src="http://www.makefamilyfun.ca/images/2014-06-16-post-ruggedizing-huxley/Photo-2014-06-16_5_44_24PM.jpg" width="320" height="240">
+<img class="pull left" src="http://www.makefamilyfun.ca/images/2014-06-16-post-ruggedizing-huxley/Photo-2014-07-09_7_58_27AM.jpg" width="320" height="240">
+<img class="pull left" src="http://www.makefamilyfun.ca/images/2014-06-16-post-ruggedizing-huxley/Photo-2014-07-10_11_13_12PM.jpg" width="320" height="240">
+<img class="pull left" src="http://www.makefamilyfun.ca/images/2014-06-16-post-ruggedizing-huxley/Photo-2014-07-10_11_13_39PM.jpg" width="320" height="240">
+<img class="pull left" src="http://www.makefamilyfun.ca/images/2014-06-16-post-ruggedizing-huxley/Photo-2014-07-10_11_14_03PM.jpg" width="320" height="240">
+<img class="pull left" src="http://www.makefamilyfun.ca/images/2014-06-16-post-ruggedizing-huxley/Photo-2014-07-10_11_14_33PM.jpg" width="320" height="240">
+<img class="pull left" src="http://www.makefamilyfun.ca/images/2014-06-16-post-ruggedizing-huxley/Photo-2014-07-10_11_15_22PM.jpg" width="320" height="240">
+<img class="pull left" src="http://www.makefamilyfun.ca/images/2014-06-16-post-ruggedizing-huxley/Photo-2014-07-13_11_17_16PM.jpg" width="320" height="240">
+We want to be able to easily move our 3D printer around, including taking it to events and schools.</p>
+
+<p>Thus was born the printer case.  Very nice that everything could be cut out of a single 4&#8217;x4&#8217; sheet of particle board.</p>
+
+<p>Only downside- disconnecting everything and rewiring it with plugs. So many wires to solder!</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Octoprint Rocks!]]></title>
+    <link href="http://www.makefamilyfun.ca/blog/2014/06/14/octoprint-rocks/"/>
+    <updated>2014-06-14T12:41:27-07:00</updated>
+    <id>http://www.makefamilyfun.ca/blog/2014/06/14/octoprint-rocks</id>
+    <content type="html"><![CDATA[<p><img class="pull left" src="http://www.makefamilyfun.ca/images/2014-06-14-post-octoprint-rocks/Photo-2014-06-14_4_00_51PM.jpg" width="320" height="240">
+Got <a href="http://octoprint.org/">Octoprint</a> running on <a href="http://archlinuxarm.org/platforms/armv5/seagate-dockstar">Arch for the Seagate Dockster</a>.</p>
+
+<p>Now the printer can be completely remote controlled and monitored- Octoprint includes instructions for setting up a webcam to both record and stream the print.</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Mythical Celebrities]]></title>
+    <link href="http://www.makefamilyfun.ca/blog/2014/05/24/mythical-celebrities/"/>
+    <updated>2014-05-24T10:47:03-07:00</updated>
+    <id>http://www.makefamilyfun.ca/blog/2014/05/24/mythical-celebrities</id>
+    <content type="html"><![CDATA[<p><img class="pull left" src="http://www.makefamilyfun.ca/images/2014-05-24-post-mythical-celebrities/Photo-2014-05-24_4_14_14PM.jpg" width="320" height="240">
+It&rsquo;s blurry, but if you look really carefully, you should be able to recognise <a href="http://www.cbc.ca/quirks/">CBC&rsquo;s Bob McDonald</a> and <a href="http://www.discovery.com/tv-shows/mythbusters">Adam Savage, Jamie Hyneman- the MythBusters!</a></p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[New PTFE Tube]]></title>
+    <link href="http://www.makefamilyfun.ca/blog/2014/05/21/new-ptfe-tube/"/>
+    <updated>2014-05-21T02:39:40-07:00</updated>
+    <id>http://www.makefamilyfun.ca/blog/2014/05/21/new-ptfe-tube</id>
+    <content type="html"><![CDATA[<p><img class="pull left" src="http://www.makefamilyfun.ca/images/2014-05-21-post-new-ptfe-tube/Photo-2014-05-21_11_53_23PM.jpg" width="320" height="240">
+<img class="pull left" src="http://www.makefamilyfun.ca/images/2014-05-21-post-new-ptfe-tube/Photo-2014-05-21_11_53_37PM.jpg" width="320" height="240">
+<img class="pull left" src="http://www.makefamilyfun.ca/images/2014-05-21-post-new-ptfe-tube/Photo-2014-05-21_11_53_46PM.jpg" width="320" height="240">
+<img class="pull left" src="http://www.makefamilyfun.ca/images/2014-05-21-post-new-ptfe-tube/Photo-2014-05-21_11_55_25PM.jpg" width="320" height="240">
+One of the problems of Bowden drives is that the PTFE (teflon) tube is hard to hold onto.</p>
+
+<p>Added a larger PTFE tube (thanks Tiago!) and a new pressfit fitting. So far so good.</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Kaiju Board]]></title>
+    <link href="http://www.makefamilyfun.ca/blog/2014/05/08/kaiju-board/"/>
+    <updated>2014-05-08T12:13:37-07:00</updated>
+    <id>http://www.makefamilyfun.ca/blog/2014/05/08/kaiju-board</id>
+    <content type="html"><![CDATA[<p><img class="pull left" src="http://www.makefamilyfun.ca/images/2014-05-08-post-kaiju-board/Photo-2014-05-08_12_44_28AM.jpg" width="320" height="240">
+<img class="pull left" src="http://www.makefamilyfun.ca/images/2014-05-08-post-kaiju-board/Photo-2014-05-23_2_35_23AM.jpg" width="320" height="240">
+<img class="pull left" src="http://www.makefamilyfun.ca/images/2014-05-08-post-kaiju-board/Photo-2014-07-14_6_15_51PM.jpg" width="320" height="240">
+<img class="pull left" src="http://www.makefamilyfun.ca/images/2014-05-08-post-kaiju-board/Photo-2014-07-14_6_16_16PM.jpg" width="320" height="240">
+<img class="pull left" src="http://www.makefamilyfun.ca/images/2014-05-08-post-kaiju-board/Photo-2014-07-14_6_17_55PM.jpg" width="320" height="240">
+<img class="pull left" src="http://www.makefamilyfun.ca/images/2014-05-08-post-kaiju-board/Photo-2014-07-14_6_19_19PM.jpg" width="320" height="240">
+We have a large wall mounted display at the office that is intended to display the status of various systems.  We&rsquo;ve yet to find a great app that is both informative and keeps people checking on it.</p>
+
+<p>We tried <a href="http://skahal.com/buildron/">Buildron</a> but after a while it crashes and needs to be restarted.  And I never could get the Gravatar integration to work.</p>
+
+<p>So we&rsquo;ve decided to build our own information radiator utilising a Pandaboard we have in the office. We&rsquo;ve got Android on it, and Leslie has got a demo unity app to install and run.</p>
+
+<p>To house this I build a wooden frame.  The back houses speakers, amplifier, Pandaboard, and an Arduino.  The Arduino controls 8 RGB LEDs embedded in the side of the frame. Long term we plan to have the Pandaboard send control messages to the Arduino that will trigger different LED sequences. Eg failing builds - shades of red.</p>
+
+<p>The Pandaboard is held in place by a custom 3D clip that I created in OpenSCAD and printed. Right now everything else is held by tape, but they&rsquo;ll get 3D printed holders to.</p>
+
+<p>I put to use the foam cutter I made from a broken toaster to cut out our team name from styrofoam. The acid etched look was achieved by using a couple of different kinds of spray paint. Solvent based spray paint dissolves styrofoam, whereas acrylic based doesn&rsquo;t.</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[3D Printed Phone Case]]></title>
+    <link href="http://www.makefamilyfun.ca/blog/2014/05/01/3d-printed-phone-case/"/>
+    <updated>2014-05-01T10:34:08-07:00</updated>
+    <id>http://www.makefamilyfun.ca/blog/2014/05/01/3d-printed-phone-case</id>
+    <content type="html"><![CDATA[<p><img class="pull left" src="http://www.makefamilyfun.ca/images/2014-05-01-post-3d-printed-phone-case/IMG_1978.JPG" width="320" height="240">
+<img class="pull left" src="http://www.makefamilyfun.ca/images/2014-05-01-post-3d-printed-phone-case/Photo-2014-06-08_1_08_13AM.jpg" width="320" height="240"></p>
+
+<p>My new phone case. Printed in SeaCans PLA. Many of the pieces fited with no or very little sanding. Very happy- I think Huxley is working!</p>
+
+<p><a href="http://www.thingiverse.com/thing:79606">Model on Thingiverse.</a></p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Rebuilding a Roomba Battery]]></title>
+    <link href="http://www.makefamilyfun.ca/blog/2014/04/28/rebuilding-a-roomba-battery/"/>
+    <updated>2014-04-28T02:32:04-07:00</updated>
+    <id>http://www.makefamilyfun.ca/blog/2014/04/28/rebuilding-a-roomba-battery</id>
+    <content type="html"><![CDATA[<p><img class="pull left" src="http://www.makefamilyfun.ca/images/2014-04-28-post-rebuilding-a-roomba-battery/Photo-2014-04-28_10_34_17PM.jpg" width="320" height="240">
+<img class="pull left" src="http://www.makefamilyfun.ca/images/2014-04-28-post-rebuilding-a-roomba-battery/Photo-2014-04-28_10_35_10PM.jpg" width="320" height="240">
+<img class="pull left" src="http://www.makefamilyfun.ca/images/2014-04-28-post-rebuilding-a-roomba-battery/Photo-2014-04-28_10_36_02PM.jpg" width="320" height="240">
+<img class="pull left" src="http://www.makefamilyfun.ca/images/2014-04-28-post-rebuilding-a-roomba-battery/Photo-2014-04-29_12_39_24AM.jpg" width="320" height="240">
+Roomba batteries are built from the same cells that are in RC car batteries.</p>
+
+<p>With care you can use one to rebuild the other!</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Glass Blowing]]></title>
+    <link href="http://www.makefamilyfun.ca/blog/2014/04/16/glass-blowing/"/>
+    <updated>2014-04-16T10:23:31-07:00</updated>
+    <id>http://www.makefamilyfun.ca/blog/2014/04/16/glass-blowing</id>
+    <content type="html"><![CDATA[<p><img class="pull left" src="http://www.makefamilyfun.ca/images/2014-04-16-post-glass-blowing/glass-paperweight.jpg" width="320" height="240">
+<img class="pull left" src="http://www.makefamilyfun.ca/images/2014-04-16-post-glass-blowing/Glassblowing1.jpg" width="320" height="240">
+<img class="pull left" src="http://www.makefamilyfun.ca/images/2014-04-16-post-glass-blowing/IMG_2113.jpg" width="320" height="240">
+Granville Island glass blowing class. Awesome.</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[J-Heads are Better than Old]]></title>
+    <link href="http://www.makefamilyfun.ca/blog/2014/03/30/j-heads-are-better-than-old/"/>
+    <updated>2014-03-30T02:21:50-07:00</updated>
+    <id>http://www.makefamilyfun.ca/blog/2014/03/30/j-heads-are-better-than-old</id>
+    <content type="html"><![CDATA[<p><img class="pull left" src="http://www.makefamilyfun.ca/images/2014-03-30-post-j-heads-are-better-than-old/Photo-2014-03-30_12_33_20AM.jpg" width="320" height="240">
+<img class="pull left" src="http://www.makefamilyfun.ca/images/2014-03-30-post-j-heads-are-better-than-old/Photo-2014-03-30_12_40_42AM.jpg" width="320" height="240">
+<img class="pull left" src="http://www.makefamilyfun.ca/images/2014-03-30-post-j-heads-are-better-than-old/Photo-2014-03-30_12_41_08AM.jpg" width="320" height="240">
+<img class="pull left" src="http://www.makefamilyfun.ca/images/2014-03-30-post-j-heads-are-better-than-old/Photo-2014-03-30_12_41_52AM.jpg" width="320" height="240">
+Next thing to try on the road to making my Huxley work well: replace the head.</p>
+
+<p>I&rsquo;ve taken a sheet of hobby aluminium (bought at <a href="http://www.imperialhobbies.ca/">Imperial Hobbies</a>) and then cut and bent it by hand into an adapter for the JHead.</p>
+
+<p>Also upgraded to a heating cartridge (instead of a resistor).</p>
+
+<p>Great improvement.</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Autobed Levelling]]></title>
+    <link href="http://www.makefamilyfun.ca/blog/2014/03/27/autobed-levelling/"/>
+    <updated>2014-03-27T02:14:36-07:00</updated>
+    <id>http://www.makefamilyfun.ca/blog/2014/03/27/autobed-levelling</id>
+    <content type="html"><![CDATA[<p><img class="pull left" src="http://www.makefamilyfun.ca/images/2014-03-27-post-autobed-levelling/Photo-2014-03-27_9_35_15PM.jpg" width="320" height="240">
+<img class="pull left" src="http://www.makefamilyfun.ca/images/2014-03-27-post-autobed-levelling/Photo-2014-03-27_9_36_58PM.jpg" width="320" height="240">
+<img class="pull left" src="http://www.makefamilyfun.ca/images/2014-03-27-post-autobed-levelling/Photo-2014-03-27_9_37_14PM.jpg" width="320" height="240">
+<img class="pull left" src="http://www.makefamilyfun.ca/images/2014-03-27-post-autobed-levelling/Photo-2014-03-27_9_45_55PM.jpg" width="320" height="240">
+My hands are too big to easily manipulate the three set screws that control the bed levelling adjustments.</p>
+
+<p>I&rsquo;ve added a servo controlled Z-Axis probe and followed the instructions for setting up the Marlin firmware.</p>
+
+<p>Major improvement!</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[To the Moon!]]></title>
+    <link href="http://www.makefamilyfun.ca/blog/2014/03/25/to-the-moon/"/>
+    <updated>2014-03-25T02:06:45-07:00</updated>
+    <id>http://www.makefamilyfun.ca/blog/2014/03/25/to-the-moon</id>
+    <content type="html"><![CDATA[<p><img class="pull left" src="http://www.makefamilyfun.ca/images/2014-03-25-post-to-the-moon/Photo-2014-03-25_6_14_20PM.jpg" width="320" height="240">
+Another successful print!</p>
+
+<p>Printed from <a href="http://www.thingiverse.com/thing:26163">this</a> model file.</p>
+
+<p>Some adjustments still needed- the circles aren&rsquo;t quite right and there are a few blobs.</p>
+
+<p>Good progress!</p>
+]]></content>
+  </entry>
+  
+</feed>

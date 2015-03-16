@@ -187,7 +187,8 @@ _GooglePlay_
 
 **Test**
 
-{% gemoji smile%}
+*fix -- not working! Need to update to 2!*
+% gemoji smile%
 
 ## Gravatar
 
