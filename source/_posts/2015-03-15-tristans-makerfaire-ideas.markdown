@@ -11,7 +11,7 @@ attract_rows:
 ---
 Here is some stuff we will most likely be bringing to Maker Faire.
 
-<!--more-->
+<!-- more -->
 
  The benefit of moding Nerf guns is that they shoot further, are easier to use and it is often fun to mod them. 
 
