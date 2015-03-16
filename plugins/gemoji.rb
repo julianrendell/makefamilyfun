@@ -7,6 +7,7 @@ module Jekyll
   class Gemoji < Liquid::Tag
     def initialize(name, markup, tokens)
       @emoji = markup
+      @emoji.strip!
     end
 
     def render(context)
@@ -20,10 +21,14 @@ module Jekyll
           end
         end
 
-        if Emoji.names.include?(@emoji) and emoji_dir
-          '<img alt="' + @emoji + '" src="' + config['emoji_dir'] + "/#{@emoji}.png" + '" class="emoji" />'
+        emoji = Emoji.find_by_alias(@emoji)
+        if emoji != nil and emoji_dir
+          '<img alt="' + @emoji + '" src="' + config['emoji_dir'] + "/" + emoji.image_filename + '" class="emoji" />'
         else
-          ""
+          print "\e[31m"
+          puts "gemoji warning: #{@emoji} was not found! @#{context['page']['url']}"
+          print "\e[0m"
+          @emoji
         end
       else
         ""
@@ -37,15 +42,11 @@ module Jekyll
       return false if not config['emoji_dir']
       return false if config['emoji_dir'].start_with?('http')
       emoji_dir = File.join(config['source'], config['emoji_dir'])
-      return false if File.exist?(emoji_dir + '/smiley.png')
-
-      # Make Emoji directory
-      FileUtils.mkdir_p(emoji_dir)
+      return false if File.exist?(emoji_dir)
 
       # Copy Gemoji files
-      Dir["#{Emoji.images_path}/emoji/*.png"].each do |src|
-        FileUtils.cp src, emoji_dir
-      end
+      p "Copying #{Emoji.images_path}/emoji to #{emoji_dir}..."
+      FileUtils.cp_r Emoji.images_path + "/emoji", emoji_dir
     end
   end
 
