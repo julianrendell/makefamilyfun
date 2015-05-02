@@ -1,7 +1,5 @@
 <!DOCTYPE html>
-<!--[if IEMobile 7 ]><html class="no-js iem7"><![endif]-->
-<!--[if lt IE 9]><html class="no-js lte-ie8"><![endif]-->
-<!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
+<html class="no-js" lang="en">
 <head>
   <meta charset="utf-8">
   <title>3D Printed Phone Case - Make. Family. Fun.</title>
@@ -16,15 +14,27 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   
-  <link rel="canonical" href="http://www.makefamilyfun.ca/blog/2014/05/01/3d-printed-phone-case">
+  <link rel="canonical" href="http://www.makefamilyfun.ca/blog/2014/05/01/3d-printed-phone-case/">
   <link href="/favicon.png" type="image/png" rel="icon">
   <link href="/atom.xml" rel="alternate" title="Make. Family. Fun." type="application/atom+xml">
 
-  <link href="/assets/bootstrap-themes/darkly/bootstrap.min.css" rel="stylesheet" type="text/css">
-<link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
+  <!-- http://opengraphprotocol.org/ -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="http://www.makefamilyfun.ca/blog/2014/05/01/3d-printed-phone-case/">
+  <meta property="og:title" content="3D Printed Phone Case - Make. Family. Fun.">
+  
+
+  <script src="/javascripts/libs/jquery/jquery-2.1.3.min.js"></script>
+
+<link href="/assets/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet" type="text/css">
+<link href="/assets/bootstrap/dist/css/bootstrap-theme.min.css" rel="stylesheet" type="text/css">
+<link href="/assets/stylesheets/site.css" rel="stylesheet" type="text/css">
 
 
-  <script src="/javascripts/libs/jquery/jquery-2.0.3.min.js"></script>
+  
+  <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
+
   
   <script>
   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
@@ -47,12 +57,13 @@
 </head>
 
   <body   >
+    <a href="#content" class="sr-only sr-only-focusable">Skip to main content</a>
     <div id="wrap">
       <header role="banner">
         <nav class="navbar navbar-default" role="navigation">
     <div class="container">
         <div class="navbar-header">
-            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+            <button type="button" class="navbar-toggle" title="toggle navbar" data-toggle="collapse" data-target=".navbar-collapse">
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
@@ -61,16 +72,24 @@
         </div>
 
         <div class="navbar-collapse collapse">
-            
-                <form class="search navbar-form navbar-right" action="https://www.google.com/search" method="GET">
-                    <input type="hidden" name="q" value="site:www.makefamilyfun.ca">
-                    <div class="form-group">
-                        <input class="form-control" type="text" name="q" placeholder="Search">
-                    </div>
-                </form>
-            
-
+            <ul class="nav navbar-nav">
+                <li class="active">
+                    <a rel="index" href="/">Blog</a>
+                </li>
+                <li >
+                    <a href="/blog/archives">Archives</a>
+                </li>
+            </ul>
             <ul class="nav navbar-nav navbar-right">
+                
+                    <li>
+                        <form class="search navbar-form navbar-right" action="https://www.google.com/search" method="GET">
+                            <input type="hidden" name="sitesearch" value="www.makefamilyfun.ca">
+                            <div class="form-group">
+                                <input class="form-control" type="text" name="q" placeholder="Search">
+                            </div>
+                        </form>
+                    </li>
                 
                 <li>
                     <a class="subscribe-rss" href="/atom.xml" title="subscribe via RSS">
@@ -78,11 +97,7 @@
                         <img class="hidden-xs" src="/images/rss.png" alt="RSS">
                     </a>
                 </li>
-            </ul>
-            <ul class="nav navbar-nav navbar-right">
-                <li >
-                    <a href="/blog/archives">Archives</a>
-                </li>
+                
             </ul>
         </div>
     </div>
@@ -90,11 +105,14 @@
 
 
       </header>
-      <div id="main" class="container">
+      <div id="main" role="main" class="container">
         <div id="content">
           <div class="row">
-  <div class="page-content col-md-9">
-    <article class="hentry" role="article">
+  <div class="page-content col-md-9" itemscope itemtype="http://schema.org/Blog">
+    <meta itemprop="name" content="Make. Family. Fun." />
+    <meta itemprop="description" content="Laughing, Smiling, Making, Creating." />
+    <meta itemprop="url" content="http://www.makefamilyfun.ca" />
+    <article class="hentry" role="article" itemprop="blogPost" itemscope itemtype="http://schema.org/BlogPosting">
       
   <header class="page-header">
     
@@ -112,15 +130,15 @@
 
 
 
-<span class="glyphicon glyphicon-calendar"></span> <time datetime="2014-05-01T10:34:08-07:00" pubdate data-updated="true"></time>
+<span class="glyphicon glyphicon-calendar"></span> <time datetime="2014-05-01T10:34:08-07:00"  data-updated="true" itemprop="datePublished dateCreated">Thu  1 May 2014, 10:34 AM</time>
         
-           | <a href="#disqus_thread"
+           | <a href="#disqus_thread" itemprop="discussionUrl"
              data-disqus-identifier="http://www.makefamilyfun.ca">Comments</a>
         
       </p>
     
     
-    <h1 class="entry-title">
+    <h1 class="entry-title" itemprop="name headline">
         3D Printed Phone Case
         
     </h1>
@@ -128,7 +146,7 @@
   </header>
 
 
-<div class="entry-content clearfix"><p><img class="pull left" src="/images/2014-05-01-post-3d-printed-phone-case/IMG_1978.JPG" width="320" height="240">
+<div class="entry-content clearfix" itemprop="articleBody description"><p><img class="pull left" src="/images/2014-05-01-post-3d-printed-phone-case/IMG_1978.JPG" width="320" height="240">
 <img class="pull left" src="/images/2014-05-01-post-3d-printed-phone-case/Photo-2014-06-08_1_08_13AM.jpg" width="320" height="240"></p>
 
 <p>My new phone case. Printed in SeaCans PLA. Many of the pieces fited with no or very little sanding. Very happy- I think Huxley is working!</p>
@@ -142,7 +160,7 @@
           
   
 
-<span class="glyphicon glyphicon-user"></span> <span class="byline author vcard">Posted by <span class="fn">Julian Rendell & Sarah Dakin</span></span>
+<span class="glyphicon glyphicon-user"></span> <span class="byline author vcard" itemprop="author" itemscope itemtype="http://schema.org/Person">Posted by <span class="fn" itemprop="name">Julian Rendell & Sarah Dakin</span></span>
 
           
 
@@ -157,7 +175,7 @@
 
 
 
-<span class="glyphicon glyphicon-calendar"></span> <time datetime="2014-05-01T10:34:08-07:00" pubdate data-updated="true"></time>
+<span class="glyphicon glyphicon-calendar"></span> <time datetime="2014-05-01T10:34:08-07:00"  data-updated="true" itemprop="datePublished dateCreated">Thu  1 May 2014, 10:34 AM</time>
           
 
 <span class="glyphicon glyphicon-tags"></span>&nbsp;
@@ -186,10 +204,10 @@
         
           <ul class="meta text-muted pager">
             
-            <li class="previous"><a href="/blog/2014/04/28/rebuilding-a-roomba-battery/" title="Previous Post: Rebuilding a Roomba Battery">&laquo; Rebuilding a Roomba Battery</a></li>
+            <li class="previous"><span><a href="/blog/2014/04/28/rebuilding-a-roomba-battery/" title="Previous Post: Rebuilding a Roomba Battery">&laquo; Rebuilding a Roomba Battery</a></span></li>
             
             
-            <li class="next"><a href="/blog/2014/05/08/kaiju-board/" title="Next Post: Kaiju Board">Kaiju Board &raquo;</a></li>
+            <li class="next"><span><a href="/blog/2014/05/08/kaiju-board/" title="Next Post: Kaiju Board">Kaiju Board &raquo;</a></span></li>
             
           </ul>
         
@@ -197,7 +215,7 @@
     </article>
     
       <section>
-        <h1>Comments</h1>
+        <h2>Comments</h2>
         <div id="disqus_thread" aria-live="polite"><noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
 </div>
       </section>
@@ -214,34 +232,88 @@
 
   
   	
-  		<div>
-  			<img class="img-thumbnail pull-left" src="http://www.gravatar.com/avatar/663ada792dbc2fdf5e2272d39cece109?s=64" alt="Gravatar of juliangrendell@gmail.com " title="Gravatar of juliangrendell@gmail.com" />
-    			<h4 class="list-group-item-heading">Julian</h3>
-  			<p>
-  	  		<p>Curious explorer, enjoys encounters with other learners; known to crack bad jokes.</p>
+  		<div class="clearfix">
+        <table>
+          <tr valign="top" class="list-group-item">
+            <td width="80px">
+              <div class="navbar-left clearfix">
+                <img class="img-thumbnail" src="http://www.gravatar.com/avatar/663ada792dbc2fdf5e2272d39cece109?s=64" alt="Gravatar of juliangrendell@gmail.com " title="Gravatar of juliangrendell@gmail.com" />
+              </div>
+              </td>
+              <td>
+              <div>
+                <h4 class="list-group-item-heading">Julian</h4>
+                <p class="list-group-item-text">
+          	  		<p>Curious explorer, enjoys encounters with other learners; known to crack bad jokes.</p>
 
-  	  	</p>
-        <br/>
+          	  	</p>
+              </div>
+              </td>
+          </tr>
+        </table>
   		</div>
   	
-  		<div>
-  			<img class="img-thumbnail pull-left" src="http://www.gravatar.com/avatar/f02f328915f353bd587d06a72ae35adb?s=64" alt="Gravatar of sarahdakin@gmail.com " title="Gravatar of sarahdakin@gmail.com" />
-    			<h4 class="list-group-item-heading">Sarah</h3>
-  			<p>
-  	  		<p>Teacher, writer, presenter: Sarah is a curious mind who is fascinated by how people learn.</p>
+  		<div class="clearfix">
+        <table>
+          <tr valign="top" class="list-group-item">
+            <td width="80px">
+              <div class="navbar-left clearfix">
+                <img class="img-thumbnail" src="http://www.gravatar.com/avatar/f02f328915f353bd587d06a72ae35adb?s=64" alt="Gravatar of sarahdakin@gmail.com " title="Gravatar of sarahdakin@gmail.com" />
+              </div>
+              </td>
+              <td>
+              <div>
+                <h4 class="list-group-item-heading">Sarah</h4>
+                <p class="list-group-item-text">
+          	  		<p>Teacher, writer, presenter: Sarah is a curious mind who is fascinated by how people learn.</p>
 
-  	  	</p>
-        <br/>
+          	  	</p>
+              </div>
+              </td>
+          </tr>
+        </table>
   		</div>
   	
-  		<div>
-  			<img class="img-thumbnail pull-left" src="http://www.gravatar.com/avatar/dc28dc4418329d1672c722c5bc92e8f1?s=64" alt="Gravatar of tristan.rendell@gmail.com " title="Gravatar of tristan.rendell@gmail.com" />
-    			<h4 class="list-group-item-heading">Tristan</h3>
-  			<p>
-  	  		<p>Minecraft. Nerf. Games :-)</p>
+  		<div class="clearfix">
+        <table>
+          <tr valign="top" class="list-group-item">
+            <td width="80px">
+              <div class="navbar-left clearfix">
+                <img class="img-thumbnail" src="http://www.gravatar.com/avatar/dc28dc4418329d1672c722c5bc92e8f1?s=64" alt="Gravatar of tristan.rendell@gmail.com " title="Gravatar of tristan.rendell@gmail.com" />
+              </div>
+              </td>
+              <td>
+              <div>
+                <h4 class="list-group-item-heading">Tristan</h4>
+                <p class="list-group-item-text">
+          	  		<p>Cosplay. Nerf. Games :-)</p>
 
-  	  	</p>
-        <br/>
+          	  	</p>
+              </div>
+              </td>
+          </tr>
+        </table>
+  		</div>
+  	
+  		<div class="clearfix">
+        <table>
+          <tr valign="top" class="list-group-item">
+            <td width="80px">
+              <div class="navbar-left clearfix">
+                <img class="img-thumbnail" src="http://www.gravatar.com/avatar/fef22c2c039adb452c9a31414c0295b5?s=64" alt="Gravatar of liam.rendell@gmail.com " title="Gravatar of liam.rendell@gmail.com" />
+              </div>
+              </td>
+              <td>
+              <div>
+                <h4 class="list-group-item-heading">Liam</h4>
+                <p class="list-group-item-text">
+          	  		<p>Explosion, fire, and cannons- That&rsquo;s me, Liam!</p>
+
+          	  	</p>
+              </div>
+              </td>
+          </tr>
+        </table>
   		</div>
   	
   
@@ -253,15 +325,25 @@
   
   <div id="recent_posts" class="list-group">
     
-    <a class="list-group-item " href="/blog/2015/03/14/tristans-makerfaire-ideas/">Tristan&#8217;s Makerfaire 2015 Ideas</a>
+    <div class="list-group-item">
+	    <a class="" href="/blog/2015/03/14/tristans-makerfaire-ideas/">Tristan&#8217;s Makerfaire 2015 Ideas</a>
+    </div>
     
-    <a class="list-group-item " href="/blog/2014/08/02/printer-music/">Printer Music</a>
+    <div class="list-group-item">
+	    <a class="" href="/blog/2014/08/02/printer-music/">Printer Music</a>
+    </div>
     
-    <a class="list-group-item " href="/blog/2014/07/29/a-hamp/">A Hamp</a>
+    <div class="list-group-item">
+	    <a class="" href="/blog/2014/07/29/a-hamp/">A Hamp</a>
+    </div>
     
-    <a class="list-group-item " href="/blog/2014/07/18/what-is-manifold/">What Is Manifold?</a>
+    <div class="list-group-item">
+	    <a class="" href="/blog/2014/07/18/what-is-manifold/">What Is Manifold?</a>
+    </div>
     
-    <a class="list-group-item " href="/blog/2014/07/18/3d-scanning-and-modelling/">3D Scanning and Modelling</a>
+    <div class="list-group-item">
+	    <a class="" href="/blog/2014/07/18/3d-scanning-and-modelling/">3D Scanning and Modelling</a>
+    </div>
     
   </div>
 </section>
@@ -270,11 +352,9 @@
     <h3 class="panel-title">Recent Articles<br/><small>Longer form Guides, How-Tos, Notes, etc</small></h3>
   </div>
 
-  <div>
-  </div>
-
-
   <div id="recent_pages" class="list-group">
+    
+	    
     
 	    
     
@@ -479,12 +559,12 @@
 
 <section class="googleplus panel panel-default">
   <div class="panel-body">
-    <h1>
+    <h2>
       <a href="https://plus.google.com/112335496000884633259?rel=author">
         <img src="http://www.google.com/images/icons/ui/gprofile_button-32.png" width="32" height="32">
         Google+
       </a>
-    </h1>
+    </h2>
   </div>
 </section>
 
@@ -509,9 +589,7 @@
 
 </div>
 </footer>
-    <script src="/assets/bootstrap/dist/js/bootstrap.min.js"></script>
-<script src="/javascripts/modernizr-2.0.js"></script>
-
+    
 
 <script type="text/javascript">
       var disqus_shortname = 'makefamilyfun';
@@ -524,7 +602,7 @@
       
     (function () {
       var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
-      dsq.src = ('https:' == document.location.protocol ? 'https://' : 'http://') + disqus_shortname + '.disqus.com/' + disqus_script;
+      dsq.src = '//' + disqus_shortname + '.disqus.com/' + disqus_script;
       (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
     }());
 </script>
@@ -563,7 +641,8 @@
   </script>
 
 
-
+<script src="/assets/bootstrap/dist/js/bootstrap.min.js"></script>
+<script src="/javascripts/modernizr.js"></script>
 
 
   </body>

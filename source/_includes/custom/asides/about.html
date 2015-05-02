@@ -5,13 +5,24 @@
 
   {% if site.authors %}
   	{% for author in site.authors %}
-  		<div>
-  			<img class="img-thumbnail pull-left" src="{% gravatar_image_for_email email:author.email size:64 %}" alt="Gravatar of {{ author.email}} " title="Gravatar of {{ author.email }}" />
-    			<h4 class="list-group-item-heading">{{ author.name }}</h3>
-  			<p>
-  	  		{{ author.description | markdownify}}
-  	  	</p>
-        <br/>
+  		<div class="clearfix">
+        <table>
+          <tr valign="top" class="list-group-item">
+            <td width="80px">
+              <div class="navbar-left clearfix">
+                <img class="img-thumbnail" src="{% gravatar_image_for_email email:author.email size:64 %}" alt="Gravatar of {{ author.email}} " title="Gravatar of {{ author.email }}" />
+              </div>
+              </td>
+              <td>
+              <div>
+                <h4 class="list-group-item-heading">{{ author.name }}</h4>
+                <p class="list-group-item-text">
+          	  		{{ author.description | markdownify}}
+          	  	</p>
+              </div>
+              </td>
+          </tr>
+        </table>
   		</div>
   	{% endfor %}
   {% endif %}

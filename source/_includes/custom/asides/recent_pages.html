@@ -3,14 +3,12 @@
     <h3 class="panel-title">Recent Articles<br/><small>Longer form Guides, How-Tos, Notes, etc</small></h3>
   </div>
 
-  <div>
-  </div>
-
-
   <div id="recent_pages" class="list-group">
     {% for post in site.pages %}
 	    {% if post.published == true %}
-	        <a class="list-group-item {% if post.url == page.url %}active{% endif %}" href="{{ root_url }}{{ post.url }}">{% if site.titlecase %}{{ post.title | titlecase }}{% else %}{{ post.title }}{% endif %}</a>
+        <div class="list-group-item">
+	        <a class="{% if post.url == page.url %}active{% endif %}" href="{{ root_url }}{{ post.url }}">{% if site.titlecase %}{{ post.title | titlecase }}{% else %}{{ post.title }}{% endif %}</a>
+        </div>
 	    {% endif%}
     {% endfor %}
   </div>

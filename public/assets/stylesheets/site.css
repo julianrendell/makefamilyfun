@@ -1,0 +1,144 @@
+/* Back Pulse */
+@-webkit-keyframes hvr-back-pulse {
+  50% {
+    background-color: rgba(32, 152, 209, 0.75);
+  }
+}
+
+@keyframes hvr-back-pulse {
+  50% {
+    background-color: rgba(32, 152, 209, 0.75);
+  }
+}
+
+/*
+From http://ianlunn.github.io/Hover/
+*/
+.hvr-back-pulse {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: translateZ(0);
+  transform: translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  -moz-osx-font-smoothing: grayscale;
+  overflow: visible;
+  -webkit-transition-duration: 0.5s;
+  transition-duration: 0.5s;
+  -webkit-transition-property: color, background-color;
+  transition-property: color, background-color;
+}
+
+.hvr-back-pulse:hover, .hvr-back-pulse:focus, .hvr-back-pulse:active {
+  -webkit-animation-name: hvr-back-pulse;
+  animation-name: hvr-back-pulse;
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-delay: 0.5s;
+  animation-delay: 0.5s;
+  -webkit-animation-timing-function: linear;
+  animation-timing-function: linear;
+  -webkit-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+  background-color: #2098d1;
+  color: white;
+}
+
+a {
+  display: inline-block;
+  position: relative;
+  padding-left: 2px;
+  padding-right: 2px;
+  
+}
+
+a:hover, a:focus, a:active  {
+  text-decoration: underline;
+  -webkit-animation-name: hvr-back-pulse;
+  animation-name: hvr-back-pulse;
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-delay: 0.5s;
+  animation-delay: 0.5s;
+  -webkit-animation-timing-function: linear;
+  animation-timing-function: linear;
+  -webkit-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+  background-color: #2098d1;
+  color: white;
+}
+
+/* 
+  slide [
+  Inspired by http://tritarget.org/
+*/
+a:hover::before, a:hover:focus::before, a:active::before, a:hover::after, a:hover:focus::after, a:active::after {
+  -webkit-transition: all .2s;
+  -o-transition: all .2s;
+  transition: all .2s;
+  transition-property: all;
+  transition-duration: 0.2s;
+  transition-timing-function: initial;
+  transition-delay: initial;
+  position: relative;
+  display: inline-block;
+  opacity: 1;
+  top: 0px;
+  font-weight: bold;
+  padding: 0px 0px;
+  background-color: #2098d1;
+  color: white;
+}
+
+a:hover::before, a:hover:focus::before, a:active::before {
+  left: -4px;
+  content: "[";  
+}
+
+a:hover::after, a:hover:focus::after, a:active::after {
+  right: -4px;
+  content: "]";  
+}
+
+/* colors */
+a:hover::before, a:hover:focus::before, a:active::before, a:hover::after, a:hover:focus::after, a:active::after {
+ -webkit-animation-name: hvr-back-pulse;
+  animation-name: hvr-back-pulse;
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-delay: 0.5s;
+  animation-delay: 0.5s;
+  -webkit-animation-timing-function: linear;
+  animation-timing-function: linear;
+  -webkit-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+  background-color: #2098d1;
+  color: white;
+}
+
+/* resets */
+a::before, a::after {
+  -webkit-transition: all .2s;
+  -o-transition: all .2s;
+  transition: all .2s;
+  transition-property: all;
+  transition-duration: 0.2s;
+  transition-timing-function: initial;
+  transition-delay: initial;
+  position: relative;
+  display: inline-block;
+  top: 0;
+  opacity: 0;
+  font-weight: bold;
+}
+
+a::before {
+    left: 4px;
+  content: "[";
+}
+
+a::after {
+    right: 4px;
+  content: "]";
+}

@@ -1,0 +1,268 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "_config.yml",
+			"settings":
+			{
+				"buffer_size": 4579,
+				"line_ending": "Unix"
+			}
+		}
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 67.0,
+		"last_filter": "install",
+		"selected_items":
+		[
+			[
+				"install",
+				"Package Control: Install Package"
+			]
+		],
+		"width": 449.0
+	},
+	"console":
+	{
+		"height": 146.0,
+		"history":
+		[
+			"import urllib.request,os,hashlib; h = 'eb2297e1a458f27d836c04bb0cbaf282' + 'd0e7a3098092775ccb37ca9d6b2e4b7d'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://packagecontrol.io/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by)"
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"expanded_folders":
+	[
+		"/Users/julian/Dropbox/Projects/makefamilyfun-octopress"
+	],
+	"file_history":
+	[
+		"/Users/julian/Documents/Arduino/libraries/PS2X_lib/PS2X_lib.h",
+		"/Users/julian/Dropbox/Projects/makefamilyfun-octopress/source/_includes/custom/navigation.html",
+		"/Users/julian/Dropbox/Projects/makefamilyfun-octopress/source/_includes/custom/asides/about.html",
+		"/Users/julian/Dropbox/Projects/makefamilyfun-octopress/source/_includes/asides/github.html",
+		"/Users/julian/Dropbox/Projects/makefamilyfun-octopress/source/javascripts/github.js",
+		"/Users/julian/Dropbox/Projects/makefamilyfun-octopress/source/_includes/asides/recent_posts.html",
+		"/Users/julian/Dropbox/Projects/makefamilyfun-octopress/source/_includes/header.html",
+		"/Users/julian/Dropbox/Projects/makefamilyfun-octopress/source/assets/bootstrap/docs/_layouts/home.html",
+		"/Users/julian/Dropbox/Projects/makefamilyfun-octopress/source/_includes/custom/header.html",
+		"/Users/julian/Dropbox/Projects/makefamilyfun-octopress/source/_includes/archive_post.html",
+		"/Users/julian/Dropbox/Projects/makefamilyfun-octopress/source/assets/bootstrap/docs/_includes/nav-main.html",
+		"/Users/julian/Downloads/EDH_Deckbox_V2_Island2.gcode",
+		"/Users/julian/Library/Application Support/Sublime Text 3/Packages/GoSublime/USAGE.md",
+		"/Users/julian/Dropbox/Projects/makefamilyfun-octopress/.gitmodules",
+		"/Users/julian/Dropbox/Projects/makefamilyfun-octopress/source/index.html",
+		"/Users/julian/Dropbox/Projects/makefamilyfun-octopress/source/_layouts/default.html",
+		"/Users/julian/Dropbox/Projects/makefamilyfun-octopress/source/_includes/head.html",
+		"/Users/julian/Dropbox/Projects/makefamilyfun-octopress/source/_includes/custom/asides/recent_posts.html",
+		"/Users/julian/Dropbox/Projects/makefamilyfun-octopress/source/_includes/custom/asides/recent_pages.html",
+		"/Users/julian/Dropbox/Projects/makefamilyfun-octopress/source/_includes/navigation.html",
+		"/Users/julian/Dropbox/Projects/makefamilyfun-octopress/source/_includes/custom/head.html",
+		"/Users/julian/Dropbox/Projects/makefamilyfun-octopress/plugins/category_generator.rb",
+		"/Users/julian/Dropbox/Projects/makefamilyfun-octopress/plugins/code_block.rb",
+		"/Users/julian/Dropbox/Projects/makefamilyfun-octopress/plugins/include_code.rb",
+		"/Users/julian/Dropbox/Projects/makefamilyfun-octopress/public/sitemap.xml",
+		"/Users/julian/Dropbox/Projects/makefamilyfun-octopress/_config.yml",
+		"/Users/julian/Dropbox/Projects/makefamilyfun-octopress/Gemfile",
+		"/Users/julian/Dropbox/Projects/makefamilyfun-octopress/Rakefile",
+		"/Users/julian/Downloads/EDH_Deckbox_V2_Island.gcode",
+		"/Users/julian/Dropbox/Projects/makefamilyfun-octopress/source/_posts/2015-03-15-tristans-makerfaire-ideas.markdown",
+		"/Users/julian/Dropbox/Projects/makefamilyfun-octopress/source/_posts/2014-08-02-printer-music.markdown",
+		"/Users/julian/Dropbox/Projects/makefamilyfun-octopress/source/_posts/2014-07-29-a-hamp.markdown",
+		"/Users/julian/Dropbox/Projects/makefamilyfun-octopress/source/atom.xml",
+		"/Users/julian/Dropbox/Projects/makefamilyfun-octopress/source/robots.txt",
+		"/Users/julian/Dropbox/Projects/makefamilyfun-octopress/source/_includes/custom/category_feed.xml",
+		"/Users/julian/Dropbox/Projects/makefamilyfun-octopress/source/Notes/Octopress/index.markdown",
+		"/Users/julian/Desktop/mini-maker-faire-2015 application.md",
+		"/Users/julian/Dropbox/Projects/makefamilyfun-octopress/Gemfile.lock",
+		"/Users/julian/Library/Application Support/Sublime Text 3/Packages/User/Preferences.sublime-settings",
+		"/Users/julian/Dropbox/Projects/Creepers/two-part-mould-generator.scad",
+		"/Users/julian/Dropbox/Slic3rSync/TAZ-medium_SeaCans-PLA_pt35nzl_pt22layer.ini",
+		"/Users/julian/Downloads/BIG_HERO_6_-_BAYMAX_-_NO_SUPPORTS/BIG_HERO_6_-_BAYMAX_-_NO_SUPPORTS7ff846401c1ef49964a19d6fcb03cd65-baymax_Soccer_Pin_Plate.gcode",
+		"/Users/julian/Downloads/ctrlV_3D_test.gcode"
+	],
+	"find":
+	{
+		"height": 35.0
+	},
+	"find_in_files":
+	{
+		"height": 93.0,
+		"where_history":
+		[
+			"/Users/julian/Dropbox/Projects/makefamilyfun-octopress/source"
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"site\\.subtitle",
+			"header\\.html",
+			"h1.*site\\.title",
+			"site.title",
+			"site.description",
+			"Z84."
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": true,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 0,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "_config.yml",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 4579,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								2625,
+								2625
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/YAML/YAML.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 464.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 23.0
+	},
+	"input":
+	{
+		"height": 0.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.GoSublime-output":
+	{
+		"height": 118.0
+	},
+	"output.MarGo-output":
+	{
+		"height": 118.0
+	},
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"pinned_build_system": "",
+	"project": "makefamilyfun.sublime-project",
+	"replace":
+	{
+		"height": 42.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 150.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}
