@@ -11,13 +11,14 @@ attract_rows:
 ---
 Here is some stuff we will most likely be bringing to Maker Faire.
 
-<!-- more -->
-
  The benefit of moding Nerf guns is that they shoot further, are easier to use and it is often fun to mod them. 
 
 {% img left /images/2015-03-15-post-tristans-makerfaire-ideas/IMG_3567.JPG 320 240 %}
 
 This is a modified electronic Nerf flywheel blaster. Modifications done to this blaster include: Motors replaced, wiring redone with solid core wiring, all locks were removed and the firing mechanism was lubricated. 
+
+<!-- more -->
+
 <br>
 <br>
 <br>

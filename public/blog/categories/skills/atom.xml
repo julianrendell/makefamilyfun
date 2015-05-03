@@ -4,7 +4,7 @@
   <title><![CDATA[Category: Skills | Make. Family. Fun.]]></title>
   <link href="http://www.makefamilyfun.ca/blog/categories/skills/atom.xml" rel="self"/>
   <link href="http://www.makefamilyfun.ca/"/>
-  <updated>2015-05-02T01:48:52-07:00</updated>
+  <updated>2015-05-03T00:49:05-07:00</updated>
   <id>http://www.makefamilyfun.ca/</id>
   <author>
     <name><![CDATA[Julian Rendell & Sarah Dakin]]></name>
@@ -18,10 +18,9 @@
     <link href="http://www.makefamilyfun.ca/blog/2014/03/09/mighty-minibuilder/"/>
     <updated>2014-03-09T00:48:38-08:00</updated>
     <id>http://www.makefamilyfun.ca/blog/2014/03/09/mighty-minibuilder</id>
-    <content type="html"><![CDATA[<p><img class="pull left" src="/images/2014-03-09-post-mighty-minibuilder/Photo-2014-03-09_5_29_15PM.jpg" width="320" height="240">
-<img class="pull left" src="/images/2014-03-09-post-mighty-minibuilder/Photo-2014-03-09_5_29_49PM.jpg" width="320" height="240">
-<img class="pull left" src="/images/2014-03-09-post-mighty-minibuilder/Photo-2014-03-09_5_30_09PM.jpg" width="320" height="240">
-Builder Bob?</p>
+    <content type="html"><![CDATA[<p><img class="pull left" src="/images/2014-03-09-post-mighty-minibuilder/Photo-2014-03-09_5_29_15PM.jpg" width="320" height="240"></p>
+
+<p>Builder Bob?</p>
 
 <p>NO!</p>
 
@@ -30,6 +29,12 @@ Builder Bob?</p>
 <p>Can he fix it?</p>
 
 <p>Yes he can!</p>
+
+<!-- more -->
+
+
+<p><img class="pull left" src="/images/2014-03-09-post-mighty-minibuilder/Photo-2014-03-09_5_29_49PM.jpg" width="320" height="240">
+<img class="pull left" src="/images/2014-03-09-post-mighty-minibuilder/Photo-2014-03-09_5_30_09PM.jpg" width="320" height="240"></p>
 ]]></content>
   </entry>
   

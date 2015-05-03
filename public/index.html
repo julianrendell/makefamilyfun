@@ -149,6 +149,12 @@
 
   <div class="entry-content clearfix" itemprop="articleBody description"><p>Here is some stuff we will most likely be bringing to Maker Faire.</p>
 
+<p> The benefit of moding Nerf guns is that they shoot further, are easier to use and it is often fun to mod them.</p>
+
+<p><img class="left" src="/images/2015-03-15-post-tristans-makerfaire-ideas/IMG_3567.JPG" width="320" height="240"></p>
+
+<p>This is a modified electronic Nerf flywheel blaster. Modifications done to this blaster include: Motors replaced, wiring redone with solid core wiring, all locks were removed and the firing mechanism was lubricated.</p>
+
 </div>
   
   
@@ -198,65 +204,16 @@
 
   <div class="entry-content clearfix" itemprop="articleBody description"><p>If you look around the internet you can find videos and articles describing various ways of making 3d printers, laser cutters, CNC machines, and other computer controlled devices make sounds.</p>
 
-<p>This goes back a long time- when I was in high-school, one of my friends used to make the Apple IIe drives play music.</p>
-
-<p>Most of these techniques involve moving a part of the machine rapidly back-and-forward hundreds to thousands of times a second.</p>
-
-<p>For a well built, sturdy machine, there&rsquo;s probably no harm.</p>
-
-<p>Then again, those Apple IIe&rsquo;s often seemed to have failing drives&hellip;</p>
-
-<p>But did you know that many 3D Printers include a buzzer?</p>
-
-<p>Take a look at the <a href="http://reprap.org/wiki/G-code#M300:_Play_beep_sound"><code>M300</code></a> command.</p>
-
-<p>Wouldn&rsquo;t it be nice to have the printer play a tune when it&rsquo;s finished?</p>
-
-<p>But what to do - it&rsquo;s a bit hard to figure out how to write music out as combinations of frequency and duration.</p>
-
-<p>Luckily there are some standard ways of storing musical data, such as <a href="http://en.wikipedia.org/wiki/MIDI">MIDI</a>, and we can write a program to convert from that to <code>M300</code> commands.</p>
-
-<p>MIDI records music as a note number and a relative duration. So converting the timing of the notes is going to be pretty easy: <code>MIDI Duration * time per beat = M300 duration</code>.</p>
-
-<p>The note numbers represent octave and regualar &ldquo;C, D, E, F, G, A, B&rdquo; notes.</p>
-
-<p>We need a way of converting from these octave/notes to a frequency (how many times the speaker will move per second).</p>
-
-<p>A couple of facts that will help us:</p>
-
-<ul>
-<li>Going from a lower note to the same note one octave higher means a doubling in frequency</li>
-<li>there are 12 notes per octice (including sharps and flats)</li>
-<li>most tunings are based on &lsquo;Concert A&rsquo; which is the A above Middle C</li>
-<li>concert A is defined as being 440Hz</li>
-<li>MIDI represents concert A as not number 69</li>
-</ul>
-
-
-<p>If you combine all of these together, you&rsquo;ll get a formula like:</p>
-
-<p><code>freq = 440 * 2^((n-69)/12)</code></p>
-
-<p>(I admit- I cheated a bit, and found this <a href="http://www.dzone.com/snippets/midi-note-number-and-frequency">Python snippet</a>.)</p>
-
-<p>So now we have some rules, or formulae, that will let us convert from MIDI note number/duration pairs to <code>M300</code> g-code commands.</p>
-
-<p>But how do we read the MIDI data.</p>
-
-<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-<span class='line-number'>2</span>
-<span class='line-number'>3</span>
-<span class='line-number'>4</span>
-</pre></td><td class='code'><pre><code class=''><span class='line'>&gt;&gt;&gt; for message in track:
-</span><span class='line'>...     if message.type == 'note_on':
-</span><span class='line'>...             if message.time &gt; 0:
-</span><span class='line'>...                     print "M300 S%d S%d" % (440.0*pow(2.0, ((message.note - 69.0) / 12.0)), message.time * 10)
-</span></code></pre></td></tr></table></div></figure>
-
-
-
 </div>
   
+  
+    <footer>
+      <div class="btn btn-default">
+        <span>
+          <a href="/blog/2014/08/02/printer-music/">Read on &rarr;</a>
+        </span>
+      </div>
+    </footer>
   
 
 
@@ -294,17 +251,20 @@
   </header>
 
 
-  <div class="entry-content clearfix" itemprop="articleBody description"><p><img class="pull left" src="/images/2014-07-29-post-a-hamp/IMG_2110.jpg" width="320" height="240">
-<img class="pull left" src="/images/2014-07-29-post-a-hamp/IMG_8344.jpg" width="320" height="240">
-On the weekend we made a HAMP (High Air-flow/Manual Pump) home-made Nerf gun.</p>
+  <div class="entry-content clearfix" itemprop="articleBody description"><p><img class="pull left" src="/images/2014-07-29-post-a-hamp/IMG_2110.jpg" width="320" height="240"></p>
 
-<p>It&rsquo;s based on <a href="https://www.youtube.com/watch?v=8oUIYxng9C8">this YouTube video</a>.</p>
+<p>On the weekend we made a HAMP (High Air-flow/Manual Pump) home-made Nerf gun.</p>
 
-<p>We couldn&rsquo;t get the same bushings that he used. But we found enough pieces at our local Rona to put it all together.</p>
-
-<p>It works pretty well. The range is good, but some darts get stuck.</p>
 </div>
   
+  
+    <footer>
+      <div class="btn btn-default">
+        <span>
+          <a href="/blog/2014/07/29/a-hamp/">Read on &rarr;</a>
+        </span>
+      </div>
+    </footer>
   
 
 
@@ -344,7 +304,9 @@ On the weekend we made a HAMP (High Air-flow/Manual Pump) home-made Nerf gun.</p
 
   <div class="entry-content clearfix" itemprop="articleBody description"><p>This is a term that comes up a lot in 3D printing. Non-manifold models cause a lot of problems and lead to failed prints.</p>
 
-<p>You often hear it being described in terms of &ldquo;water tightness&rdquo;, </div>
+<p>You often hear it being described in terms of &ldquo;water tightness&rdquo;, but that hasn&rsquo;t helped me to understand it.</p>
+
+</div>
   
   
     <footer>
@@ -393,13 +355,18 @@ On the weekend we made a HAMP (High Air-flow/Manual Pump) home-made Nerf gun.</p
 
   <div class="entry-content clearfix" itemprop="articleBody description"><p><img class="pull left" src="/images/2014-07-18-post-3d-scanning-and-modelling/snapshot02.png" width="320" height="240">
 <img class="pull left" src="/images/2014-07-18-post-3d-scanning-and-modelling/snapshot03.png" width="320" height="240">
-Finally plugged my Kinect into my computer to try <a href="http://skanect.occipital.com/">Skanect</a>. It&rsquo;s really cool, and amazingly, it&rsquo;s almost as easy to use as their web page makes it out to be.  The one difficulty I encountered was Tristan&rsquo;s dark hair; the sensor kept loosing tracking on the back of his head. Next time, better lighting!</p>
+Finally plugged my Kinect into my computer to try <a href="http://skanect.occipital.com/">Skanect</a>. It&rsquo;s really cool, and amazingly, it&rsquo;s almost as easy to use as their web page makes it out to be.</p>
 
-<p>Then some fun with <a href="http://meshlab.sourceforge.net/">Meshlab</a>- removing the head from this model of a <a href="http://www.thingiverse.com/thing:7202">wizzard on Thingiverse</a> and glueing on Tristan&rsquo;s.</p>
-
-<p>Though in my excitement I made a key mistake- see if you can spot it.</p>
 </div>
   
+  
+    <footer>
+      <div class="btn btn-default">
+        <span>
+          <a href="/blog/2014/07/18/3d-scanning-and-modelling/">Read on &rarr;</a>
+        </span>
+      </div>
+    </footer>
   
 
 
@@ -479,13 +446,18 @@ Finally plugged my Kinect into my computer to try <a href="http://skanect.occipi
 
 
   <div class="entry-content clearfix" itemprop="articleBody description"><p><img class="pull left" src="/images/2014-07-14-post-see-through-display-case/Photo-2014-07-14_2_21_42AM.jpg" width="320" height="240">
-My employer sometimes get&rsquo;s development prototypes of new displays for retail use- and sometimes the manufacturer doesn&rsquo;t want it back. I was very lucky to get this- it&rsquo;s I vertical display case with a transparent LCD monitor on the front. You can show the 3D virtual model floating in front of the printer as it works. Even luckier- our Huxley just fits. Next step: install the printer and ruggedize it so that it can be taken to Sarah&rsquo;s school, and the kids.</p>
+My employer sometimes get&rsquo;s development prototypes of new displays for retail use- and sometimes the manufacturer doesn&rsquo;t want it back.</p>
 
-<p>Only small downside- replaces the cabinet I&rsquo;d built a few wweeks ago.</p>
-
-<p>(Note: the image doesn&rsquo;t do it justice- the lighting is very bright and my phone struggled to capture the full dynamic range.)</p>
 </div>
   
+  
+    <footer>
+      <div class="btn btn-default">
+        <span>
+          <a href="/blog/2014/07/14/see-through-display-case/">Read on &rarr;</a>
+        </span>
+      </div>
+    </footer>
   
 
 
@@ -526,9 +498,16 @@ My employer sometimes get&rsquo;s development prototypes of new displays for ret
   <div class="entry-content clearfix" itemprop="articleBody description"><p><img class="pull left" src="/images/2014-07-13-post-cloths-line-year-later/Photo-2014-07-13_9_47_14AM.jpg" width="320" height="240">
 So what do you do when you find an advertising flag pole in the scrap metal yard? Take it home and turn it into a clothesline, right?</p>
 
-<p>The smell of freshly dried laundry can&rsquo;t be beat. It makes the effort of mixing up a lot more concrete than I expected worth it. Not to mention the &ldquo;maybe this wasn&rsquo;t a good idea&rdquo; thoughts as I drove home with the pole tied to the top of the car and the wind started to catch it as I drove past the airport!</p>
 </div>
   
+  
+    <footer>
+      <div class="btn btn-default">
+        <span>
+          <a href="/blog/2014/07/13/cloths-line-year-later/">Read on &rarr;</a>
+        </span>
+      </div>
+    </footer>
   
 
 
@@ -566,16 +545,20 @@ So what do you do when you find an advertising flag pole in the scrap metal yard
   </header>
 
 
-  <div class="entry-content clearfix" itemprop="articleBody description"><p><img class="pull left" src="/images/2014-06-08-post-vancouver-minimakerfaire-2014/Photo-2014-06-08_11_20_56AM.jpg" width="320" height="240">
-<img class="pull left" src="/images/2014-06-08-post-vancouver-minimakerfaire-2014/Photo-2014-06-08_12_42_02PM.jpg" width="320" height="240">
-<img class="pull left" src="/images/2014-06-08-post-vancouver-minimakerfaire-2014/Photo-2014-06-08_2_29_11PM.jpg" width="320" height="240">
-Another year, another MiniMakerFaire!</p>
+  <div class="entry-content clearfix" itemprop="articleBody description"><p><img class="pull left" src="/images/2014-06-08-post-vancouver-minimakerfaire-2014/Photo-2014-06-08_11_20_56AM.jpg" width="320" height="240"></p>
 
-<p>This is the fourth year Vancouver has had a MiniMakerFaire, and the fourth time we&rsquo;ve attended.</p>
+<p>Another year, another MiniMakerFaire!</p>
 
-<p>It just keeps getting better!</p>
 </div>
   
+  
+    <footer>
+      <div class="btn btn-default">
+        <span>
+          <a href="/blog/2014/06/18/vancouver-minimakerfaire-2014/">Read on &rarr;</a>
+        </span>
+      </div>
+    </footer>
   
 
 
@@ -613,21 +596,20 @@ Another year, another MiniMakerFaire!</p>
   </header>
 
 
-  <div class="entry-content clearfix" itemprop="articleBody description"><p><img class="pull left" src="/images/2014-06-16-post-ruggedizing-huxley/Photo-2014-06-16_5_44_24PM.jpg" width="320" height="240">
-<img class="pull left" src="/images/2014-06-16-post-ruggedizing-huxley/Photo-2014-07-09_7_58_27AM.jpg" width="320" height="240">
-<img class="pull left" src="/images/2014-06-16-post-ruggedizing-huxley/Photo-2014-07-10_11_13_12PM.jpg" width="320" height="240">
-<img class="pull left" src="/images/2014-06-16-post-ruggedizing-huxley/Photo-2014-07-10_11_13_39PM.jpg" width="320" height="240">
-<img class="pull left" src="/images/2014-06-16-post-ruggedizing-huxley/Photo-2014-07-10_11_14_03PM.jpg" width="320" height="240">
-<img class="pull left" src="/images/2014-06-16-post-ruggedizing-huxley/Photo-2014-07-10_11_14_33PM.jpg" width="320" height="240">
-<img class="pull left" src="/images/2014-06-16-post-ruggedizing-huxley/Photo-2014-07-10_11_15_22PM.jpg" width="320" height="240">
-<img class="pull left" src="/images/2014-06-16-post-ruggedizing-huxley/Photo-2014-07-13_11_17_16PM.jpg" width="320" height="240">
-We want to be able to easily move our 3D printer around, including taking it to events and schools.</p>
+  <div class="entry-content clearfix" itemprop="articleBody description"><p><img class="pull left" src="/images/2014-06-16-post-ruggedizing-huxley/Photo-2014-06-16_5_44_24PM.jpg" width="320" height="240"></p>
 
-<p>Thus was born the printer case.  Very nice that everything could be cut out of a single 4&#8217;x4&#8217; sheet of particle board.</p>
+<p>We want to be able to easily move our 3D printer around, including taking it to events and schools.</p>
 
-<p>Only downside- disconnecting everything and rewiring it with plugs. So many wires to solder!</p>
 </div>
   
+  
+    <footer>
+      <div class="btn btn-default">
+        <span>
+          <a href="/blog/2014/06/16/ruggedizing-huxley/">Read on &rarr;</a>
+        </span>
+      </div>
+    </footer>
   
 
 
@@ -666,7 +648,7 @@ We want to be able to easily move our 3D printer around, including taking it to 
               </td>
               <td>
               <div>
-                <h4 class="list-group-item-heading">Julian</h4>
+                <h4 class="list-group-item-heading"><a class='author' href='/authors/julian/'>Julian</a></h4>
                 <p class="list-group-item-text">
           	  		<p>Curious explorer, enjoys encounters with other learners; known to crack bad jokes.</p>
 
@@ -687,7 +669,7 @@ We want to be able to easily move our 3D printer around, including taking it to 
               </td>
               <td>
               <div>
-                <h4 class="list-group-item-heading">Sarah</h4>
+                <h4 class="list-group-item-heading"><a class='author' href='/authors/sarah/'>Sarah</a></h4>
                 <p class="list-group-item-text">
           	  		<p>Teacher, writer, presenter: Sarah is a curious mind who is fascinated by how people learn.</p>
 
@@ -708,7 +690,7 @@ We want to be able to easily move our 3D printer around, including taking it to 
               </td>
               <td>
               <div>
-                <h4 class="list-group-item-heading">Tristan</h4>
+                <h4 class="list-group-item-heading"><a class='author' href='/authors/tristan/'>Tristan</a></h4>
                 <p class="list-group-item-text">
           	  		<p>Cosplay. Nerf. Games :-)</p>
 
@@ -729,7 +711,7 @@ We want to be able to easily move our 3D printer around, including taking it to 
               </td>
               <td>
               <div>
-                <h4 class="list-group-item-heading">Liam</h4>
+                <h4 class="list-group-item-heading"><a class='author' href='/authors/liam/'>Liam</a></h4>
                 <p class="list-group-item-text">
           	  		<p>Explosion, fire, and cannons- That&rsquo;s me, Liam!</p>
 
@@ -777,6 +759,80 @@ We want to be able to easily move our 3D printer around, including taking it to 
   </div>
 
   <div id="recent_pages" class="list-group">
+    
+	    
+        <div class="list-group-item">
+	        <a class="" href="/Notes/Octopress_Setup.html">Octopress Setup</a>
+        </div>
+	    
+    
+	    
+    
+	    
+    
+	    
+    
+	    
+    
+	    
+    
+	    
+        <div class="list-group-item">
+	        <a class="" href="/Notes/Octopress/index.html">Octopress Notes</a>
+        </div>
+	    
+    
+	    
+    
+	    
+    
+	    
+    
+	    
+    
+	    
+    
+	    
+    
+	    
+    
+	    
+    
+	    
+    
+	    
+    
+	    
+    
+	    
+    
+	    
+    
+	    
+    
+	    
+    
+	    
+    
+	    
+    
+	    
+    
+	    
+    
+	    
+    
+	    
+    
+	    
+    
+	    
+    
+	    
+    
+	    
+    
+	    
     
 	    
     
@@ -941,7 +997,7 @@ We want to be able to easily move our 3D printer around, including taking it to 
   </div>
 
 	<div>
-	    <span id="tag-cloud"><a href='/blog/categories/3dprinting' style='font-size: 160.0%'>3dprinting(16)</a> <a href='/blog/categories/adafruit' style='font-size: 103.75%'>adafruit(1)</a> <a href='/blog/categories/android' style='font-size: 103.75%'>android(1)</a> <a href='/blog/categories/arduino' style='font-size: 103.75%'>arduino(1)</a> <a href='/blog/categories/baking' style='font-size: 103.75%'>baking(1)</a> <a href='/blog/categories/build' style='font-size: 103.75%'>build(1)</a> <a href='/blog/categories/building' style='font-size: 122.5%'>building(6)</a> <a href='/blog/categories/crafts' style='font-size: 111.25%'>crafts(3)</a> <a href='/blog/categories/ducttape' style='font-size: 103.75%'>ducttape(1)</a> <a href='/blog/categories/education' style='font-size: 103.75%'>education(1)</a> <a href='/blog/categories/electronics' style='font-size: 107.5%'>electronics(2)</a> <a href='/blog/categories/events' style='font-size: 103.75%'>events(1)</a> <a href='/blog/categories/fillament' style='font-size: 103.75%'>fillament(1)</a> <a href='/blog/categories/furniture' style='font-size: 111.25%'>furniture(3)</a> <a href='/blog/categories/gcode' style='font-size: 103.75%'>gcode(1)</a> <a href='/blog/categories/glassblowing' style='font-size: 103.75%'>glassblowing(1)</a> <a href='/blog/categories/head' style='font-size: 103.75%'>head(1)</a> <a href='/blog/categories/levelling' style='font-size: 103.75%'>levelling(1)</a> <a href='/blog/categories/linux' style='font-size: 103.75%'>linux(1)</a> <a href='/blog/categories/midi' style='font-size: 103.75%'>midi(1)</a> <a href='/blog/categories/minimakerfaire' style='font-size: 111.25%'>minimakerfaire(3)</a> <a href='/blog/categories/minimakerfaire2015' style='font-size: 103.75%'>minimakerfaire2015(1)</a> <a href='/blog/categories/model' style='font-size: 103.75%'>model(1)</a> <a href='/blog/categories/modelling' style='font-size: 103.75%'>modelling(1)</a> <a href='/blog/categories/nerf' style='font-size: 107.5%'>nerf(2)</a> <a href='/blog/categories/pololu' style='font-size: 103.75%'>pololu(1)</a> <a href='/blog/categories/ptfe' style='font-size: 103.75%'>ptfe(1)</a> <a href='/blog/categories/repair' style='font-size: 103.75%'>repair(1)</a> <a href='/blog/categories/skills' style='font-size: 103.75%'>skills(1)</a> <a href='/blog/categories/software' style='font-size: 103.75%'>software(1)</a> <a href='/blog/categories/vancouver' style='font-size: 107.5%'>vancouver(2)</a> <a href='/blog/categories/vr' style='font-size: 103.75%'>vr(1)</a> <a href='/blog/categories/wearables' style='font-size: 103.75%'>wearables(1)</a> </span>
+	    <span id="tag-cloud"><a href='/blog/categories/3dprinting' style='font-size: 160.0%'>3dprinting(17)</a> <a href='/blog/categories/adafruit' style='font-size: 103.52941176470588%'>adafruit(1)</a> <a href='/blog/categories/android' style='font-size: 103.52941176470588%'>android(1)</a> <a href='/blog/categories/arduino' style='font-size: 103.52941176470588%'>arduino(1)</a> <a href='/blog/categories/baking' style='font-size: 103.52941176470588%'>baking(1)</a> <a href='/blog/categories/build' style='font-size: 103.52941176470588%'>build(1)</a> <a href='/blog/categories/building' style='font-size: 121.17647058823529%'>building(6)</a> <a href='/blog/categories/crafts' style='font-size: 110.58823529411765%'>crafts(3)</a> <a href='/blog/categories/ducttape' style='font-size: 103.52941176470588%'>ducttape(1)</a> <a href='/blog/categories/education' style='font-size: 103.52941176470588%'>education(1)</a> <a href='/blog/categories/electronics' style='font-size: 107.05882352941177%'>electronics(2)</a> <a href='/blog/categories/events' style='font-size: 103.52941176470588%'>events(1)</a> <a href='/blog/categories/fillament' style='font-size: 103.52941176470588%'>fillament(1)</a> <a href='/blog/categories/furniture' style='font-size: 110.58823529411765%'>furniture(3)</a> <a href='/blog/categories/gcode' style='font-size: 103.52941176470588%'>gcode(1)</a> <a href='/blog/categories/glassblowing' style='font-size: 103.52941176470588%'>glassblowing(1)</a> <a href='/blog/categories/head' style='font-size: 103.52941176470588%'>head(1)</a> <a href='/blog/categories/levelling' style='font-size: 103.52941176470588%'>levelling(1)</a> <a href='/blog/categories/linux' style='font-size: 103.52941176470588%'>linux(1)</a> <a href='/blog/categories/midi' style='font-size: 103.52941176470588%'>midi(1)</a> <a href='/blog/categories/minimakerfaire' style='font-size: 110.58823529411765%'>minimakerfaire(3)</a> <a href='/blog/categories/minimakerfaire2015' style='font-size: 103.52941176470588%'>minimakerfaire2015(1)</a> <a href='/blog/categories/model' style='font-size: 103.52941176470588%'>model(1)</a> <a href='/blog/categories/modelling' style='font-size: 103.52941176470588%'>modelling(1)</a> <a href='/blog/categories/nerf' style='font-size: 107.05882352941177%'>nerf(2)</a> <a href='/blog/categories/pololu' style='font-size: 103.52941176470588%'>pololu(1)</a> <a href='/blog/categories/ptfe' style='font-size: 103.52941176470588%'>ptfe(1)</a> <a href='/blog/categories/repair' style='font-size: 103.52941176470588%'>repair(1)</a> <a href='/blog/categories/skills' style='font-size: 103.52941176470588%'>skills(1)</a> <a href='/blog/categories/software' style='font-size: 103.52941176470588%'>software(1)</a> <a href='/blog/categories/vancouver' style='font-size: 107.05882352941177%'>vancouver(2)</a> <a href='/blog/categories/vr' style='font-size: 103.52941176470588%'>vr(1)</a> <a href='/blog/categories/wearables' style='font-size: 103.52941176470588%'>wearables(1)</a> </span>
 	</div>
 </section>
 

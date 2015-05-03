@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "Mythical Celebrities"
+author: Julian
 date: 2014-05-24 10:47:03 -0700
 comments: true
 categories: [events]

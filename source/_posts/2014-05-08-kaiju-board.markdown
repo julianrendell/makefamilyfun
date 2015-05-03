@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "Kaiju Board"
+author: Julian
 date: 2014-05-08 12:13:37 -0700
 comments: true
 categories: [3dprinting, arduino, android, building]
@@ -9,12 +10,16 @@ attract_cols:
 attract_rows:
 ---
 {% img pull left /images/2014-05-08-post-kaiju-board/Photo-2014-05-08_12_44_28AM.jpg 320 240 %}
+
+We have a large wall mounted display at the office that is intended to display the status of various systems.  We've yet to find a great app that is both informative and keeps people checking on it.
+
+<!-- more -->
+
 {% img pull left /images/2014-05-08-post-kaiju-board/Photo-2014-05-23_2_35_23AM.jpg 320 240 %}
 {% img pull left /images/2014-05-08-post-kaiju-board/Photo-2014-07-14_6_15_51PM.jpg 320 240 %}
 {% img pull left /images/2014-05-08-post-kaiju-board/Photo-2014-07-14_6_16_16PM.jpg 320 240 %}
 {% img pull left /images/2014-05-08-post-kaiju-board/Photo-2014-07-14_6_17_55PM.jpg 320 240 %}
 {% img pull left /images/2014-05-08-post-kaiju-board/Photo-2014-07-14_6_19_19PM.jpg 320 240 %}
-We have a large wall mounted display at the office that is intended to display the status of various systems.  We've yet to find a great app that is both informative and keeps people checking on it.
 
 We tried [Buildron](http://skahal.com/buildron/) but after a while it crashes and needs to be restarted.  And I never could get the Gravatar integration to work.
 

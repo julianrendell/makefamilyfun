@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "Loft"
+author: julian
 date: 2012-12-16 01:02:51 -0700
 comments: true
 categories: [building, furniture]
@@ -8,13 +9,16 @@ coverimage: /images/2012-12-16-post-loft/Photo-2014-07-15_8_06_03PM.jpg
 attract_cols:
 attract_rows:
 ---
-{% img pull left /images/2012-12-16-post-loft/Photo-2012-12-16_11_51_16AM.jpg 320 240 %}
-{% img pull left /images/2012-12-16-post-loft/Photo-2014-07-15_8_06_03PM.jpg 320 240 %}
-{% img pull left /images/2012-12-16-post-loft/Photo-2014-07-15_8_24_31PM.jpg 320 240 %}
+{% img pull-left /images/2012-12-16-post-loft/Photo-2012-12-16_11_51_16AM.jpg 320 240 %}
 
 My 6 year old has to share a room with his 2 year old brother- who'se fingers are notourious for going everywhere by themselves.
 
 What to do?
+<!-- more -->
+
+{% img pull-left /images/2012-12-16-post-loft/Photo-2014-07-15_8_06_03PM.jpg 320 240 %}
+{% img pull-left /images/2012-12-16-post-loft/Photo-2014-07-15_8_24_31PM.jpg 320 240 %}
+
 
 Create his own private loft.
 

@@ -7,14 +7,6 @@
 	},
 	"buffers":
 	[
-		{
-			"file": "_config.yml",
-			"settings":
-			{
-				"buffer_size": 4579,
-				"line_ending": "Unix"
-			}
-		}
 	],
 	"build_system": "",
 	"build_system_choices":
@@ -53,36 +45,49 @@
 	},
 	"expanded_folders":
 	[
-		"/Users/julian/Dropbox/Projects/makefamilyfun-octopress"
+		"/Users/julian/Dropbox/Projects/makefamilyfun-octopress/public",
+		"/Users/julian/Dropbox/Projects/makefamilyfun-octopress/public/assets",
+		"/Users/julian/Dropbox/Projects/makefamilyfun-octopress/source",
+		"/Users/julian/Dropbox/Projects/makefamilyfun-octopress/source/_includes/custom",
+		"/Users/julian/Dropbox/Projects/makefamilyfun-octopress/source/assets",
+		"/Users/julian/Dropbox/Projects/makefamilyfun-octopress/source/assets/stylesheets"
 	],
 	"file_history":
 	[
+		"/Users/julian/Dropbox/Projects/makefamilyfun-octopress/source/assets/bootstrap/dist/css/bootstrap.css",
+		"/Users/julian/Dropbox/Projects/makefamilyfun-octopress/source/_layouts/post.html",
+		"/Users/julian/Dropbox/Projects/makefamilyfun-octopress/_config.yml",
+		"/Users/julian/Dropbox/Projects/makefamilyfun-octopress/source/assets/stylesheets/site.css",
+		"/Users/julian/Dropbox/Projects/makefamilyfun-octopress/source/index.html",
+		"/Users/julian/Dropbox/Projects/makefamilyfun-octopress/source/_includes/article.html",
+		"/Users/julian/Dropbox/Projects/makefamilyfun-octopress/source/_layouts/page.html",
+		"/Users/julian/Dropbox/Projects/makefamilyfun-octopress/source/blog/index.html",
+		"/Users/julian/Dropbox/Projects/makefamilyfun-octopress/source/_includes/archive_post.html",
+		"/Users/julian/Dropbox/Projects/makefamilyfun-octopress/source/_includes/custom/header.html",
+		"/Users/julian/Dropbox/Projects/makefamilyfun-octopress/source/_includes/custom/head.html",
+		"/Users/julian/Dropbox/Projects/makefamilyfun-octopress/source/_includes/custom/asides/recent_posts.html",
+		"/Users/julian/Dropbox/Projects/makefamilyfun-octopress/source/_includes/custom/footer.html",
+		"/Users/julian/Dropbox/Projects/makefamilyfun-octopress/source/_includes/post/author.html",
+		"/Users/julian/Dropbox/Projects/makefamilyfun-octopress/source/_includes/custom/asides/recent_pages.html",
+		"/Users/julian/Dropbox/Projects/makefamilyfun-octopress/source/_includes/asides/recent_posts.html",
 		"/Users/julian/Documents/Arduino/libraries/PS2X_lib/PS2X_lib.h",
 		"/Users/julian/Dropbox/Projects/makefamilyfun-octopress/source/_includes/custom/navigation.html",
 		"/Users/julian/Dropbox/Projects/makefamilyfun-octopress/source/_includes/custom/asides/about.html",
 		"/Users/julian/Dropbox/Projects/makefamilyfun-octopress/source/_includes/asides/github.html",
 		"/Users/julian/Dropbox/Projects/makefamilyfun-octopress/source/javascripts/github.js",
-		"/Users/julian/Dropbox/Projects/makefamilyfun-octopress/source/_includes/asides/recent_posts.html",
 		"/Users/julian/Dropbox/Projects/makefamilyfun-octopress/source/_includes/header.html",
 		"/Users/julian/Dropbox/Projects/makefamilyfun-octopress/source/assets/bootstrap/docs/_layouts/home.html",
-		"/Users/julian/Dropbox/Projects/makefamilyfun-octopress/source/_includes/custom/header.html",
-		"/Users/julian/Dropbox/Projects/makefamilyfun-octopress/source/_includes/archive_post.html",
 		"/Users/julian/Dropbox/Projects/makefamilyfun-octopress/source/assets/bootstrap/docs/_includes/nav-main.html",
 		"/Users/julian/Downloads/EDH_Deckbox_V2_Island2.gcode",
 		"/Users/julian/Library/Application Support/Sublime Text 3/Packages/GoSublime/USAGE.md",
 		"/Users/julian/Dropbox/Projects/makefamilyfun-octopress/.gitmodules",
-		"/Users/julian/Dropbox/Projects/makefamilyfun-octopress/source/index.html",
 		"/Users/julian/Dropbox/Projects/makefamilyfun-octopress/source/_layouts/default.html",
 		"/Users/julian/Dropbox/Projects/makefamilyfun-octopress/source/_includes/head.html",
-		"/Users/julian/Dropbox/Projects/makefamilyfun-octopress/source/_includes/custom/asides/recent_posts.html",
-		"/Users/julian/Dropbox/Projects/makefamilyfun-octopress/source/_includes/custom/asides/recent_pages.html",
 		"/Users/julian/Dropbox/Projects/makefamilyfun-octopress/source/_includes/navigation.html",
-		"/Users/julian/Dropbox/Projects/makefamilyfun-octopress/source/_includes/custom/head.html",
 		"/Users/julian/Dropbox/Projects/makefamilyfun-octopress/plugins/category_generator.rb",
 		"/Users/julian/Dropbox/Projects/makefamilyfun-octopress/plugins/code_block.rb",
 		"/Users/julian/Dropbox/Projects/makefamilyfun-octopress/plugins/include_code.rb",
 		"/Users/julian/Dropbox/Projects/makefamilyfun-octopress/public/sitemap.xml",
-		"/Users/julian/Dropbox/Projects/makefamilyfun-octopress/_config.yml",
 		"/Users/julian/Dropbox/Projects/makefamilyfun-octopress/Gemfile",
 		"/Users/julian/Dropbox/Projects/makefamilyfun-octopress/Rakefile",
 		"/Users/julian/Downloads/EDH_Deckbox_V2_Island.gcode",
@@ -118,6 +123,13 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"blog archives",
+			"span",
+			"blog archives",
+			"previous",
+			"></",
+			"previous",
+			"recent blog entries",
 			"site\\.subtitle",
 			"header\\.html",
 			"h1.*site\\.title",
@@ -141,37 +153,8 @@
 	"groups":
 	[
 		{
-			"selected": 0,
 			"sheets":
 			[
-				{
-					"buffer": 0,
-					"file": "_config.yml",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 4579,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								2625,
-								2625
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/YAML/YAML.tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 464.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 0,
-					"type": "text"
-				}
 			]
 		}
 	],
@@ -181,7 +164,7 @@
 	},
 	"input":
 	{
-		"height": 0.0
+		"height": 31.0
 	},
 	"layout":
 	{
@@ -260,7 +243,7 @@
 	"show_open_files": false,
 	"show_tabs": true,
 	"side_bar_visible": true,
-	"side_bar_width": 150.0,
+	"side_bar_width": 224.0,
 	"status_bar_visible": true,
 	"template_settings":
 	{

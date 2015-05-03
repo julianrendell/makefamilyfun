@@ -162,120 +162,6 @@
 
 
 
-<p>This goes back a long time- when I was in high-school, one of my friends used to make the Apple IIe drives play music.</p>
-
-
-
-
-<p>Most of these techniques involve moving a part of the machine rapidly back-and-forward hundreds to thousands of times a second.</p>
-
-
-
-
-<p>For a well built, sturdy machine, there&rsquo;s probably no harm.</p>
-
-
-
-
-<p>Then again, those Apple IIe&rsquo;s often seemed to have failing drives&hellip;</p>
-
-
-
-
-<p>But did you know that many 3D Printers include a buzzer?</p>
-
-
-
-
-<p>Take a look at the <a href="http://reprap.org/wiki/G-code#M300:_Play_beep_sound"><code>M300</code></a> command.</p>
-
-
-
-
-<p>Wouldn&rsquo;t it be nice to have the printer play a tune when it&rsquo;s finished?</p>
-
-
-
-
-<p>But what to do - it&rsquo;s a bit hard to figure out how to write music out as combinations of frequency and duration.</p>
-
-
-
-
-<p>Luckily there are some standard ways of storing musical data, such as <a href="http://en.wikipedia.org/wiki/MIDI">MIDI</a>, and we can write a program to convert from that to <code>M300</code> commands.</p>
-
-
-
-
-<p>MIDI records music as a note number and a relative duration. So converting the timing of the notes is going to be pretty easy: <code>MIDI Duration * time per beat = M300 duration</code>.</p>
-
-
-
-
-<p>The note numbers represent octave and regualar &ldquo;C, D, E, F, G, A, B&rdquo; notes.</p>
-
-
-
-
-<p>We need a way of converting from these octave/notes to a frequency (how many times the speaker will move per second).</p>
-
-
-
-
-<p>A couple of facts that will help us:</p>
-
-
-
-
-<ul>
-<li>Going from a lower note to the same note one octave higher means a doubling in frequency</li>
-<li>there are 12 notes per octice (including sharps and flats)</li>
-<li>most tunings are based on &lsquo;Concert A&rsquo; which is the A above Middle C</li>
-<li>concert A is defined as being 440Hz</li>
-<li>MIDI represents concert A as not number 69</li>
-</ul>
-
-
-
-
-<p>If you combine all of these together, you&rsquo;ll get a formula like:</p>
-
-
-
-
-<p><code>freq = 440 * 2^((n-69)/12)</code></p>
-
-
-
-
-<p>(I admit- I cheated a bit, and found this <a href="http://www.dzone.com/snippets/midi-note-number-and-frequency">Python snippet</a>.)</p>
-
-
-
-
-<p>So now we have some rules, or formulae, that will let us convert from MIDI note number/duration pairs to <code>M300</code> g-code commands.</p>
-
-
-
-
-<p>But how do we read the MIDI data.</p>
-
-
-
-
-<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-<span class='line-number'>2</span>
-<span class='line-number'>3</span>
-<span class='line-number'>4</span>
-</pre></td><td class='code'><pre><code class=''><span class='line'>&gt;&gt;&gt; for message in track:
-</span><span class='line'>...     if message.type == 'note_on':
-</span><span class='line'>...             if message.time &gt; 0:
-</span><span class='line'>...                     print "M300 S%d S%d" % (440.0*pow(2.0, ((message.note - 69.0) / 12.0)), message.time * 10)
-</span></code></pre></td></tr></table></div></figure>
-
-
-
-
             
         </div>
         <script>
@@ -316,7 +202,10 @@
 
 
 
-<p><p>You often hear it being described in terms of &ldquo;water tightness&rdquo;,</p>
+<p>You often hear it being described in terms of &ldquo;water tightness&rdquo;, but that hasn&rsquo;t helped me to understand it.</p>
+
+
+
 
             
         </div>
@@ -827,6 +716,309 @@
 
       
         
+           <div class="item panel panel-heading" id = "page-item-1">
+              <ul class="nav nav-pills">
+                <li class="active"><a href="/Notes/Octopress_Setup.html">Octopress Setup</a></li>
+              </ul>
+              
+                <p>Reminders about the plugins and other configuration for this site.</p>
+
+
+
+
+<h2>Notes</h2>
+
+
+
+
+<ul>
+<li><p>For <a href="http://heroku.com">Heroku</a> deployment, all git submodules need to be added via their public (<code>https</code>) repository URLs. You can&rsquo;t add a (private) <code>ssh</code> key to your <a href="http://heroku.com">Heroku</a> account to access your <a href="http://github.com">Github</a> repositories. Which makes sense if you think about it.</p></li>
+<li><p>Had to add extra <code>span</code> elements in various places to make the <code>css</code> animations I added to <code>a</code> links work correctly.</p></li>
+</ul>
+
+
+
+
+<h2>Layouts</h2>
+
+
+
+
+<p>Using <a href="http://kaworu.github.io/octostrap3/">Octostrap3</a>.</p>
+
+
+
+
+<h2>Plugins</h2>
+
+
+
+
+<h3>Plant UML</h3>
+
+
+
+
+<ul>
+<li>Git repo <code>https://github.com/yjpark/jekyll-plantuml.git</code></li>
+<li>Added as a sub-module to plugins</li>
+</ul>
+
+
+
+
+<p><em>Test</em></p>
+
+
+
+
+<p><img src='/images/plantuml/85cb0da0fb3d91900a3b0f380c3b1f51.png'></p>
+
+
+
+
+<h3>AppBox Octopress</h3>
+
+
+
+
+<ul>
+<li>Git repo: <a href="https://github.com/sotsy/appbox-octopress">https://github.com/sotsy/appbox-octopress</a></li>
+</ul>
+
+
+
+
+<p><em>Test</em></p>
+
+
+
+
+<p><em>Appstore</em></p>
+
+
+
+
+<p><em>GooglePlay</em></p>
+
+
+
+
+<h3>Wikipedia</h3>
+
+
+
+
+<ul>
+<li>Git repo: <a href="https://github.com/pferreir/octopress-wikipedia.git">https://github.com/pferreir/octopress-wikipedia.git</a></li>
+<li>Note- bit of a pain to set up, need to manually modify theme in use</li>
+</ul>
+
+
+
+
+<p><em>Test</em></p>
+
+
+
+
+<div class="wikipedia">
+  
+    <img src="//upload.wikimedia.org/wikipedia/commons/thumb/b/b2/BetaStirlingTG4web.svg/250px-BetaStirlingTG4web.svg.png" alt="Image from Wikipedia" />
+  
+  <h2>Stirling engine</h2>
+  <div>
+    <p>A <strong>Stirling engine</strong> is a <a href="http://en.wikipedia.org/wiki/Heat_engine" title="Heat engine">heat engine</a> operating by cyclic compression and expansion of air or other gas, the <i><a href="http://en.wikipedia.org/wiki/Working_fluid" title="Working fluid">working fluid</a></i>, at different temperature levels such that there is a net conversion of <a href="http://en.wikipedia.org/wiki/Heat" title="Heat">heat</a> energy to mechanical <a href="http://en.wikipedia.org/wiki/Work_(physics)" title="Work (physics)">work</a>.   Or more specifically, a closed-cycle regenerative heat engine with a permanently <a href="http://en.wikipedia.org/wiki/Gas" title="Gas">gaseous</a> working fluid, where <i>closed-cycle</i> is defined as a <a href="http://en.wikipedia.org/wiki/Thermodynamic_system" title="Thermodynamic system">thermodynamic system</a> in which the working fluid is permanently contained within the system, and <i>regenerative</i> describes the use of a specific type of internal <a href="http://en.wikipedia.org/wiki/Heat_exchanger" title="Heat exchanger">heat exchanger</a> and thermal store, known as the <a href="http://en.wikipedia.org/wiki/Regenerative_heat_exchanger" title="Regenerative heat exchanger"><i>regenerator</i></a>. It is the inclusion of a regenerator that differentiates the Stirling engine from other closed cycle <a href="http://en.wikipedia.org/wiki/Hot_air_engines" title="Hot air engines" class="mw-redirect">hot air engines</a>, although many use the term to refer to any of this type of engine. 
+</p>
+  </div>
+  <a href="http://en.wikipedia.org/wiki/Stirling Engine">Read more</a>
+</div>
+
+
+
+
+<h3>Highlight</h3>
+
+
+
+
+<ul>
+<li>Git repo: <a href="https://github.com/thesp0nge/octopress_highlight_plugin.git">https://github.com/thesp0nge/octopress_highlight_plugin.git</a></li>
+<li>also need to modify <code>_layout.scss</code></li>
+</ul>
+
+
+
+
+<p><em>Test</em></p>
+
+
+
+
+<p><span class="fluo">this is a great piece of wisdom </span>, this is not.</p>
+
+
+
+
+<h3>Gemoji</h3>
+
+
+
+
+<ul>
+<li>Git repo: <a href="https://github.com/rcmdnk/octopress-gemoji">https://github.com/rcmdnk/octopress-gemoji</a></li>
+<li><a href="http://www.emoji-cheat-sheet.com/">Emoji cheatsheet</a></li>
+</ul>
+
+
+
+
+<p><em>Test</em></p>
+
+
+
+
+<p><img alt="smile" src="/images/emoji/unicode/1f604.png" class="emoji" /></p>
+
+
+
+
+<h3>Gravatar</h3>
+
+
+
+
+<ul>
+<li>Git repo: <a href="https://github.com/joet3ch/gravatar-octopress.git">https://github.com/joet3ch/gravatar-octopress.git</a></li>
+</ul>
+
+
+
+
+<h3>Jekyll Author</h3>
+
+
+
+
+<ul>
+<li>(My fork) Git repo: <a href="https://github.com/julianrendell/jekyll-author-plugin.git">https://github.com/julianrendell/jekyll-author-plugin.git</a></li>
+</ul>
+
+
+
+
+              
+          </div>
+          <script>
+            setItemSizeAndBackground(
+                "#page-item-1",
+                 2
+                ,
+                 2
+                ,
+                ""
+              );
+            </script>
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+           <div class="item panel panel-heading" id = "page-item-7">
+              <ul class="nav nav-pills">
+                <li class="active"><a href="/Notes/Octopress/index.html">Octopress Notes</a></li>
+              </ul>
+              
+                <h1>Site Mechanics</h1>
+
+
+
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>rake preview
+</span><span class='line'>rake generate
+</span><span class='line'>rake deploy</span></code></pre></td></tr></table></div></figure>
+
+
+
+
+              
+          </div>
+          <script>
+            setItemSizeAndBackground(
+                "#page-item-7",
+                 2
+                ,
+                 2
+                ,
+                ""
+              );
+            </script>
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
       
         
       
@@ -1002,7 +1194,7 @@
               </td>
               <td>
               <div>
-                <h4 class="list-group-item-heading">Julian</h4>
+                <h4 class="list-group-item-heading"><a class='author' href='/authors/julian/'>Julian</a></h4>
                 <p class="list-group-item-text">
           	  		<p>Curious explorer, enjoys encounters with other learners; known to crack bad jokes.</p>
 
@@ -1023,7 +1215,7 @@
               </td>
               <td>
               <div>
-                <h4 class="list-group-item-heading">Sarah</h4>
+                <h4 class="list-group-item-heading"><a class='author' href='/authors/sarah/'>Sarah</a></h4>
                 <p class="list-group-item-text">
           	  		<p>Teacher, writer, presenter: Sarah is a curious mind who is fascinated by how people learn.</p>
 
@@ -1044,7 +1236,7 @@
               </td>
               <td>
               <div>
-                <h4 class="list-group-item-heading">Tristan</h4>
+                <h4 class="list-group-item-heading"><a class='author' href='/authors/tristan/'>Tristan</a></h4>
                 <p class="list-group-item-text">
           	  		<p>Cosplay. Nerf. Games :-)</p>
 
@@ -1065,7 +1257,7 @@
               </td>
               <td>
               <div>
-                <h4 class="list-group-item-heading">Liam</h4>
+                <h4 class="list-group-item-heading"><a class='author' href='/authors/liam/'>Liam</a></h4>
                 <p class="list-group-item-text">
           	  		<p>Explosion, fire, and cannons- That&rsquo;s me, Liam!</p>
 
@@ -1113,6 +1305,80 @@
   </div>
 
   <div id="recent_pages" class="list-group">
+    
+	    
+        <div class="list-group-item">
+	        <a class="" href="/Notes/Octopress_Setup.html">Octopress Setup</a>
+        </div>
+	    
+    
+	    
+    
+	    
+    
+	    
+    
+	    
+    
+	    
+    
+	    
+        <div class="list-group-item">
+	        <a class="" href="/Notes/Octopress/index.html">Octopress Notes</a>
+        </div>
+	    
+    
+	    
+    
+	    
+    
+	    
+    
+	    
+    
+	    
+    
+	    
+    
+	    
+    
+	    
+    
+	    
+    
+	    
+    
+	    
+    
+	    
+    
+	    
+    
+	    
+    
+	    
+    
+	    
+    
+	    
+    
+	    
+    
+	    
+    
+	    
+    
+	    
+    
+	    
+    
+	    
+    
+	    
+    
+	    
+    
+	    
     
 	    
     
@@ -1277,7 +1543,7 @@
   </div>
 
 	<div>
-	    <span id="tag-cloud"><a href='/blog/categories/3dprinting' style='font-size: 160.0%'>3dprinting(16)</a> <a href='/blog/categories/adafruit' style='font-size: 103.75%'>adafruit(1)</a> <a href='/blog/categories/android' style='font-size: 103.75%'>android(1)</a> <a href='/blog/categories/arduino' style='font-size: 103.75%'>arduino(1)</a> <a href='/blog/categories/baking' style='font-size: 103.75%'>baking(1)</a> <a href='/blog/categories/build' style='font-size: 103.75%'>build(1)</a> <a href='/blog/categories/building' style='font-size: 122.5%'>building(6)</a> <a href='/blog/categories/crafts' style='font-size: 111.25%'>crafts(3)</a> <a href='/blog/categories/ducttape' style='font-size: 103.75%'>ducttape(1)</a> <a href='/blog/categories/education' style='font-size: 103.75%'>education(1)</a> <a href='/blog/categories/electronics' style='font-size: 107.5%'>electronics(2)</a> <a href='/blog/categories/events' style='font-size: 103.75%'>events(1)</a> <a href='/blog/categories/fillament' style='font-size: 103.75%'>fillament(1)</a> <a href='/blog/categories/furniture' style='font-size: 111.25%'>furniture(3)</a> <a href='/blog/categories/gcode' style='font-size: 103.75%'>gcode(1)</a> <a href='/blog/categories/glassblowing' style='font-size: 103.75%'>glassblowing(1)</a> <a href='/blog/categories/head' style='font-size: 103.75%'>head(1)</a> <a href='/blog/categories/levelling' style='font-size: 103.75%'>levelling(1)</a> <a href='/blog/categories/linux' style='font-size: 103.75%'>linux(1)</a> <a href='/blog/categories/midi' style='font-size: 103.75%'>midi(1)</a> <a href='/blog/categories/minimakerfaire' style='font-size: 111.25%'>minimakerfaire(3)</a> <a href='/blog/categories/minimakerfaire2015' style='font-size: 103.75%'>minimakerfaire2015(1)</a> <a href='/blog/categories/model' style='font-size: 103.75%'>model(1)</a> <a href='/blog/categories/modelling' style='font-size: 103.75%'>modelling(1)</a> <a href='/blog/categories/nerf' style='font-size: 107.5%'>nerf(2)</a> <a href='/blog/categories/pololu' style='font-size: 103.75%'>pololu(1)</a> <a href='/blog/categories/ptfe' style='font-size: 103.75%'>ptfe(1)</a> <a href='/blog/categories/repair' style='font-size: 103.75%'>repair(1)</a> <a href='/blog/categories/skills' style='font-size: 103.75%'>skills(1)</a> <a href='/blog/categories/software' style='font-size: 103.75%'>software(1)</a> <a href='/blog/categories/vancouver' style='font-size: 107.5%'>vancouver(2)</a> <a href='/blog/categories/vr' style='font-size: 103.75%'>vr(1)</a> <a href='/blog/categories/wearables' style='font-size: 103.75%'>wearables(1)</a> </span>
+	    <span id="tag-cloud"><a href='/blog/categories/3dprinting' style='font-size: 160.0%'>3dprinting(17)</a> <a href='/blog/categories/adafruit' style='font-size: 103.52941176470588%'>adafruit(1)</a> <a href='/blog/categories/android' style='font-size: 103.52941176470588%'>android(1)</a> <a href='/blog/categories/arduino' style='font-size: 103.52941176470588%'>arduino(1)</a> <a href='/blog/categories/baking' style='font-size: 103.52941176470588%'>baking(1)</a> <a href='/blog/categories/build' style='font-size: 103.52941176470588%'>build(1)</a> <a href='/blog/categories/building' style='font-size: 121.17647058823529%'>building(6)</a> <a href='/blog/categories/crafts' style='font-size: 110.58823529411765%'>crafts(3)</a> <a href='/blog/categories/ducttape' style='font-size: 103.52941176470588%'>ducttape(1)</a> <a href='/blog/categories/education' style='font-size: 103.52941176470588%'>education(1)</a> <a href='/blog/categories/electronics' style='font-size: 107.05882352941177%'>electronics(2)</a> <a href='/blog/categories/events' style='font-size: 103.52941176470588%'>events(1)</a> <a href='/blog/categories/fillament' style='font-size: 103.52941176470588%'>fillament(1)</a> <a href='/blog/categories/furniture' style='font-size: 110.58823529411765%'>furniture(3)</a> <a href='/blog/categories/gcode' style='font-size: 103.52941176470588%'>gcode(1)</a> <a href='/blog/categories/glassblowing' style='font-size: 103.52941176470588%'>glassblowing(1)</a> <a href='/blog/categories/head' style='font-size: 103.52941176470588%'>head(1)</a> <a href='/blog/categories/levelling' style='font-size: 103.52941176470588%'>levelling(1)</a> <a href='/blog/categories/linux' style='font-size: 103.52941176470588%'>linux(1)</a> <a href='/blog/categories/midi' style='font-size: 103.52941176470588%'>midi(1)</a> <a href='/blog/categories/minimakerfaire' style='font-size: 110.58823529411765%'>minimakerfaire(3)</a> <a href='/blog/categories/minimakerfaire2015' style='font-size: 103.52941176470588%'>minimakerfaire2015(1)</a> <a href='/blog/categories/model' style='font-size: 103.52941176470588%'>model(1)</a> <a href='/blog/categories/modelling' style='font-size: 103.52941176470588%'>modelling(1)</a> <a href='/blog/categories/nerf' style='font-size: 107.05882352941177%'>nerf(2)</a> <a href='/blog/categories/pololu' style='font-size: 103.52941176470588%'>pololu(1)</a> <a href='/blog/categories/ptfe' style='font-size: 103.52941176470588%'>ptfe(1)</a> <a href='/blog/categories/repair' style='font-size: 103.52941176470588%'>repair(1)</a> <a href='/blog/categories/skills' style='font-size: 103.52941176470588%'>skills(1)</a> <a href='/blog/categories/software' style='font-size: 103.52941176470588%'>software(1)</a> <a href='/blog/categories/vancouver' style='font-size: 107.05882352941177%'>vancouver(2)</a> <a href='/blog/categories/vr' style='font-size: 103.52941176470588%'>vr(1)</a> <a href='/blog/categories/wearables' style='font-size: 103.52941176470588%'>wearables(1)</a> </span>
 	</div>
 </section>
 

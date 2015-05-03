@@ -4,7 +4,7 @@
   <title><![CDATA[Category: Pololu | Make. Family. Fun.]]></title>
   <link href="http://www.makefamilyfun.ca/blog/categories/pololu/atom.xml" rel="self"/>
   <link href="http://www.makefamilyfun.ca/"/>
-  <updated>2015-05-02T01:48:52-07:00</updated>
+  <updated>2015-05-03T00:49:05-07:00</updated>
   <id>http://www.makefamilyfun.ca/</id>
   <author>
     <name><![CDATA[Julian Rendell & Sarah Dakin]]></name>
@@ -18,13 +18,16 @@
     <link href="http://www.makefamilyfun.ca/blog/2013/10/06/replacement-pololus/"/>
     <updated>2013-10-06T20:40:45-07:00</updated>
     <id>http://www.makefamilyfun.ca/blog/2013/10/06/replacement-pololus</id>
-    <content type="html"><![CDATA[<p><img class="pull left" src="/images/2013-10-06-post-replacement-pololus/Photo-2013-10-06_12_01_31AM.jpg" width="320" height="240" title="Sparkfun Mighty Stepper" ></p>
-
-<p><img class="pull left" src="/images/2013-10-06-post-replacement-pololus/Photo-2013-10-05_11_30_02PM.jpg" width="320" height="240" title="The Awesome 8250 drivers" ></p>
-
-<p><img class="pull left" src="/images/2013-10-06-post-replacement-pololus/Photo-2013-10-06_12_04_57AM.jpg" width="320" height="240" title="The Awesome 8250 drivers" ></p>
+    <content type="html"><![CDATA[<p><img class="pull-left" src="/images/2013-10-06-post-replacement-pololus/Photo-2013-10-06_12_01_31AM.jpg" width="320" height="240" title="Sparkfun Mighty Stepper" ></p>
 
 <p>Smoother. Quieter. More reliable.</p>
+
+<!-- more -->
+
+
+<p><img class="pull-left" src="/images/2013-10-06-post-replacement-pololus/Photo-2013-10-05_11_30_02PM.jpg" width="320" height="240" title="The Awesome 8250 drivers" ></p>
+
+<p><img class="pull-left" src="/images/2013-10-06-post-replacement-pololus/Photo-2013-10-06_12_04_57AM.jpg" width="320" height="240" title="The Awesome 8250 drivers" ></p>
 
 <p>Seems to be any over Pololu compatible driver board than the ones that I&rsquo;ve got.</p>
 

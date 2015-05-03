@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "Printer Music"
+author: Julian
 date: 2014-08-02 11:58:06 -0700
 comments: true
 categories: [3dprinting, midi, gcode]
@@ -8,6 +9,8 @@ categories: [3dprinting, midi, gcode]
 ---
 
 If you look around the internet you can find videos and articles describing various ways of making 3d printers, laser cutters, CNC machines, and other computer controlled devices make sounds.
+
+<!-- more -->
 
 This goes back a long time- when I was in high-school, one of my friends used to make the Apple IIe drives play music.
 

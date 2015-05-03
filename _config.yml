@@ -115,6 +115,9 @@ plantuml:
 # Emoji
 emoji_dir: /images/emoji
 
+# Jekyll Author
+author_title_prefix: 'Items Written by ' 
+
 # Custom About
 authors: [
 			{

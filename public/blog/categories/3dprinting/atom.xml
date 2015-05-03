@@ -4,7 +4,7 @@
   <title><![CDATA[Category: 3dprinting | Make. Family. Fun.]]></title>
   <link href="http://www.makefamilyfun.ca/blog/categories/3dprinting/atom.xml" rel="self"/>
   <link href="http://www.makefamilyfun.ca/"/>
-  <updated>2015-05-02T01:48:52-07:00</updated>
+  <updated>2015-05-03T00:49:05-07:00</updated>
   <id>http://www.makefamilyfun.ca/</id>
   <author>
     <name><![CDATA[Julian Rendell & Sarah Dakin]]></name>
@@ -19,6 +19,9 @@
     <updated>2014-08-02T11:58:06-07:00</updated>
     <id>http://www.makefamilyfun.ca/blog/2014/08/02/printer-music</id>
     <content type="html"><![CDATA[<p>If you look around the internet you can find videos and articles describing various ways of making 3d printers, laser cutters, CNC machines, and other computer controlled devices make sounds.</p>
+
+<!-- more -->
+
 
 <p>This goes back a long time- when I was in high-school, one of my friends used to make the Apple IIe drives play music.</p>
 
@@ -74,13 +77,45 @@
   </entry>
   
   <entry>
+    <title type="html"><![CDATA[What Is Manifold?]]></title>
+    <link href="http://www.makefamilyfun.ca/blog/2014/07/18/what-is-manifold/"/>
+    <updated>2014-07-18T01:54:37-07:00</updated>
+    <id>http://www.makefamilyfun.ca/blog/2014/07/18/what-is-manifold</id>
+    <content type="html"><![CDATA[<p>This is a term that comes up a lot in 3D printing. Non-manifold models cause a lot of problems and lead to failed prints.</p>
+
+<p>You often hear it being described in terms of &ldquo;water tightness&rdquo;, but that hasn&rsquo;t helped me to understand it.</p>
+
+<!-- more -->
+
+
+<p>But <a href="http://www.iheartrobotics.com/2010/01/openscad-tip-manifold-space-and-time.html">this</a> post did, especially <a href="http://www.iheartrobotics.com/2010/01/openscad-tip-manifold-space-and-time.html?showComment=1264551125102#c7892813172347887917">this comment</a>:</p>
+
+<blockquote><p>Dominic Muren said&hellip;
+While &ldquo;watertightness&rdquo; is a nice by-product of a manifold mesh, the real test of whether a mesh is manifold or not is that all edges must be shared by exactly two polygons (usually triangles). If we think about a hole (or a leak, in terms of watertightness) that would be a triangle with an edge used by only one polygon. But another way to make a non-manifold, but still technically watertight mesh is to take a manifold mesh and connect two arbitrary edges with a triangle &ndash; that would create at least one edge shared by three polygons.</p>
+
+<p>nd outside are, if there are multiple volumes enclosed by meshes.</p>
+
+<p>In this case, it looks like you might have had an errant triangle, or an edge that didn&rsquo;t terminate correctly, because of how many edges shared that upper vertex. Making the step freed the vertex up.</p></blockquote>
+
+<p>Extra: technically we want models to be 2-manifold.</p>
+
+<p>And <a href="http://www.cs.mtu.edu/~shene/COURSES/cs3621/NOTES/model/manifold.html">some more information here.</a></p>
+]]></content>
+  </entry>
+  
+  <entry>
     <title type="html"><![CDATA[3D Scanning and Modelling]]></title>
     <link href="http://www.makefamilyfun.ca/blog/2014/07/18/3d-scanning-and-modelling/"/>
     <updated>2014-07-18T01:31:01-07:00</updated>
     <id>http://www.makefamilyfun.ca/blog/2014/07/18/3d-scanning-and-modelling</id>
     <content type="html"><![CDATA[<p><img class="pull left" src="/images/2014-07-18-post-3d-scanning-and-modelling/snapshot02.png" width="320" height="240">
 <img class="pull left" src="/images/2014-07-18-post-3d-scanning-and-modelling/snapshot03.png" width="320" height="240">
-Finally plugged my Kinect into my computer to try <a href="http://skanect.occipital.com/">Skanect</a>. It&rsquo;s really cool, and amazingly, it&rsquo;s almost as easy to use as their web page makes it out to be.  The one difficulty I encountered was Tristan&rsquo;s dark hair; the sensor kept loosing tracking on the back of his head. Next time, better lighting!</p>
+Finally plugged my Kinect into my computer to try <a href="http://skanect.occipital.com/">Skanect</a>. It&rsquo;s really cool, and amazingly, it&rsquo;s almost as easy to use as their web page makes it out to be.</p>
+
+<!-- more -->
+
+
+<p>The one difficulty I encountered was Tristan&rsquo;s dark hair; the sensor kept loosing tracking on the back of his head. Next time, better lighting!</p>
 
 <p>Then some fun with <a href="http://meshlab.sourceforge.net/">Meshlab</a>- removing the head from this model of a <a href="http://www.thingiverse.com/thing:7202">wizzard on Thingiverse</a> and glueing on Tristan&rsquo;s.</p>
 
@@ -104,32 +139,16 @@ Finally plugged my Kinect into my computer to try <a href="http://skanect.occipi
     <updated>2014-07-14T10:55:42-07:00</updated>
     <id>http://www.makefamilyfun.ca/blog/2014/07/14/see-through-display-case</id>
     <content type="html"><![CDATA[<p><img class="pull left" src="/images/2014-07-14-post-see-through-display-case/Photo-2014-07-14_2_21_42AM.jpg" width="320" height="240">
-My employer sometimes get&rsquo;s development prototypes of new displays for retail use- and sometimes the manufacturer doesn&rsquo;t want it back. I was very lucky to get this- it&rsquo;s I vertical display case with a transparent LCD monitor on the front. You can show the 3D virtual model floating in front of the printer as it works. Even luckier- our Huxley just fits. Next step: install the printer and ruggedize it so that it can be taken to Sarah&rsquo;s school, and the kids.</p>
+My employer sometimes get&rsquo;s development prototypes of new displays for retail use- and sometimes the manufacturer doesn&rsquo;t want it back.</p>
+
+<!-- more -->
+
+
+<p>I was very lucky to get this- it&rsquo;s I vertical display case with a transparent LCD monitor on the front. You can show the 3D virtual model floating in front of the printer as it works. Even luckier- our Huxley just fits. Next step: install the printer and ruggedize it so that it can be taken to Sarah&rsquo;s school, and the kids.</p>
 
 <p>Only small downside- replaces the cabinet I&rsquo;d built a few wweeks ago.</p>
 
 <p>(Note: the image doesn&rsquo;t do it justice- the lighting is very bright and my phone struggled to capture the full dynamic range.)</p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[Ruggedizing Huxley]]></title>
-    <link href="http://www.makefamilyfun.ca/blog/2014/06/16/ruggedizing-huxley/"/>
-    <updated>2014-06-16T12:48:53-07:00</updated>
-    <id>http://www.makefamilyfun.ca/blog/2014/06/16/ruggedizing-huxley</id>
-    <content type="html"><![CDATA[<p><img class="pull left" src="/images/2014-06-16-post-ruggedizing-huxley/Photo-2014-06-16_5_44_24PM.jpg" width="320" height="240">
-<img class="pull left" src="/images/2014-06-16-post-ruggedizing-huxley/Photo-2014-07-09_7_58_27AM.jpg" width="320" height="240">
-<img class="pull left" src="/images/2014-06-16-post-ruggedizing-huxley/Photo-2014-07-10_11_13_12PM.jpg" width="320" height="240">
-<img class="pull left" src="/images/2014-06-16-post-ruggedizing-huxley/Photo-2014-07-10_11_13_39PM.jpg" width="320" height="240">
-<img class="pull left" src="/images/2014-06-16-post-ruggedizing-huxley/Photo-2014-07-10_11_14_03PM.jpg" width="320" height="240">
-<img class="pull left" src="/images/2014-06-16-post-ruggedizing-huxley/Photo-2014-07-10_11_14_33PM.jpg" width="320" height="240">
-<img class="pull left" src="/images/2014-06-16-post-ruggedizing-huxley/Photo-2014-07-10_11_15_22PM.jpg" width="320" height="240">
-<img class="pull left" src="/images/2014-06-16-post-ruggedizing-huxley/Photo-2014-07-13_11_17_16PM.jpg" width="320" height="240">
-We want to be able to easily move our 3D printer around, including taking it to events and schools.</p>
-
-<p>Thus was born the printer case.  Very nice that everything could be cut out of a single 4&#8217;x4&#8217; sheet of particle board.</p>
-
-<p>Only downside- disconnecting everything and rewiring it with plugs. So many wires to solder!</p>
 ]]></content>
   </entry>
   

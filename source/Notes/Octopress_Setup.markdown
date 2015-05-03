@@ -1,13 +1,31 @@
-# Notes
+---
+layout: page
+title: "Octopress Setup"
+author: Julian
+date: 2014-07-04 19:53
+comments: true
+sharing: true
+footer: true
+published: true
+---
 
-## References
+Reminders about the plugins and other configuration for this site.
 
+## Notes
+
+* For [Heroku] deployment, all git submodules need to be added via their public (`https`) repository URLs. You can't add a (private) `ssh` key to your [Heroku] account to access your [Github] repositories. Which makes sense if you think about it.
+
+* Had to add extra `span` elements in various places to make the `css` animations I added to `a` links work correctly.
+
+## Layouts
+
+Using [Octostrap3].
 
 ## Plugins
 
 ### Plant UML
 
-* Git repo `url = git@github.com:yjpark/jekyll-plantuml.git`
+* Git repo `https://github.com/yjpark/jekyll-plantuml.git`
 * Added as a sub-module to plugins
 
 *Test*
@@ -21,7 +39,7 @@ Alice <-- Bob: another authentication Response
 {% endplantuml %}
 
 ### AppBox Octopress
-* Git repo `https://github.com/sotsy/appbox-octopress`
+* Git repo: https://github.com/sotsy/appbox-octopress
 
 *Test*
 
@@ -36,7 +54,7 @@ _GooglePlay_
 {% appbox googleplay screenshots com.twitter.android %}
 
 ### Wikipedia
-* Git repo: git@github.com:pferreir/octopress-wikipedia.git
+* Git repo: https://github.com/pferreir/octopress-wikipedia.git
 * Note- bit of a pain to set up, need to manually modify theme in use
 
 *Test*
@@ -44,7 +62,7 @@ _GooglePlay_
 {% wikipedia Stirling Engine %}
 
 ### Highlight
-* Git repo: git@github.com:thesp0nge/octopress_highlight_plugin.git
+* Git repo: https://github.com/thesp0nge/octopress_highlight_plugin.git
 * also need to modify `_layout.scss`
 
 *Test*
@@ -61,4 +79,13 @@ _GooglePlay_
 
 ### Gravatar
 
-* Git repo: git@github.com:joet3ch/gravatar-octopress.git
+* Git repo: https://github.com/joet3ch/gravatar-octopress.git
+
+### Jekyll Author
+* (My fork) Git repo: https://github.com/julianrendell/jekyll-author-plugin.git
+
+
+
+[Heroku]: http://heroku.com
+[Github]: http://github.com
+[Octostrap3]: http://kaworu.github.io/octostrap3/

@@ -15,7 +15,7 @@
               </td>
               <td>
               <div>
-                <h4 class="list-group-item-heading">{{ author.name }}</h4>
+                <h4 class="list-group-item-heading">{{ author.name | author_links }}</h4>
                 <p class="list-group-item-text">
           	  		{{ author.description | markdownify}}
           	  	</p>

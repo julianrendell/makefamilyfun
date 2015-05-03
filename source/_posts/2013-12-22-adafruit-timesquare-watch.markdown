@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "Adafruit TimeSquare Watch"
+author: Julian
 date: 2013-12-22 01:39:10 -0700
 comments: true
 categories: [electronics, wearables, adafruit]
@@ -12,6 +13,8 @@ attract_rows:
 Shhh- don't tell Liam. SO COOL!
 
 It's an [Adafruit TimeSquare watch!](http://www.adafruit.com/products/1225)
+
+<!-- more -->
 
 *Postscript:** Liam's 7 and pretty good at soldering.  He got most of the way through this by himself, but needed a little help to finish it off and figure out how to set it up.
 

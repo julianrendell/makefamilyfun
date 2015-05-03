@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "Standing Desk"
+author: Julian
 date: 2013-12-10 01:32:49 -0700
 comments: true
 categories: [building, furniture]
@@ -9,6 +10,8 @@ attract_cols:
 attract_rows:
 ---
 {% img pull left /images/2013-12-10-post-standing-desk/Photo-2013-12-10_10_53_45AM.jpg 320 240 %}
-Continuing trends in building my own furniture and trying to be more healthy I've built my own standing desk.
+Continuing trends in building my own furniture and trying to be more healthy- I've built my own standing desk.
+
+<!-- more -->
 
 I rounded the corners so I don't gouge myself. Even painted it with polyureathene so it should survive the horrors of coffee mugs.

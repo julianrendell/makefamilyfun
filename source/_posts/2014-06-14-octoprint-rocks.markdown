@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "Octoprint Rocks!"
+author: Julian
 date: 2014-06-14 12:41:27 -0700
 comments: true
 categories: [3dprinting, linux]

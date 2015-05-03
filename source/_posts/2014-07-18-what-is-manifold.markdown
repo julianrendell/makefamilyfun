@@ -1,16 +1,19 @@
 ---
 layout: post
 title: "What is Manifold?"
+author: Julian
 date: 2014-07-18 01:54:37 -0700
 comments: true
-categories: []
+categories: [3dprinting]
 coverimage: 
 attract_cols:
 attract_rows:
 ---
 This is a term that comes up a lot in 3D printing. Non-manifold models cause a lot of problems and lead to failed prints.
 
-You often hear it being described in terms of "water tightness", <!--more-->but that hasn't helped me to understand it.
+You often hear it being described in terms of "water tightness", but that hasn't helped me to understand it.
+
+<!-- more -->
 
 But [this](http://www.iheartrobotics.com/2010/01/openscad-tip-manifold-space-and-time.html) post did, especially [this comment](http://www.iheartrobotics.com/2010/01/openscad-tip-manifold-space-and-time.html?showComment=1264551125102#c7892813172347887917):
 >

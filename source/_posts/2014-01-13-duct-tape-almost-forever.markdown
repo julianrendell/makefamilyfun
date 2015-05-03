@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "Duct Tape- almost forever"
+author: Julian
 date: 2014-01-13 01:44:35 -0700
 comments: true
 categories: [ducttape, crafts]

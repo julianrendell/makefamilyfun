@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "What to do With Failed Prints?"
+author: Julian
 date: 2014-07-17 13:24:55 -0700
 comments: true
 categories: [3dprinting, crafts]
