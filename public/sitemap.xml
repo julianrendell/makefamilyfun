@@ -136,16 +136,13 @@
     <loc>http://www.makefamilyfun.ca/Notes/Octopress_Setup.html</loc>
   </url>
   <url>
-    <loc>http://www.makefamilyfun.ca/blog/archives/index%20(julian2%E2%80%99s%20MacBook%20Pro&#8217;s%20conflicted%20copy%202015-05-02).html</loc>
-  </url>
-  <url>
-    <loc>http://www.makefamilyfun.ca/</loc>
-  </url>
-  <url>
     <loc>http://www.makefamilyfun.ca/blog/archives/</loc>
   </url>
   <url>
     <loc>http://www.makefamilyfun.ca/blog/</loc>
+  </url>
+  <url>
+    <loc>http://www.makefamilyfun.ca/</loc>
   </url>
   <url>
     <loc>http://www.makefamilyfun.ca/Notes/Octopress/</loc>
@@ -344,6 +341,15 @@
   </url>
   <url>
     <loc>http://www.makefamilyfun.ca/blog/categories/minimakerfaire2015/</loc>
+  </url>
+  <url>
+    <loc>http://www.makefamilyfun.ca/posts/2/</loc>
+  </url>
+  <url>
+    <loc>http://www.makefamilyfun.ca/posts/3/</loc>
+  </url>
+  <url>
+    <loc>http://www.makefamilyfun.ca/posts/4/</loc>
   </url>
   <url>
     <loc>http://www.makefamilyfun.ca/assets/bootstrap/js/tests/index.html</loc>
