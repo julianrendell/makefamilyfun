@@ -1,6 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
+    <loc>http://www.makefamilyfun.ca/blog/2015/05/06/learning-to-improvise/</loc>
+    <lastmod>2015-05-06T18:48:17-07:00</lastmod>
+  </url>
+  <url>
+    <loc>http://www.makefamilyfun.ca/blog/2015/05/06/a-minion-pinata/</loc>
+    <lastmod>2015-05-06T18:45:03-07:00</lastmod>
+  </url>
+  <url>
+    <loc>http://www.makefamilyfun.ca/blog/2015/05/06/liams-mine/</loc>
+    <lastmod>2015-05-06T18:37:22-07:00</lastmod>
+  </url>
+  <url>
     <loc>http://www.makefamilyfun.ca/blog/2015/03/14/tristans-makerfaire-ideas/</loc>
     <lastmod>2015-03-14T20:00:28-07:00</lastmod>
   </url>
@@ -242,6 +254,15 @@
   </url>
   <url>
     <loc>http://www.makefamilyfun.ca/authors/tristan/</loc>
+  </url>
+  <url>
+    <loc>http://www.makefamilyfun.ca/authors/sarah/</loc>
+  </url>
+  <url>
+    <loc>http://www.makefamilyfun.ca/authors/sarah/</loc>
+  </url>
+  <url>
+    <loc>http://www.makefamilyfun.ca/authors/sarah/</loc>
   </url>
   <url>
     <loc>http://www.makefamilyfun.ca/blog/categories/building/</loc>

@@ -25,7 +25,7 @@ Using [Octostrap3].
 
 ### Plant UML
 
-* Git repo `https://github.com/yjpark/jekyll-plantuml.git`
+* Git repo https://github.com/yjpark/jekyll-plantuml.git
 * Added as a sub-module to plugins
 
 *Test*
