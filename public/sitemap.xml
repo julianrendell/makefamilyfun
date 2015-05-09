@@ -1,6 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
+    <loc>http://www.makefamilyfun.ca/blog/2015/05/08/discover-the-wonders-of-wood-pechakucha-richmond/</loc>
+    <lastmod>2015-05-08T18:09:28-07:00</lastmod>
+  </url>
+  <url>
+    <loc>http://www.makefamilyfun.ca/blog/2015/05/08/crash-course-in-amazon-associate-links/</loc>
+    <lastmod>2015-05-08T17:25:13-07:00</lastmod>
+  </url>
+  <url>
     <loc>http://www.makefamilyfun.ca/blog/2015/05/06/learning-to-improvise/</loc>
     <lastmod>2015-05-06T18:48:17-07:00</lastmod>
   </url>
@@ -265,6 +273,12 @@
     <loc>http://www.makefamilyfun.ca/authors/sarah/</loc>
   </url>
   <url>
+    <loc>http://www.makefamilyfun.ca/authors/julian/</loc>
+  </url>
+  <url>
+    <loc>http://www.makefamilyfun.ca/authors/julian/</loc>
+  </url>
+  <url>
     <loc>http://www.makefamilyfun.ca/blog/categories/building/</loc>
   </url>
   <url>
@@ -364,13 +378,16 @@
     <loc>http://www.makefamilyfun.ca/blog/categories/minimakerfaire2015/</loc>
   </url>
   <url>
-    <loc>http://www.makefamilyfun.ca/posts/2/</loc>
+    <loc>http://www.makefamilyfun.ca/blog/categories/money/</loc>
   </url>
   <url>
-    <loc>http://www.makefamilyfun.ca/posts/3/</loc>
+    <loc>http://www.makefamilyfun.ca/blog/categories/web/</loc>
   </url>
   <url>
-    <loc>http://www.makefamilyfun.ca/posts/4/</loc>
+    <loc>http://www.makefamilyfun.ca/blog/categories/art/</loc>
+  </url>
+  <url>
+    <loc>http://www.makefamilyfun.ca/blog/categories/wood/</loc>
   </url>
   <url>
     <loc>http://www.makefamilyfun.ca/assets/bootstrap/js/tests/index.html</loc>

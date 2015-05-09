@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: Web | Make. Family. Fun.]]></title>
+  <link href="http://www.makefamilyfun.ca/blog/categories/web/atom.xml" rel="self"/>
+  <link href="http://www.makefamilyfun.ca/"/>
+  <updated>2015-05-08T23:57:06-07:00</updated>
+  <id>http://www.makefamilyfun.ca/</id>
+  <author>
+    <name><![CDATA[Julian Rendell & Sarah Dakin]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[Crash Course in Amazon Associate Links]]></title>
+    <link href="http://www.makefamilyfun.ca/blog/2015/05/08/crash-course-in-amazon-associate-links/"/>
+    <updated>2015-05-08T17:25:13-07:00</updated>
+    <id>http://www.makefamilyfun.ca/blog/2015/05/08/crash-course-in-amazon-associate-links</id>
+    <content type="html"><![CDATA[<p>I&rsquo;ve spent some time this week learning about <a href="https://associates.amazon.ca">Amazon&rsquo;s Associate</a> (affiliates) program. There&rsquo;s a lot of information scattered around the internet covering strategies to maximize revenues, or how to integrate it into various blogging engines, but I couldn&rsquo;t find much that gave an overview of how it all works, especially when considering the different regional Amazon stores.</p>
+
+<p>Here&rsquo;s my attempt at explaining it.</p>
+
+<!-- more -->
+
+
+<p>There are a few complications:</p>
+
+<ul>
+<li>Amazon operates in multiple regions.</li>
+<li>User accounts are per region, and per subsidiary; they are not global. e.g. Amazon US and Audible US both have associate programs, but require separate sign up. (More confusing given that you can login to Audible using your Amazon account!)</li>
+<li>An Associate account is a regular account that has opted into the associate program.</li>
+<li>Amazon pays associates by Amazon Gift Cards, direct deposit to a bank account (but only in the region of a given Amazon store), or by check. They all have minimum payout thresholds, generally $10. Checks incur a $15 fee. Associates can opt to set a higher minimum payout threshold.</li>
+<li>Amazon has <a href="http://en.wikipedia.org/wiki/Amazon_Standard_Identification_Number">&ldquo;Amazon Standard Identification Numbers (ASINs)&rdquo;</a></li>
+<li><a href="http://en.wikipedia.org/wiki/Amazon_Standard_Identification_Number">ASINs</a> are unique, but not guaranteed to be the same across Amazon stores for a given product.</li>
+<li>Amazon associate links that you create have to contain two key pieces of information: a special token that identifies the associate, and the ASIN of the product being promoted.</li>
+<li>Associates can create as many tokens as they want to. This can be used to correlate earnings to different campaigns, or promotions, etc.</li>
+</ul>
+
+
+<p>So when a visitor clicks on your associate link they&rsquo;ll end up on one of Amazon&rsquo;s sites.  If that person is already logged in, and has an account on the same Amazon site that your associate account belongs to then all is well: they&rsquo;ll end up on the product page you intended, and if they purchase the item you&rsquo;ll get a percentage.</p>
+
+<p>But if the visitors account is with a different regional store, it will know that your token is not valid for that region and ignore it.  If the user purchases the item you won&rsquo;t get anything.</p>
+
+<p>Worse, the <a href="http://en.wikipedia.org/wiki/Amazon_Standard_Identification_Number">ASIN</a> you obtained from your Amazon regional store may not match the <a href="http://en.wikipedia.org/wiki/Amazon_Standard_Identification_Number">ASIN</a> of the product in your visitors regional store. I&rsquo;m not sure what happens in this case; it&rsquo;s not clear if the visitor ends up on a different (or non existent) product page or if Amazon does some cross-region <a href="http://en.wikipedia.org/wiki/Amazon_Standard_Identification_Number">ASIN</a> matching magic. Whatever happens, you are not going to get any payment.</p>
+
+<p>So if you know your site is regularly visited by people in several regions you need to sign up for accounts in each region, then opt in to each regions associate program. You also need to get the <a href="http://en.wikipedia.org/wiki/Amazon_Standard_Identification_Number">ASIN</a> for the product in each region. Finally you need to add links for each region to your site.</p>
+
+<p>But now you&rsquo;re going to be presenting your site&rsquo;s visitors with a bevy of Amazon links, and if they click on the wrong one you still won&rsquo;t earn anything.</p>
+
+<p>There is a thread of hope- in general the physical location of the browser will match the correct region for the Amazon store of the visitor.</p>
+
+<p>Javascript can be used to geo-locate the IP address of the browser (for example <a href="https://github.com/onury/geolocator">geolocator</a>) so in principle you could build a script that determines the visitors location and substitutes your associate token for that region.</p>
+
+<p>That takes care of the associate token&hellip; but not the <a href="http://en.wikipedia.org/wiki/Amazon_Standard_Identification_Number">ASIN</a>. We could look up the details of the product (using Amazon&rsquo;s product API) in the original region store and then apply some heuristics to find the <a href="http://en.wikipedia.org/wiki/Amazon_Standard_Identification_Number">ASIN</a> in the visitor&rsquo;s region&rsquo;s store.</p>
+
+<p>Javascript can do that too, right?</p>
+
+<p>Unfortunately not. The <a href="http://en.wikipedia.org/wiki/Same-origin_policy">Same Origin Policy</a> get&rsquo;s in the way. The <a href="http://en.wikipedia.org/wiki/Same-origin_policy">SOP</a> is a security measure that only allows Javascript scripts to communicate with the server from which they were loaded.  There are work-arounds, such as <a href="http://en.wikipedia.org/wiki/JSONP">JSONP</a>, but they require support from the API provider. Unfortunately Amazon doesn&rsquo;t support <a href="http://en.wikipedia.org/wiki/JSONP">JSONP</a> for their product API.</p>
+
+<p>The only way to take care of the <a href="http://en.wikipedia.org/wiki/Amazon_Standard_Identification_Number">ASIN</a> conversion is to have your javascript call back to your server, and then have your server figure out the <a href="http://en.wikipedia.org/wiki/Amazon_Standard_Identification_Number">ASIN</a> for the visitors region.  One implementation of such a proxy is this <a href="http://petewilliams.info/blog/2009/07/javascript-amazon-associate-link-localiser/">Amazon Associate Link Localiser</a> written in JavaScript and PHP.</p>
+
+<p>This is why all the Amazon link localizers for CMSs have both a server-side part and some extra JavaScript.</p>
+
+<p>Aside: I suspect that even after all the above, if someone is travelling outside of the region of their Amazon account the above will fail and again, you&rsquo;ll miss out on any potential revenue.</p>
+
+<p>But that&rsquo;s not a lot of use for this site.  Right now this site is being generated by <a href="http://octopress.org">Octopress</a>. There are no server-side scripts; it&rsquo;s all static HTML pages pre-generated by the <a href="http://octopress.org">Octopress</a> script running on my computer.  This makes it easier (and cheaper) to find a host for, but precludes any server-side proxy. There are services, like <a href="http://www.georiot.com/home">GeoRiot</a>, that can take care of this for you, but I suspect they&rsquo;d cost us more than what we&rsquo;ll make via associate sales.</p>
+
+<p>It does seem that Amazon is, shall we say, not maximizing associates potential revenue in a global economy.</p>
+
+<p>The silver lining for us is that, at the time of writing this, most of our site visitors are from Canada. So one simple Amazon associate link will capture the majority of potential buyers we forward on.</p>
+
+<p>Amazon product links can be added using Amazons <a href="https://affiliate-program.amazon.com/gp/associates/join/landing/tools.html">sitestripe</a>, but instead I&rsquo;m going to use this <a href="https://github.com/longkey1/jekyll-amazon-plugin">Jekyll amazon plugin</a>. This way there&rsquo;ll be less to do in the future if I do implement a server side proxy.</p>
+]]></content>
+  </entry>
+  
+</feed>
